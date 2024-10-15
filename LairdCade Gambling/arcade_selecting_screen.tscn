@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://7dx21ymnbiqi"]
+
+[ext_resource type="PackedScene" uid="uid://bek72rnr4ic2d" path="res://FBX format/floor.fbx" id="1_g4tmt"]
+
+[node name="Arcade Selecting Screen" type="Node3D"]
+
+[node name="floor" parent="." instance=ExtResource("1_g4tmt")]
+
+[node name="floor4" parent="." instance=ExtResource("1_g4tmt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.024163, 0, 0.995008)
+
+[node name="floor3" parent="." instance=ExtResource("1_g4tmt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.985934, 0, 0.995008)
+
+[node name="floor2" parent="." instance=ExtResource("1_g4tmt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.985934, 0, 0)
