@@ -1,4 +1,9 @@
-[gd_scene format=3 uid="uid://daw67cojklrht"]
+[gd_scene load_steps=5 format=3 uid="uid://daw67cojklrht"]
+
+[ext_resource type="Texture2D" uid="uid://bs7ncwo0tesgn" path="res://images/Random Images/Title Screen Background.jpg" id="1_0kuuo"]
+[ext_resource type="Script" path="res://titlescreen.gd" id="1_8i68i"]
+[ext_resource type="FontFile" uid="uid://cmeke2x4k1cq8" path="res://Miscellaneous Stuff/Budmo font/budmo jigglish.otf" id="2_pwswt"]
+[ext_resource type="FontFile" uid="uid://dpen4mjgiv7pg" path="res://Miscellaneous Stuff/Budmo font/budmo jiggler.otf" id="3_8j8jx"]
 
 [node name="titlescreen" type="Control"]
 layout_mode = 3
@@ -7,3 +12,32 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_8i68i")
+
+[node name="TitleScreenBackground" type="Sprite2D" parent="."]
+position = Vector2(576, 324.5)
+scale = Vector2(1.8671, 1.79722)
+texture = ExtResource("1_0kuuo")
+
+[node name="titlelabel" type="Label" parent="."]
+modulate = Color(1, 1, 0, 1)
+layout_mode = 0
+offset_left = 80.0
+offset_top = 16.0
+offset_right = 1104.0
+offset_bottom = 137.0
+theme_override_fonts/font = ExtResource("2_pwswt")
+theme_override_font_sizes/font_size = 100
+text = "McLairds Gambling"
+
+[node name="playbutton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 338.0
+offset_top = 381.0
+offset_right = 819.0
+offset_bottom = 450.0
+theme_override_fonts/font = ExtResource("3_8j8jx")
+theme_override_font_sizes/font_size = 50
+text = "Begin your journey"
+
+[connection signal="button_down" from="playbutton" to="." method="_on_playbutton_button_down"]
