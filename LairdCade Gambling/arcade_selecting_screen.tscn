@@ -1,16 +1,38 @@
-[gd_scene load_steps=2 format=3 uid="uid://7dx21ymnbiqi"]
+[gd_scene load_steps=5 format=3 uid="uid://7dx21ymnbiqi"]
 
 [ext_resource type="PackedScene" uid="uid://bek72rnr4ic2d" path="res://FBX format/floor.fbx" id="1_g4tmt"]
+[ext_resource type="PackedScene" uid="uid://dy7v0cf2l4k0o" path="res://FBX format/wall.fbx" id="2_p54ms"]
+[ext_resource type="PackedScene" uid="uid://b7tasc46ns4g8" path="res://FBX format/gambling-machine.fbx" id="3_hyrkc"]
+[ext_resource type="PackedScene" uid="uid://df4fbwmiojh48" path="res://FBX format/claw-machine.fbx" id="4_ektmi"]
 
 [node name="Arcade Selecting Screen" type="Node3D"]
 
 [node name="floor" parent="." instance=ExtResource("1_g4tmt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.0485533)
 
 [node name="floor4" parent="." instance=ExtResource("1_g4tmt")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.024163, 0, 0.995008)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00930824, 0, 0.918165)
 
 [node name="floor3" parent="." instance=ExtResource("1_g4tmt")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.985934, 0, 0.995008)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.985934, 0, 0.910743)
 
 [node name="floor2" parent="." instance=ExtResource("1_g4tmt")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.985934, 0, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.985934, 0, -0.0500091)
+
+[node name="wall" parent="." instance=ExtResource("2_p54ms")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.982055, 0, -0.833783)
+
+[node name="wall2" parent="." instance=ExtResource("2_p54ms")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0165828, 0, -0.833783)
+
+[node name="gambling-machine" parent="." instance=ExtResource("3_hyrkc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.235561, 0, -0.328859)
+
+[node name="gambling-machine2" parent="." instance=ExtResource("3_hyrkc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.224718, 0, -0.300076)
+
+[node name="claw-machine" parent="." instance=ExtResource("4_ektmi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.25002, 0, -0.310902)
+
+[node name="claw-machine2" parent="." instance=ExtResource("4_ektmi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.736538, 0, -0.301781)
