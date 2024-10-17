@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cf0e1wcq87uys"
-path="res://.godot/imported/frenchie.png-2fe84d13f7a04888f1d304fa71ca024c.ctex"
+path="res://.godot/imported/Frenchie.png-463116c8b92f4b76956bcaafb9636ded.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/theboys/frenchie.png"
-dest_files=["res://.godot/imported/frenchie.png-2fe84d13f7a04888f1d304fa71ca024c.ctex"]
+source_file="res://images/TheBoys/Frenchie.png"
+dest_files=["res://.godot/imported/Frenchie.png-463116c8b92f4b76956bcaafb9636ded.ctex"]
 
 [params]
 

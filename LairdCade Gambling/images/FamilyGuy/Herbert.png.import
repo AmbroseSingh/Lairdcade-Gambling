@@ -7,7 +7,7 @@ valid=false
 
 [deps]
 
-source_file="res://images/familyguy/Herbert.png"
+source_file="res://images/FamilyGuy/Herbert.png"
 
 [params]
 

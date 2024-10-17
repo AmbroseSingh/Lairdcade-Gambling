@@ -15,7 +15,7 @@ grow_vertical = 2
 script = ExtResource("1_8i68i")
 
 [node name="TitleScreenBackground" type="Sprite2D" parent="."]
-position = Vector2(540, 964.5)
+position = Vector2(540, 963.5)
 scale = Vector2(1.75041, 5.35278)
 texture = ExtResource("1_0kuuo")
 
@@ -40,7 +40,7 @@ theme_override_fonts/font = ExtResource("3_8j8jx")
 theme_override_font_sizes/font_size = 50
 text = "Begin your journey"
 
-[node name="how2play" type="Button" parent="."]
+[node name="how2playbutton" type="Button" parent="."]
 layout_mode = 0
 offset_left = 390.0
 offset_top = 1425.0
@@ -51,4 +51,5 @@ theme_override_font_sizes/font_size = 50
 text = "How 2 play"
 
 [connection signal="button_down" from="playbutton" to="." method="_on_playbutton_button_down"]
-[connection signal="button_down" from="how2play" to="." method="_on_playbutton_button_down"]
+[connection signal="button_down" from="how2playbutton" to="." method="_on_how_2_playbutton_button_down"]
+[connection signal="button_down" from="how2playbutton" to="." method="_on_playbutton_button_down"]
