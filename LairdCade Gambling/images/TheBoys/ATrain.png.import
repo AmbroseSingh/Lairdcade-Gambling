@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cs0q8xgnwlmmw"
-path="res://.godot/imported/ATrain.png-5e01b63547fad709010e65ef9c8d3717.ctex"
+path="res://.godot/imported/ATrain.png-b875be85fb4385983f2021f0bfc269c5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/theboys/ATrain.png"
-dest_files=["res://.godot/imported/ATrain.png-5e01b63547fad709010e65ef9c8d3717.ctex"]
+source_file="res://images/TheBoys/ATrain.png"
+dest_files=["res://.godot/imported/ATrain.png-b875be85fb4385983f2021f0bfc269c5.ctex"]
 
 [params]
 

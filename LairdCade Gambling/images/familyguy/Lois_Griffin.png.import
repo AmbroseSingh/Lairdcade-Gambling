@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c1yk54im0sfxh"
-path="res://.godot/imported/Lois_Griffin.png-57ace85ba3dd271e2ce3587e42c6e040.ctex"
+path="res://.godot/imported/Lois_Griffin.png-245c8ed952dcef5ae2af285a105889ef.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/familyguy/Lois_Griffin.png"
-dest_files=["res://.godot/imported/Lois_Griffin.png-57ace85ba3dd271e2ce3587e42c6e040.ctex"]
+source_file="res://images/FamilyGuy/Lois_Griffin.png"
+dest_files=["res://.godot/imported/Lois_Griffin.png-245c8ed952dcef5ae2af285a105889ef.ctex"]
 
 [params]
 

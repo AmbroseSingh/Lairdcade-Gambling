@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://i52tpgdlalr3"
-path="res://.godot/imported/stewie.png-e55147ed51399efb73870afc295f8031.ctex"
+path="res://.godot/imported/stewie.png-f8302b3a6e09272ac370edb8e69aa653.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/familyguy/stewie.png"
-dest_files=["res://.godot/imported/stewie.png-e55147ed51399efb73870afc295f8031.ctex"]
+source_file="res://images/FamilyGuy/stewie.png"
+dest_files=["res://.godot/imported/stewie.png-f8302b3a6e09272ac370edb8e69aa653.ctex"]
 
 [params]
 

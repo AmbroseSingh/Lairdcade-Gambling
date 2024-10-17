@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bfrgi5olpfybt"]
+
+[ext_resource type="Texture2D" uid="uid://c04ueed1vkqri" path="res://images/BreakingBad/Skylar.png" id="1_fon5w"]
+
+[node name="Skylar" type="Sprite2D"]
+position = Vector2(358, -79)
+scale = Vector2(0.861172, 0.979538)
+texture = ExtResource("1_fon5w")

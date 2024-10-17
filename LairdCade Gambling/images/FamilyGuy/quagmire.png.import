@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dlw7ho3vctxv4"
-path="res://.godot/imported/quagmire.png-5b03708de01cc644ee095c43c141f1c9.ctex"
+path="res://.godot/imported/quagmire.png-fc4db60b099a47f9c0265bd90da15179.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/familyguy/quagmire.png"
-dest_files=["res://.godot/imported/quagmire.png-5b03708de01cc644ee095c43c141f1c9.ctex"]
+source_file="res://images/FamilyGuy/quagmire.png"
+dest_files=["res://.godot/imported/quagmire.png-fc4db60b099a47f9c0265bd90da15179.ctex"]
 
 [params]
 

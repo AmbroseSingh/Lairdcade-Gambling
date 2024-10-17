@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://clk1ndqjdlwmb"
-path="res://.godot/imported/Lois.png-2908284e63c1e038c06237ada962e39f.ctex"
+path="res://.godot/imported/Lois.png-a95041bdc1f82f5a03eaf1d6c7c641e6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/familyguy/Lois.png"
-dest_files=["res://.godot/imported/Lois.png-2908284e63c1e038c06237ada962e39f.ctex"]
+source_file="res://images/FamilyGuy/Lois.png"
+dest_files=["res://.godot/imported/Lois.png-a95041bdc1f82f5a03eaf1d6c7c641e6.ctex"]
 
 [params]
 
