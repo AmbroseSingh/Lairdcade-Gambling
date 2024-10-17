@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ddrf0rn4dvv2w"
-path="res://.godot/imported/victorianeuman.webp-8574fe030f4a81c6407e272269101dcf.ctex"
+uid="uid://bx46xth4b7y2x"
+path="res://.godot/imported/Chicken.png-285af6de497642bf3bb85e9d3ada75ce.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/TheBoys/victorianeuman.webp"
-dest_files=["res://.godot/imported/victorianeuman.webp-8574fe030f4a81c6407e272269101dcf.ctex"]
+source_file="res://images/FamilyGuy/Chicken.png"
+dest_files=["res://.godot/imported/Chicken.png-285af6de497642bf3bb85e9d3ada75ce.ctex"]
 
 [params]
 

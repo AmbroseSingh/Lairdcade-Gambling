@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://djlq6nwfag4im"
-path="res://.godot/imported/megan.png-aae7f0ca310ab0c495aba0d82d4602bf.ctex"
+uid="uid://dfnbyg0hw6g5r"
+path="res://.godot/imported/Victoria Neumann.png-490c56e68b8495dad0ae536b62bf3fa3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/FamilyGuy/megan.png"
-dest_files=["res://.godot/imported/megan.png-aae7f0ca310ab0c495aba0d82d4602bf.ctex"]
+source_file="res://images/TheBoys/Victoria Neumann.png"
+dest_files=["res://.godot/imported/Victoria Neumann.png-490c56e68b8495dad0ae536b62bf3fa3.ctex"]
 
 [params]
 

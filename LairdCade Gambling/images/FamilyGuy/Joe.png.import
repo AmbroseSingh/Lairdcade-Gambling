@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://1nebueaou1h3"
-path="res://.godot/imported/Frenchie.png-463116c8b92f4b76956bcaafb9636ded.ctex"
+uid="uid://b066m38xa56eg"
+path="res://.godot/imported/Joe.png-2a645fa4accd0289976b834fa7e0e7ba.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/TheBoys/Frenchie.png"
-dest_files=["res://.godot/imported/Frenchie.png-463116c8b92f4b76956bcaafb9636ded.ctex"]
+source_file="res://images/FamilyGuy/Joe.png"
+dest_files=["res://.godot/imported/Joe.png-2a645fa4accd0289976b834fa7e0e7ba.ctex"]
 
 [params]
 

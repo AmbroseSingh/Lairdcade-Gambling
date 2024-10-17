@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dd7jiu7mqjvyk"
-path="res://.godot/imported/Joe.webp-8178211b49a6ba3d1edb7cb9d1e05167.ctex"
+uid="uid://dky82f328bek0"
+path="res://.godot/imported/Soldier_Boy_Transparent.webp-1ad5917f13d4b5095145a0a98a51129e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/FamilyGuy/Joe.webp"
-dest_files=["res://.godot/imported/Joe.webp-8178211b49a6ba3d1edb7cb9d1e05167.ctex"]
+source_file="res://images/Random Images/Soldier_Boy_Transparent.webp"
+dest_files=["res://.godot/imported/Soldier_Boy_Transparent.webp-1ad5917f13d4b5095145a0a98a51129e.ctex"]
 
 [params]
 

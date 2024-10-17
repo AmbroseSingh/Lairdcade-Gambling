@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bgf6vqphmkpqn"
-path="res://.godot/imported/quagmire.png-fc4db60b099a47f9c0265bd90da15179.ctex"
+uid="uid://vm03wpv7s88r"
+path="res://.godot/imported/Quagmire.png-c1f2b25083c643bf58c2d78068860169.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/FamilyGuy/quagmire.png"
-dest_files=["res://.godot/imported/quagmire.png-fc4db60b099a47f9c0265bd90da15179.ctex"]
+source_file="res://images/FamilyGuy/Quagmire.png"
+dest_files=["res://.godot/imported/Quagmire.png-c1f2b25083c643bf58c2d78068860169.ctex"]
 
 [params]
 

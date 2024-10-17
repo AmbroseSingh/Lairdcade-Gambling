@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cugdx0nockkdi"
-path="res://.godot/imported/Lois_Griffin.webp-ed3f9ab421a3d961b3c0d06e4b3292ed.ctex"
+uid="uid://baqvtrxcjl6dm"
+path="res://.godot/imported/Meg.png-47fd3cb89bb7fc6dd6352f5fc8f909aa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/FamilyGuy/Lois_Griffin.webp"
-dest_files=["res://.godot/imported/Lois_Griffin.webp-ed3f9ab421a3d961b3c0d06e4b3292ed.ctex"]
+source_file="res://images/FamilyGuy/Meg.png"
+dest_files=["res://.godot/imported/Meg.png-47fd3cb89bb7fc6dd6352f5fc8f909aa.ctex"]
 
 [params]
 

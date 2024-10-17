@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d0j7ul56bbbwe"
-path="res://.godot/imported/SoldierBoy.webp-a5cba51344b2d178c11b285b632bae9f.ctex"
+uid="uid://3gkkrngjj3ge"
+path="res://.godot/imported/Lois.png-a95041bdc1f82f5a03eaf1d6c7c641e6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/TheBoys/SoldierBoy.webp"
-dest_files=["res://.godot/imported/SoldierBoy.webp-a5cba51344b2d178c11b285b632bae9f.ctex"]
+source_file="res://images/FamilyGuy/Lois.png"
+dest_files=["res://.godot/imported/Lois.png-a95041bdc1f82f5a03eaf1d6c7c641e6.ctex"]
 
 [params]
 
