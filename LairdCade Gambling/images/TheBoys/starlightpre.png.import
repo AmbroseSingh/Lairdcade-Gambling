@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ckcema1i48444"
-path="res://.godot/imported/starlightpre.png-bb64e5f52289dc2083e3517b89f1a981.ctex"
+path="res://.godot/imported/starlightpre.png-f8d5f2a22e0da1b364e1246293fdd3ce.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/TheBoys/starlightpre.png"
-dest_files=["res://.godot/imported/starlightpre.png-bb64e5f52289dc2083e3517b89f1a981.ctex"]
+source_file="res://images/theboys/starlightpre.png"
+dest_files=["res://.godot/imported/starlightpre.png-f8d5f2a22e0da1b364e1246293fdd3ce.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bpyp0yite4mfd"
-path="res://.godot/imported/chickn.webp-5a2543bedbffa0347876037ce52b75c2.ctex"
+path="res://.godot/imported/chickn.webp-2a721d9a664b61679cf67f888da25652.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/FamilyGuy/chickn.webp"
-dest_files=["res://.godot/imported/chickn.webp-5a2543bedbffa0347876037ce52b75c2.ctex"]
+source_file="res://images/familyguy/chickn.webp"
+dest_files=["res://.godot/imported/chickn.webp-2a721d9a664b61679cf67f888da25652.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bst8q4sg3wwde"
-path="res://.godot/imported/thedeep.png-82c85a2558271310426917ff97bf0291.ctex"
+path="res://.godot/imported/thedeep.png-49931901d1a524171fd55d3179f9db22.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/TheBoys/thedeep.png"
-dest_files=["res://.godot/imported/thedeep.png-82c85a2558271310426917ff97bf0291.ctex"]
+source_file="res://images/theboys/thedeep.png"
+dest_files=["res://.godot/imported/thedeep.png-49931901d1a524171fd55d3179f9db22.ctex"]
 
 [params]
 

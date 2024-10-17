@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://blnsp37r1psgd"
-path="res://.godot/imported/homelander.png-f848108c9ae873127897e3e4c856ee8d.ctex"
+path="res://.godot/imported/homelander.png-ef468aeb7c4dc0835e5089e7201f06a5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/TheBoys/homelander.png"
-dest_files=["res://.godot/imported/homelander.png-f848108c9ae873127897e3e4c856ee8d.ctex"]
+source_file="res://images/theboys/homelander.png"
+dest_files=["res://.godot/imported/homelander.png-ef468aeb7c4dc0835e5089e7201f06a5.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dpjjuxi103nig"
-path="res://.godot/imported/frenchie.png-2fe84d13f7a04888f1d304fa71ca024c.ctex"
+uid="uid://c1yk54im0sfxh"
+path="res://.godot/imported/Lois_Griffin.png-57ace85ba3dd271e2ce3587e42c6e040.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/theboys/frenchie.png"
-dest_files=["res://.godot/imported/frenchie.png-2fe84d13f7a04888f1d304fa71ca024c.ctex"]
+source_file="res://images/familyguy/Lois_Griffin.png"
+dest_files=["res://.godot/imported/Lois_Griffin.png-57ace85ba3dd271e2ce3587e42c6e040.ctex"]
 
 [params]
 

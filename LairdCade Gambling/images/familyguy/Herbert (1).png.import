@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dpjjuxi103nig"
-path="res://.godot/imported/frenchie.png-2fe84d13f7a04888f1d304fa71ca024c.ctex"
+uid="uid://ba71b07yinj0a"
+path="res://.godot/imported/Herbert (1).png-438a2c9738649c950d0e16b03b750acd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/theboys/frenchie.png"
-dest_files=["res://.godot/imported/frenchie.png-2fe84d13f7a04888f1d304fa71ca024c.ctex"]
+source_file="res://images/familyguy/Herbert (1).png"
+dest_files=["res://.godot/imported/Herbert (1).png-438a2c9738649c950d0e16b03b750acd.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dpjjuxi103nig"
-path="res://.godot/imported/frenchie.png-2fe84d13f7a04888f1d304fa71ca024c.ctex"
+uid="uid://c7jq3slltkm1t"
+path="res://.godot/imported/chickn.png-3337f9c696d382272f8483f06bb00641.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/theboys/frenchie.png"
-dest_files=["res://.godot/imported/frenchie.png-2fe84d13f7a04888f1d304fa71ca024c.ctex"]
+source_file="res://images/familyguy/chickn.png"
+dest_files=["res://.godot/imported/chickn.png-3337f9c696d382272f8483f06bb00641.ctex"]
 
 [params]
 
