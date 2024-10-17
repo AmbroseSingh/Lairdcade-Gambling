@@ -50,6 +50,21 @@ theme_override_fonts/font = ExtResource("3_8j8jx")
 theme_override_font_sizes/font_size = 50
 text = "How 2 play"
 
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 108.0
+offset_top = 563.0
+offset_right = 953.0
+offset_bottom = 1021.0
+theme_override_fonts/font = ExtResource("3_8j8jx")
+theme_override_font_sizes/font_size = 70
+text = "Games
+Cards
+Bets
+Food & Drinks
+Fun For the Whole Family"
+horizontal_alignment = 1
+
 [connection signal="button_down" from="playbutton" to="." method="_on_playbutton_button_down"]
 [connection signal="button_down" from="how2playbutton" to="." method="_on_how_2_playbutton_button_down"]
 [connection signal="button_down" from="how2playbutton" to="." method="_on_playbutton_button_down"]
