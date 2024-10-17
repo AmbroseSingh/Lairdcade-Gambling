@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://dgwjfiyjil0dc"]
+
+[ext_resource type="Texture2D" uid="uid://de5rw2p3ntuya" path="res://images/BreakingBad/HankShrader.png" id="1_5hpr7"]
+
+[node name="Hank_Shrader" type="Sprite2D"]
+scale = Vector2(0.386207, 0.339375)
+texture = ExtResource("1_5hpr7")

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://o28rqduxyi63"]
+
+[ext_resource type="Texture2D" uid="uid://djt328qqibrmx" path="res://images/BreakingBad/WaltJr.png" id="1_qvkit"]
+
+[node name="Walt_JR" type="Sprite2D"]
+texture = ExtResource("1_qvkit")

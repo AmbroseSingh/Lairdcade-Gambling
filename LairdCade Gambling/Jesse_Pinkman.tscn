@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://igbk26j4smmr"]
+
+[ext_resource type="Texture2D" uid="uid://bx6k00ad6lyi3" path="res://images/BreakingBad/JessePinkman.png" id="1_xv6mu"]
+
+[node name="Jesse_Pinkman" type="Sprite2D"]
+scale = Vector2(0.36, 0.323478)
+texture = ExtResource("1_xv6mu")

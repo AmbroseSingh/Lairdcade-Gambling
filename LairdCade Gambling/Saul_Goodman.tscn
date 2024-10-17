@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://c56ygh0hvjubu"]
+
+[ext_resource type="Texture2D" uid="uid://c7ohiav4knoqe" path="res://images/BreakingBad/SaulGoodman.png" id="1_7x8ar"]
+
+[node name="Saul_Goodman" type="Sprite2D"]
+scale = Vector2(0.348387, 0.337143)
+texture = ExtResource("1_7x8ar")
