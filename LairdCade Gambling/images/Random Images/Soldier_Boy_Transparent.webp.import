@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dlw7ho3vctxv4"
-path="res://.godot/imported/quagmire.png-5b03708de01cc644ee095c43c141f1c9.ctex"
+uid="uid://dky82f328bek0"
+path="res://.godot/imported/Soldier_Boy_Transparent.webp-1ad5917f13d4b5095145a0a98a51129e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/familyguy/quagmire.png"
-dest_files=["res://.godot/imported/quagmire.png-5b03708de01cc644ee095c43c141f1c9.ctex"]
+source_file="res://images/Random Images/Soldier_Boy_Transparent.webp"
+dest_files=["res://.godot/imported/Soldier_Boy_Transparent.webp-1ad5917f13d4b5095145a0a98a51129e.ctex"]
 
 [params]
 

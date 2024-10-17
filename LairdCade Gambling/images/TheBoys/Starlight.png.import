@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cugdx0nockkdi"
-path="res://.godot/imported/Lois_Griffin.webp-e01c3e8dd26e6a9065c9e53cc9640879.ctex"
+uid="uid://cnjdvaccmbuer"
+path="res://.godot/imported/Starlight.png-4c9b215d5ac8ffc6a44194ea2eef4dce.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/familyguy/Lois_Griffin.webp"
-dest_files=["res://.godot/imported/Lois_Griffin.webp-e01c3e8dd26e6a9065c9e53cc9640879.ctex"]
+source_file="res://images/TheBoys/Starlight.png"
+dest_files=["res://.godot/imported/Starlight.png-4c9b215d5ac8ffc6a44194ea2eef4dce.ctex"]
 
 [params]
 

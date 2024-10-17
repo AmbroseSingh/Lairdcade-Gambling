@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dd7jiu7mqjvyk"
-path="res://.godot/imported/Joe.webp-72668815a71c579791d93c38de6c143c.ctex"
+uid="uid://cegmvxrrv0q4k"
+path="res://.godot/imported/Chicken.png-9ef4d30c2bbada403c512ccf5d2e7d2b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/familyguy/Joe.webp"
-dest_files=["res://.godot/imported/Joe.webp-72668815a71c579791d93c38de6c143c.ctex"]
+source_file="res://images/familyguy/Chicken.png"
+dest_files=["res://.godot/imported/Chicken.png-9ef4d30c2bbada403c512ccf5d2e7d2b.ctex"]
 
 [params]
 

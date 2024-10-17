@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://djlq6nwfag4im"
-path="res://.godot/imported/megan.png-352c3d273b14721dfe5b97535ed6c965.ctex"
+uid="uid://d15sakdfm1aan"
+path="res://.godot/imported/Soldier Boy.png-1faaaea9cceb54c290bb9621a34089a7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/familyguy/megan.png"
-dest_files=["res://.godot/imported/megan.png-352c3d273b14721dfe5b97535ed6c965.ctex"]
+source_file="res://images/TheBoys/Soldier Boy.png"
+dest_files=["res://.godot/imported/Soldier Boy.png-1faaaea9cceb54c290bb9621a34089a7.ctex"]
 
 [params]
 
