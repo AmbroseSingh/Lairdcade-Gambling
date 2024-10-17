@@ -1,9 +1,11 @@
-[gd_scene load_steps=5 format=3 uid="uid://daw67cojklrht"]
+[gd_scene load_steps=7 format=3 uid="uid://daw67cojklrht"]
 
 [ext_resource type="Texture2D" uid="uid://bs7ncwo0tesgn" path="res://images/Random Images/Title Screen Background.jpg" id="1_0kuuo"]
 [ext_resource type="Script" path="res://titlescreen.gd" id="1_8i68i"]
 [ext_resource type="FontFile" uid="uid://cmeke2x4k1cq8" path="res://Miscellaneous Stuff/Budmo font/budmo jigglish.otf" id="2_pwswt"]
 [ext_resource type="FontFile" uid="uid://dpen4mjgiv7pg" path="res://Miscellaneous Stuff/Budmo font/budmo jiggler.otf" id="3_8j8jx"]
+[ext_resource type="Texture2D" uid="uid://bhtw3wap6vaw3" path="res://Miscellaneous Stuff/Mr Laird.png" id="5_xwp4e"]
+[ext_resource type="Texture2D" uid="uid://ddf0nr1444lwn" path="res://Miscellaneous Stuff/Text bubble.png" id="6_pbi5j"]
 
 [node name="titlescreen" type="Control"]
 layout_mode = 3
@@ -33,29 +35,29 @@ text = "McLairds Gambling"
 [node name="playbutton" type="Button" parent="."]
 layout_mode = 0
 offset_left = 308.0
-offset_top = 1277.0
+offset_top = 1366.0
 offset_right = 789.0
-offset_bottom = 1346.0
+offset_bottom = 1435.0
 theme_override_fonts/font = ExtResource("3_8j8jx")
 theme_override_font_sizes/font_size = 50
 text = "Begin your journey"
 
 [node name="how2playbutton" type="Button" parent="."]
 layout_mode = 0
-offset_left = 390.0
-offset_top = 1425.0
-offset_right = 703.0
-offset_bottom = 1494.0
+offset_left = 398.0
+offset_top = 1526.0
+offset_right = 711.0
+offset_bottom = 1595.0
 theme_override_fonts/font = ExtResource("3_8j8jx")
 theme_override_font_sizes/font_size = 50
 text = "How 2 play"
 
-[node name="Label" type="Label" parent="."]
+[node name="banterlabel" type="Label" parent="."]
 layout_mode = 0
-offset_left = 108.0
-offset_top = 563.0
-offset_right = 953.0
-offset_bottom = 1021.0
+offset_left = 103.0
+offset_top = 336.0
+offset_right = 948.0
+offset_bottom = 794.0
 theme_override_fonts/font = ExtResource("3_8j8jx")
 theme_override_font_sizes/font_size = 70
 text = "Games
@@ -64,6 +66,28 @@ Bets
 Food & Drinks
 Fun For the Whole Family"
 horizontal_alignment = 1
+
+[node name="TextBubble" type="Sprite2D" parent="."]
+position = Vector2(482.459, 924)
+scale = Vector2(3.34014, 1.04123)
+texture = ExtResource("6_pbi5j")
+flip_h = true
+
+[node name="MrLaird" type="Sprite2D" parent="TextBubble"]
+position = Vector2(132.791, 229.536)
+scale = Vector2(0.179633, 0.576241)
+texture = ExtResource("5_xwp4e")
+
+[node name="lairdlabel" type="Label" parent="."]
+modulate = Color(0, 0, 0, 1)
+offset_left = 111.0
+offset_top = 856.0
+offset_right = 621.0
+offset_bottom = 1194.0
+theme_override_fonts/font = ExtResource("3_8j8jx")
+theme_override_font_sizes/font_size = 40
+text = "I love McLairds Gambling!  
+I would recommend it to all my friends"
 
 [connection signal="button_down" from="playbutton" to="." method="_on_playbutton_button_down"]
 [connection signal="button_down" from="how2playbutton" to="." method="_on_how_2_playbutton_button_down"]
