@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ba71b07yinj0a"
-path="res://.godot/imported/Herbert (1).png-438a2c9738649c950d0e16b03b750acd.ctex"
+uid="uid://cjl5tdrth65at"
+path="res://.godot/imported/thedeep (1).png-54cfa4dbabf6bdc2f3f253b669c0d292.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/familyguy/Herbert (1).png"
-dest_files=["res://.godot/imported/Herbert (1).png-438a2c9738649c950d0e16b03b750acd.ctex"]
+source_file="res://images/theboys/thedeep (1).png"
+dest_files=["res://.godot/imported/thedeep (1).png-54cfa4dbabf6bdc2f3f253b669c0d292.ctex"]
 
 [params]
 

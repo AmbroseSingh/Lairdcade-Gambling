@@ -14,4 +14,4 @@ func _process(delta: float) -> void:
 func _on_playbutton_button_down() -> void:
 	get_tree().change_scene_to_file("res://homescreen.tscn")
 func _on_how_2_play_button_down() -> void:
-	pass # Replace with function body.
+	get_tree().change_scene_to_file("res://info.tscn")

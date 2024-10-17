@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cnjdvaccmbuer"
-path="res://.godot/imported/Starlight.png-4c9b215d5ac8ffc6a44194ea2eef4dce.ctex"
+uid="uid://v15wvikpm10r"
+path="res://.godot/imported/Starlight.png-2c634d52e06f5bf5cbf30e687a05f454.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/TheBoys/Starlight.png"
-dest_files=["res://.godot/imported/Starlight.png-4c9b215d5ac8ffc6a44194ea2eef4dce.ctex"]
+source_file="res://images/theboys/Starlight.png"
+dest_files=["res://.godot/imported/Starlight.png-2c634d52e06f5bf5cbf30e687a05f454.ctex"]
 
 [params]
 
