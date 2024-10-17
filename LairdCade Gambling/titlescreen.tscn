@@ -15,8 +15,8 @@ grow_vertical = 2
 script = ExtResource("1_8i68i")
 
 [node name="TitleScreenBackground" type="Sprite2D" parent="."]
-position = Vector2(543.5, 958.75)
-scale = Vector2(1.75851, 5.35139)
+position = Vector2(540, 964.5)
+scale = Vector2(1.75041, 5.35278)
 texture = ExtResource("1_0kuuo")
 
 [node name="titlelabel" type="Label" parent="."]
