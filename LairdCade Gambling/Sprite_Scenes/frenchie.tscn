@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://23q7pkq8d6n4"]
+
+[ext_resource type="Texture2D" uid="uid://cf0e1wcq87uys" path="res://images/TheBoys/frenchie.png" id="1_ehwoy"]
+
+[node name="Frenchie" type="Sprite2D"]
+texture = ExtResource("1_ehwoy")

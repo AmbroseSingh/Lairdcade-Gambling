@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://6ufxd0aub0wm"]
+
+[ext_resource type="Texture2D" uid="uid://cmsmetjhdvu8" path="res://images/Fortnite/Jonesy_The_First_29_-_Outfit_-_Fortnite.png" id="1_wnk2b"]
+
+[node name="Jonesy" type="Sprite2D"]
+texture = ExtResource("1_wnk2b")

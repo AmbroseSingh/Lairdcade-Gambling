@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://i501c67w1cw2"]
+
+[ext_resource type="Texture2D" uid="uid://bbr8uq1aqop8d" path="res://images/Fortnite/Travis_Scott_29_-_Outfit_-_Fortnite.png" id="1_7r557"]
+
+[node name="Travis_Scott" type="Sprite2D"]
+texture = ExtResource("1_7r557")

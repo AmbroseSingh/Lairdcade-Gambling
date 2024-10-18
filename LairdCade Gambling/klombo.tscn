@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://8yloq1o2a1wr"]
+
+[ext_resource type="Texture2D" uid="uid://bf8xorgigbaj7" path="res://images/Fortnite/Klombo_-_Wildlife_-_Fortnite.png" id="1_xpl4h"]
+
+[node name="Klombo" type="Sprite2D"]
+texture = ExtResource("1_xpl4h")

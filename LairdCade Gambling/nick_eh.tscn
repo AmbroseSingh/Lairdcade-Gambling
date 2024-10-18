@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://c1wxhbfs5esop"]
+
+[ext_resource type="Texture2D" uid="uid://dc43cautrcxte" path="res://images/Fortnite/NickEh30.png" id="1_v3xb4"]
+
+[node name="Nick_Eh" type="Sprite2D"]
+texture = ExtResource("1_v3xb4")

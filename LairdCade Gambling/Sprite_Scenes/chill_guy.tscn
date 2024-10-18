@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cusmexrsiofs3"]
+
+[ext_resource type="Texture2D" uid="uid://b8jdyauabt63u" path="res://images/Misc/ChillGuy.png" id="1_a8sf0"]
+
+[node name="Chill_Guy" type="Sprite2D"]
+texture = ExtResource("1_a8sf0")
