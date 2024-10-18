@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bhtw3wap6vaw3"
-path="res://.godot/imported/Mr Laird.png-dcd2724bbacb0c092d0fd4cb35cf072a.ctex"
+uid="uid://ddf0nr1444lwn"
+path="res://.godot/imported/Text bubble.png-376ddb0e3c20ce97526d913da851162e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Miscellaneous Stuff/Mr Laird.png"
-dest_files=["res://.godot/imported/Mr Laird.png-dcd2724bbacb0c092d0fd4cb35cf072a.ctex"]
+source_file="res://images/Random Images/Text bubble.png"
+dest_files=["res://.godot/imported/Text bubble.png-376ddb0e3c20ce97526d913da851162e.ctex"]
 
 [params]
 
