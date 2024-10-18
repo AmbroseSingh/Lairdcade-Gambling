@@ -6,8 +6,8 @@
 [node name="info" type="Node2D"]
 
 [node name="TitleScreenBackground" type="Sprite2D" parent="."]
-position = Vector2(540, 959.5)
-scale = Vector2(1.74716, 5.33611)
+position = Vector2(539.5, 959.5)
+scale = Vector2(1.75203, 5.33611)
 texture = ExtResource("1_d3v6f")
 
 [node name="titlelabel" type="Label" parent="."]
