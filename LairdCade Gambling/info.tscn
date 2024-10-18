@@ -1,3 +1,21 @@
-[gd_scene format=3 uid="uid://br0222h53ols5"]
+[gd_scene load_steps=3 format=3 uid="uid://br0222h53ols5"]
+
+[ext_resource type="Texture2D" uid="uid://bs7ncwo0tesgn" path="res://images/Random Images/Title Screen Background.jpg" id="1_d3v6f"]
+[ext_resource type="FontFile" uid="uid://cmeke2x4k1cq8" path="res://Miscellaneous Stuff/Budmo font/budmo jigglish.otf" id="2_5lfum"]
 
 [node name="info" type="Node2D"]
+
+[node name="TitleScreenBackground" type="Sprite2D" parent="."]
+position = Vector2(540, 959.5)
+scale = Vector2(1.74716, 5.33611)
+texture = ExtResource("1_d3v6f")
+
+[node name="titlelabel" type="Label" parent="."]
+modulate = Color(1, 1, 0, 1)
+offset_left = 24.0
+offset_top = 184.0
+offset_right = 1048.0
+offset_bottom = 305.0
+theme_override_fonts/font = ExtResource("2_5lfum")
+theme_override_font_sizes/font_size = 100
+text = "McLairds Gambling"
