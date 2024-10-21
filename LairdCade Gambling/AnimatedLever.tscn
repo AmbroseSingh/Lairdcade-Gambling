@@ -1,0 +1,132 @@
+[gd_scene load_steps=9 format=3 uid="uid://c5ss1h8arfsj5"]
+
+[ext_resource type="Texture2D" uid="uid://cc6oen7fpqv10" path="res://SlotMachine/LeverUp.png" id="1_cb1yq"]
+[ext_resource type="Script" path="res://animated_lever.gd" id="1_mmdol"]
+[ext_resource type="Texture2D" uid="uid://56ant4uhi5ym" path="res://SlotMachine/LeverDown.png" id="2_fpwgy"]
+[ext_resource type="Texture2D" uid="uid://c52qrn847goe1" path="res://SlotMachine/LeverMoving.png" id="3_r4rkt"]
+[ext_resource type="AudioStream" uid="uid://oeqcl8lshbuj" path="res://music/Button_Plate Click (Minecraft Sound) - Sound Effect for editing.mp3" id="5_cldy2"]
+
+[sub_resource type="Animation" id="Animation_341w7"]
+resource_name = "ButtonAnimation"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("LeverUp:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [true, false, true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("LeverDown:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [false, true, false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("LeverMove:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [false, true, false, true, false]
+}
+
+[sub_resource type="Animation" id="Animation_i5nw7"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("LeverUp:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("LeverDown:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("LeverMove:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_vqj0i"]
+_data = {
+"ButtonAnimation": SubResource("Animation_341w7"),
+"RESET": SubResource("Animation_i5nw7")
+}
+
+[node name="Lever" type="Node2D"]
+script = ExtResource("1_mmdol")
+
+[node name="Button" type="Button" parent="."]
+modulate = Color(1, 1, 1, 0)
+offset_left = 44.0
+offset_top = 87.0
+offset_right = 149.0
+offset_bottom = 188.0
+
+[node name="LeverUp" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(136, 177)
+scale = Vector2(5, 5)
+texture = ExtResource("1_cb1yq")
+
+[node name="LeverDown" type="Sprite2D" parent="."]
+visible = false
+texture_filter = 1
+position = Vector2(96, 307)
+scale = Vector2(5, 5)
+texture = ExtResource("2_fpwgy")
+
+[node name="LeverMove" type="Sprite2D" parent="."]
+visible = false
+texture_filter = 1
+position = Vector2(97, 244)
+scale = Vector2(4.125, 5.0625)
+texture = ExtResource("3_r4rkt")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_vqj0i")
+}
+
+[node name="ButtonClick" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_cldy2")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
