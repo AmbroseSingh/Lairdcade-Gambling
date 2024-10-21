@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://caq1ydtdywdfa"]
 
-[ext_resource type="Texture2D" uid="uid://bhtw3wap6vaw3" path="res://Miscellaneous Stuff/Mr Laird.png" id="1_ebddq"]
+[ext_resource type="Texture2D" uid="uid://bhtw3wap6vaw3" path="res://images/Random Images/Mr Laird.png" id="1_ebddq"]
 
 [node name="Mr_Laird" type="Sprite2D"]
 texture = ExtResource("1_ebddq")

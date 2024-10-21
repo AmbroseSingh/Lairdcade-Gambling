@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://dq5ih61ttxl2w"]
+
+[ext_resource type="Texture2D" uid="uid://bs7ncwo0tesgn" path="res://images/Random Images/Title Screen Background.jpg" id="1_qslrk"]
+[ext_resource type="Texture2D" uid="uid://c48ixv2xr7xx8" path="res://Spinner/file.png" id="2_ncy2l"]
+
+[node name="Wheel" type="Node2D"]
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(557, 967)
+scale = Vector2(1.75041, 5.39444)
+texture = ExtResource("1_qslrk")
+
+[node name="Wheel" type="Sprite2D" parent="."]
+position = Vector2(576, 763)
+scale = Vector2(3.54286, 3.422)
+
+[node name="Button" type="Button" parent="."]
+offset_left = 17.0
+offset_top = 1531.0
+offset_right = 59.0
+offset_bottom = 1562.0
+scale = Vector2(25.2583, 12.8712)
+text = "Spin"
+
+[node name="File" type="Sprite2D" parent="."]
+position = Vector2(554, 943)
+texture = ExtResource("2_ncy2l")

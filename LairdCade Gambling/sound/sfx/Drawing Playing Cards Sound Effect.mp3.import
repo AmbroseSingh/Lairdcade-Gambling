@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://clii20u0g8itk"
+path="res://.godot/imported/Drawing Playing Cards Sound Effect.mp3-fc595ec8529902b335ba5e33ca84b8dd.mp3str"
+
+[deps]
+
+source_file="res://sound/sfx/Drawing Playing Cards Sound Effect.mp3"
+dest_files=["res://.godot/imported/Drawing Playing Cards Sound Effect.mp3-fc595ec8529902b335ba5e33ca84b8dd.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
