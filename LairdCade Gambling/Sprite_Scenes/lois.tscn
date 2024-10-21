@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dp65t8qo2qdbv"]
+
+[ext_resource type="Texture2D" uid="uid://clk1ndqjdlwmb" path="res://images/FamilyGuy/Lois.png" id="1_4ckjc"]
+
+[node name="Lois" type="Sprite2D"]
+texture = ExtResource("1_4ckjc")

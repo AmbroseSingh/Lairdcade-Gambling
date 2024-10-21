@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://d2scvwt6vjviq"
+path="res://.godot/imported/claw-machine.obj-18fe0feb99f51fce98e9aef4df210dfa.mesh"
+
+[deps]
+
+files=["res://.godot/imported/claw-machine.obj-18fe0feb99f51fce98e9aef4df210dfa.mesh"]
+
+source_file="res://3D_Testing/kenney_mini-arcade/Models/OBJ format/claw-machine.obj"
+dest_files=["res://.godot/imported/claw-machine.obj-18fe0feb99f51fce98e9aef4df210dfa.mesh", "res://.godot/imported/claw-machine.obj-18fe0feb99f51fce98e9aef4df210dfa.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

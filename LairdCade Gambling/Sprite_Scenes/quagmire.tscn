@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://duwvsgkbqkp8e"]
+
+[ext_resource type="Texture2D" uid="uid://dlw7ho3vctxv4" path="res://images/FamilyGuy/quagmire.png" id="1_j1sx6"]
+
+[node name="Quagmire" type="Sprite2D"]
+texture = ExtResource("1_j1sx6")

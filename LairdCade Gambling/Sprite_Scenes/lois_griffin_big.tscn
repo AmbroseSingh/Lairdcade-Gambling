@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dn0ddwdagj3kq"]
+
+[ext_resource type="Texture2D" uid="uid://c1yk54im0sfxh" path="res://images/FamilyGuy/Lois_Griffin.png" id="1_0njhj"]
+
+[node name="Lois_Griffin_BIG" type="Sprite2D"]
+texture = ExtResource("1_0njhj")
