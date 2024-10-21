@@ -4,8 +4,8 @@
 [ext_resource type="Script" path="res://titlescreen.gd" id="1_8i68i"]
 [ext_resource type="FontFile" uid="uid://cmeke2x4k1cq8" path="res://Miscellaneous Stuff/Budmo font/budmo jigglish.otf" id="2_pwswt"]
 [ext_resource type="FontFile" uid="uid://dpen4mjgiv7pg" path="res://Miscellaneous Stuff/Budmo font/budmo jiggler.otf" id="3_8j8jx"]
-[ext_resource type="Texture2D" path="res://Miscellaneous Stuff/Mr Laird.png" id="5_xwp4e"]
-[ext_resource type="Texture2D" path="res://Miscellaneous Stuff/Text bubble.png" id="6_pbi5j"]
+[ext_resource type="Texture2D" uid="uid://ddf0nr1444lwn" path="res://images/Random Images/Text bubble.png" id="5_ml8e3"]
+[ext_resource type="Texture2D" uid="uid://bhtw3wap6vaw3" path="res://images/Random Images/Mr Laird.png" id="6_nhrsh"]
 
 [node name="titlescreen" type="Control"]
 layout_mode = 3
@@ -17,7 +17,7 @@ grow_vertical = 2
 script = ExtResource("1_8i68i")
 
 [node name="TitleScreenBackground" type="Sprite2D" parent="."]
-position = Vector2(540, 964.5)
+position = Vector2(540, 963.5)
 scale = Vector2(1.75041, 5.35278)
 texture = ExtResource("1_0kuuo")
 
@@ -68,27 +68,27 @@ Fun For the Whole Family"
 horizontal_alignment = 1
 
 [node name="TextBubble" type="Sprite2D" parent="."]
-position = Vector2(482.459, 924)
-scale = Vector2(3.34014, 1.04123)
-texture = ExtResource("6_pbi5j")
+position = Vector2(490.5, 940.5)
+scale = Vector2(3.08438, 1.30116)
+texture = ExtResource("5_ml8e3")
 flip_h = true
-
-[node name="MrLaird" type="Sprite2D" parent="TextBubble"]
-position = Vector2(132.791, 229.536)
-scale = Vector2(0.179633, 0.576241)
-texture = ExtResource("5_xwp4e")
 
 [node name="lairdlabel" type="Label" parent="."]
 modulate = Color(0, 0, 0, 1)
 layout_mode = 0
 offset_left = 111.0
 offset_top = 856.0
-offset_right = 621.0
+offset_right = 875.0
 offset_bottom = 1194.0
 theme_override_fonts/font = ExtResource("3_8j8jx")
 theme_override_font_sizes/font_size = 40
 text = "I love McLairds Gambling!  
 I would recommend it to all my friends"
 
+[node name="MrLaird" type="Sprite2D" parent="."]
+position = Vector2(912, 1158)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("6_nhrsh")
+
 [connection signal="button_down" from="playbutton" to="." method="_on_playbutton_button_down"]
-[connection signal="button_down" from="how2play" to="." method="_on_playbutton_button_down"]
+[connection signal="button_down" from="how2play" to="." method="_on_how_2_play_button_down"]
