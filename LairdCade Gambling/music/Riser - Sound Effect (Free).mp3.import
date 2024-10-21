@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c4i2nyncp4hyq"
+path="res://.godot/imported/Riser - Sound Effect (Free).mp3-074b1c4012693c4bbb50f73517b806f8.mp3str"
+
+[deps]
+
+source_file="res://music/Riser - Sound Effect (Free).mp3"
+dest_files=["res://.godot/imported/Riser - Sound Effect (Free).mp3-074b1c4012693c4bbb50f73517b806f8.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://bubuhhu282tam"]
+[gd_scene load_steps=5 format=3 uid="uid://bubuhhu282tam"]
 
 [ext_resource type="PackedScene" uid="uid://bfatxylpa8tye" path="res://Spawner.tscn" id="1_3gm2i"]
 [ext_resource type="Texture2D" uid="uid://bjh438peqnt76" path="res://SlotMachine/SlotMachineUpdated.png" id="2_i535y"]
+[ext_resource type="Texture2D" uid="uid://dwxun7brif0g5" path="res://SlotMachine/RandomTen.png" id="3_wj367"]
+[ext_resource type="PackedScene" uid="uid://c5ss1h8arfsj5" path="res://AnimatedLever.tscn" id="4_llb3t"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -11,16 +13,31 @@ position = Vector2(544, 962)
 texture = ExtResource("2_i535y")
 
 [node name="StaticSpawner" parent="." instance=ExtResource("1_3gm2i")]
-position = Vector2(786, 752)
+position = Vector2(788, 753)
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticSpawner"]
+scale = Vector2(3.5, 3.5)
+texture = ExtResource("3_wj367")
 
 [node name="StaticSpawner2" parent="." instance=ExtResource("1_3gm2i")]
-position = Vector2(591, 753)
+position = Vector2(596, 754)
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticSpawner2"]
+scale = Vector2(3.5, 3.5)
+texture = ExtResource("3_wj367")
 
 [node name="StaticSpawner3" parent="." instance=ExtResource("1_3gm2i")]
-position = Vector2(402, 753)
+position = Vector2(403, 754)
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticSpawner3"]
+scale = Vector2(3.5, 3.5)
+texture = ExtResource("3_wj367")
 
 [node name="Label" type="Label" parent="."]
 offset_left = 26.0
 offset_top = 102.0
 offset_right = 597.0
 offset_bottom = 193.0
+
+[node name="Lever" parent="." instance=ExtResource("4_llb3t")]
+position = Vector2(62, 545)

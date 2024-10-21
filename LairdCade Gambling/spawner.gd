@@ -9,7 +9,7 @@ var RanSeven = preload("res://StaticSeven.tscn")
 var RanEight = preload("res://StaticEight.tscn")
 var RanNine = preload("res://StaticNine.tscn")
 var RanTen = preload("res://StaticTen.tscn")
-
+var start = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

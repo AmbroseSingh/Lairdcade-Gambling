@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://0y5p65cvmh6d"
+path="res://.godot/imported/ECHL - Sound Effect - Slot Machine.mp3-db6ae19d55a3f8084271866fe2f824fc.mp3str"
+
+[deps]
+
+source_file="res://music/ECHL - Sound Effect - Slot Machine.mp3"
+dest_files=["res://.godot/imported/ECHL - Sound Effect - Slot Machine.mp3-db6ae19d55a3f8084271866fe2f824fc.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
