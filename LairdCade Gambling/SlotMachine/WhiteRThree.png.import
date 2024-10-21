@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bnkb20n7tj1ba"
-path="res://.godot/imported/kimiko.png-a4302c1214bd23a05a2281596da66b85.ctex"
+uid="uid://bb7onxmkq8ahe"
+path="res://.godot/imported/WhiteRThree.png-20d8041ba5ba59479407887714a774fa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/TheBoys/kimiko.png"
-dest_files=["res://.godot/imported/kimiko.png-a4302c1214bd23a05a2281596da66b85.ctex"]
+source_file="res://SlotMachine/WhiteRThree.png"
+dest_files=["res://.godot/imported/WhiteRThree.png-20d8041ba5ba59479407887714a774fa.ctex"]
 
 [params]
 

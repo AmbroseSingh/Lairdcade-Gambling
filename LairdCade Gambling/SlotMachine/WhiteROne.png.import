@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bnkb20n7tj1ba"
-path="res://.godot/imported/kimiko.png-a4302c1214bd23a05a2281596da66b85.ctex"
+uid="uid://b6s5siytcxpxv"
+path="res://.godot/imported/WhiteROne.png-ea1dc8c4425907515fc979cbc07a43fd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/TheBoys/kimiko.png"
-dest_files=["res://.godot/imported/kimiko.png-a4302c1214bd23a05a2281596da66b85.ctex"]
+source_file="res://SlotMachine/WhiteROne.png"
+dest_files=["res://.godot/imported/WhiteROne.png-ea1dc8c4425907515fc979cbc07a43fd.ctex"]
 
 [params]
 

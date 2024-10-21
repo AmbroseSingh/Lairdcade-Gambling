@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://xb8luw3o0whg"]
+
+[ext_resource type="Texture2D" uid="uid://c81hgys72edbb" path="res://SlotMachine/RandomThree.png" id="1_pjtly"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(3.5, 3.5)
+texture = ExtResource("1_pjtly")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.2
+autostart = true

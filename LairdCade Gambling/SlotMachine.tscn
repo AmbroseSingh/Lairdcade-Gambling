@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://bubuhhu282tam"]
+
+[ext_resource type="PackedScene" uid="uid://bfatxylpa8tye" path="res://Spawner.tscn" id="1_3gm2i"]
+[ext_resource type="Texture2D" uid="uid://bjh438peqnt76" path="res://SlotMachine/SlotMachineUpdated.png" id="2_i535y"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(544, 962)
+texture = ExtResource("2_i535y")
+
+[node name="StaticSpawner" parent="." instance=ExtResource("1_3gm2i")]
+position = Vector2(786, 752)
+
+[node name="StaticSpawner2" parent="." instance=ExtResource("1_3gm2i")]
+position = Vector2(591, 753)
+
+[node name="StaticSpawner3" parent="." instance=ExtResource("1_3gm2i")]
+position = Vector2(402, 753)
+
+[node name="Label" type="Label" parent="."]
+offset_left = 26.0
+offset_top = 102.0
+offset_right = 597.0
+offset_bottom = 193.0

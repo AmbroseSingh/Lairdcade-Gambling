@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://4clbdyeli83c"]
+
+[ext_resource type="Texture2D" uid="uid://dlfjiapb8voig" path="res://SlotMachine/RandomFive.png" id="1_blj23"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(3.5, 3.5)
+texture = ExtResource("1_blj23")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.2
+autostart = true
