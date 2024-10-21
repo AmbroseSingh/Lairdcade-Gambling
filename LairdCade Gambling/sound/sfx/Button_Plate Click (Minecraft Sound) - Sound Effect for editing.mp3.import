@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://h0yoxb4fr2hr"
+path="res://.godot/imported/Button_Plate Click (Minecraft Sound) - Sound Effect for editing.mp3-878f3a1c5f3e5c40b9bacd422b62aebe.mp3str"
+
+[deps]
+
+source_file="res://sound/sfx/Button_Plate Click (Minecraft Sound) - Sound Effect for editing.mp3"
+dest_files=["res://.godot/imported/Button_Plate Click (Minecraft Sound) - Sound Effect for editing.mp3-878f3a1c5f3e5c40b9bacd422b62aebe.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

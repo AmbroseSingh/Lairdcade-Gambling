@@ -1,9 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://br0222h53ols5"]
+[gd_scene load_steps=4 format=3 uid="uid://br0222h53ols5"]
 
 [ext_resource type="Texture2D" uid="uid://bs7ncwo0tesgn" path="res://images/Random Images/Title Screen Background.jpg" id="1_d3v6f"]
+[ext_resource type="Script" path="res://info.gd" id="1_mtl47"]
 [ext_resource type="FontFile" uid="uid://cmeke2x4k1cq8" path="res://Miscellaneous Stuff/Budmo font/budmo jigglish.otf" id="2_5lfum"]
 
 [node name="info" type="Node2D"]
+script = ExtResource("1_mtl47")
 
 [node name="TitleScreenBackground" type="Sprite2D" parent="."]
 position = Vector2(539.5, 959.5)
@@ -19,3 +21,43 @@ offset_bottom = 305.0
 theme_override_fonts/font = ExtResource("2_5lfum")
 theme_override_font_sizes/font_size = 100
 text = "McLairds Gambling"
+
+[node name="titlelabel2" type="Label" parent="."]
+modulate = Color(1, 1, 0, 1)
+offset_left = 220.0
+offset_top = 419.0
+offset_right = 874.0
+offset_bottom = 540.0
+theme_override_fonts/font = ExtResource("2_5lfum")
+theme_override_font_sizes/font_size = 100
+text = "How To Play"
+
+[node name="titlelabel3" type="Label" parent="."]
+modulate = Color(1, 1, 0, 1)
+offset_left = 18.0
+offset_top = 662.0
+offset_right = 1061.0
+offset_bottom = 963.0
+theme_override_fonts/font = ExtResource("2_5lfum")
+theme_override_font_sizes/font_size = 60
+text = "Play by spinning the slot 
+machine, you will then gain
+tokens for that specific show
+in which you can spend in plinko
+or the spinning wheel.
+
+spinning wheel and plinko will 
+allow you to gain certain 
+characters with differing
+rarities, where they have their 
+own value."
+
+[node name="Button" type="Button" parent="."]
+offset_left = 225.0
+offset_top = 1589.0
+offset_right = 902.0
+offset_bottom = 1778.0
+theme_override_font_sizes/font_size = 100
+text = "BACK 2 MENU"
+
+[connection signal="button_down" from="Button" to="." method="_on_button_button_down"]
