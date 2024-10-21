@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://u2iv1ox6v4pe"]
+
+[ext_resource type="Texture2D" uid="uid://cegmvxrrv0q4k" path="res://images/FamilyGuy/Chicken.png" id="1_dl876"]
+
+[node name="Chicken" type="Sprite2D"]
+texture = ExtResource("1_dl876")

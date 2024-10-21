@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dwtuy0lcgdorw"]
+
+[ext_resource type="Texture2D" uid="uid://slucmpcdr5ko" path="res://images/Fortnite/Peely_29_-_Outfit_-_Fortnite.png" id="1_xtls3"]
+
+[node name="Peely" type="Sprite2D"]
+texture = ExtResource("1_xtls3")

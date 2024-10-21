@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cgfratmql68ij"]
+
+[ext_resource type="Texture2D" uid="uid://fqslqxp5oitj" path="res://images/SpongeBob/MrKrabs.png" id="1_4j1dq"]
+
+[node name="Mr_Krabs" type="Sprite2D"]
+texture = ExtResource("1_4j1dq")

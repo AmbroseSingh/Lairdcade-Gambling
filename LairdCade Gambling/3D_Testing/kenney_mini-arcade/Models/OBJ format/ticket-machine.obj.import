@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bi6byvgbtfa14"
+path="res://.godot/imported/ticket-machine.obj-5ec16fcc02710e2022cc5fb16399f2da.mesh"
+
+[deps]
+
+files=["res://.godot/imported/ticket-machine.obj-5ec16fcc02710e2022cc5fb16399f2da.mesh"]
+
+source_file="res://3D_Testing/kenney_mini-arcade/Models/OBJ format/ticket-machine.obj"
+dest_files=["res://.godot/imported/ticket-machine.obj-5ec16fcc02710e2022cc5fb16399f2da.mesh", "res://.godot/imported/ticket-machine.obj-5ec16fcc02710e2022cc5fb16399f2da.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

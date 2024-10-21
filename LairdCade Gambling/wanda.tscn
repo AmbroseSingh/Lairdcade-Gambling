@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dx7ej82de14dm"]
+
+[ext_resource type="Texture2D" uid="uid://duowpa1o7e43i" path="res://images/Marvel/Wanda.png" id="1_k75kw"]
+
+[node name="Wanda" type="Sprite2D"]
+texture = ExtResource("1_k75kw")

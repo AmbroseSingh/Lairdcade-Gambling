@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://c1h5linofg3pm"]
+
+[ext_resource type="Texture2D" uid="uid://bruq4g2wofn14" path="res://images/Marvel/BlackPanther.png" id="1_os5xg"]
+
+[node name="Black_Panther" type="Sprite2D"]
+texture = ExtResource("1_os5xg")

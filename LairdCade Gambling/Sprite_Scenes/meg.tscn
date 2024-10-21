@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://5cl85w335g66"]
+
+[ext_resource type="Texture2D" uid="uid://c1ukyuucs7vme" path="res://images/FamilyGuy/Meg.png" id="1_xrqea"]
+
+[node name="Meg" type="Sprite2D"]
+texture = ExtResource("1_xrqea")

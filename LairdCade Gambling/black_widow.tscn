@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cp03bngrkj0kf"]
+
+[ext_resource type="Texture2D" uid="uid://blma7780s6das" path="res://images/Marvel/BlackWidow.png" id="1_clsop"]
+
+[node name="Black_Widow" type="Sprite2D"]
+texture = ExtResource("1_clsop")

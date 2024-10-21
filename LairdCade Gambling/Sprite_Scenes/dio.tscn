@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://ctw51rt764o5j"]
+
+[ext_resource type="Texture2D" uid="uid://c3g6kxwcxg2pk" path="res://images/Misc/Dio.png" id="1_igmnu"]
+
+[node name="Dio" type="Sprite2D"]
+texture = ExtResource("1_igmnu")

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bi4tn7ciwtyen"]
+
+[ext_resource type="Texture2D" uid="uid://cxqwh426851oa" path="res://images/SpongeBob/Gary.png" id="1_78pl0"]
+
+[node name="Gary" type="Sprite2D"]
+texture = ExtResource("1_78pl0")

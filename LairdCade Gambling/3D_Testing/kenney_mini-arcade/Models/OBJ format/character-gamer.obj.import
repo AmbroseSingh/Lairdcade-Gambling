@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://1kbl26fbsoai"
+path="res://.godot/imported/character-gamer.obj-300934678b9323eb8c8ee3d8ab2a27c2.mesh"
+
+[deps]
+
+files=["res://.godot/imported/character-gamer.obj-300934678b9323eb8c8ee3d8ab2a27c2.mesh"]
+
+source_file="res://3D_Testing/kenney_mini-arcade/Models/OBJ format/character-gamer.obj"
+dest_files=["res://.godot/imported/character-gamer.obj-300934678b9323eb8c8ee3d8ab2a27c2.mesh", "res://.godot/imported/character-gamer.obj-300934678b9323eb8c8ee3d8ab2a27c2.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

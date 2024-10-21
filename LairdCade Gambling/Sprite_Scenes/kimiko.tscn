@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://dq5o3gn081s3a"]
+
+[ext_resource type="Texture2D" uid="uid://bnkb20n7tj1ba" path="res://images/TheBoys/kimiko.png" id="1_wreqg"]
+
+[node name="Kimiko" type="Sprite2D"]
+scale = Vector2(0.479998, 0.400001)
+texture = ExtResource("1_wreqg")

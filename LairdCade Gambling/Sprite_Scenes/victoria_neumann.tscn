@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://fat2yd4ey8nv"]
+
+[ext_resource type="Texture2D" uid="uid://cvdit2pnsvo3p" path="res://images/TheBoys/Victoria Neumann.png" id="1_7hjh4"]
+
+[node name="Victoria_Neumann" type="Sprite2D"]
+texture = ExtResource("1_7hjh4")
