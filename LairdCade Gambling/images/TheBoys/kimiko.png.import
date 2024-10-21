@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bnkb20n7tj1ba"
-path="res://.godot/imported/kimiko.png-a4302c1214bd23a05a2281596da66b85.ctex"
+path="res://.godot/imported/Kimiko.png-f3e3e47b53ba90f9bbc086d5154cef15.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/TheBoys/kimiko.png"
-dest_files=["res://.godot/imported/kimiko.png-a4302c1214bd23a05a2281596da66b85.ctex"]
+source_file="res://images/TheBoys/Kimiko.png"
+dest_files=["res://.godot/imported/Kimiko.png-f3e3e47b53ba90f9bbc086d5154cef15.ctex"]
 
 [params]
 
