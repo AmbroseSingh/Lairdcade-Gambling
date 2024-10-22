@@ -1,8 +1,10 @@
-[gd_scene load_steps=4 format=3 uid="uid://br0222h53ols5"]
+[gd_scene load_steps=6 format=3 uid="uid://br0222h53ols5"]
 
 [ext_resource type="Texture2D" uid="uid://bs7ncwo0tesgn" path="res://images/Random Images/Title Screen Background.jpg" id="1_d3v6f"]
 [ext_resource type="Script" path="res://info.gd" id="1_mtl47"]
 [ext_resource type="FontFile" uid="uid://cmeke2x4k1cq8" path="res://Miscellaneous Stuff/Budmo font/budmo jigglish.otf" id="2_5lfum"]
+[ext_resource type="AudioStream" uid="uid://c0jg8gt3fbxrk" path="res://sound/sfx/button-pressed-38129.mp3" id="4_v6nam"]
+[ext_resource type="AudioStream" uid="uid://chl2q76jafi30" path="res://sound/music/kane.mp3" id="5_nn181"]
 
 [node name="info" type="Node2D"]
 script = ExtResource("1_mtl47")
@@ -60,4 +62,12 @@ offset_bottom = 1778.0
 theme_override_font_sizes/font_size = 100
 text = "BACK 2 MENU"
 
+[node name="buttonclick" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_v6nam")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_nn181")
+autoplay = true
+
 [connection signal="button_down" from="Button" to="." method="_on_button_button_down"]
+[connection signal="finished" from="buttonclick" to="." method="_on_buttonclick_finished"]

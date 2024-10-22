@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://bubuhhu282tam"]
+[gd_scene load_steps=6 format=3 uid="uid://bubuhhu282tam"]
 
 [ext_resource type="PackedScene" uid="uid://bfatxylpa8tye" path="res://Spawner.tscn" id="1_3gm2i"]
 [ext_resource type="Texture2D" uid="uid://bjh438peqnt76" path="res://SlotMachine/SlotMachineUpdated.png" id="2_i535y"]
 [ext_resource type="Texture2D" uid="uid://dwxun7brif0g5" path="res://SlotMachine/RandomTen.png" id="3_wj367"]
 [ext_resource type="PackedScene" uid="uid://c5ss1h8arfsj5" path="res://AnimatedLever.tscn" id="4_llb3t"]
+[ext_resource type="AudioStream" uid="uid://u11ds0mxqkds" path="res://sound/music/manuel.mp3" id="5_axphw"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -41,3 +42,7 @@ offset_bottom = 193.0
 
 [node name="Lever" parent="." instance=ExtResource("4_llb3t")]
 position = Vector2(62, 545)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_axphw")
+autoplay = true
