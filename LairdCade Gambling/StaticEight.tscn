@@ -1,14 +1,18 @@
-[gd_scene load_steps=2 format=3 uid="uid://drsccs3yg63mr"]
+[gd_scene load_steps=3 format=3 uid="uid://drsccs3yg63mr"]
 
 [ext_resource type="Texture2D" uid="uid://cbvao4g61th00" path="res://SlotMachine/RandomEight.png" id="1_360qw"]
+[ext_resource type="Script" path="res://static_eight.gd" id="1_xxwmx"]
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_xxwmx")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1
 scale = Vector2(3.5, 3.5)
 texture = ExtResource("1_360qw")
 
-[node name="Timer" type="Timer" parent="."]
+[node name="Clear" type="Timer" parent="."]
 wait_time = 0.2
 autostart = true
+
+[connection signal="timeout" from="Clear" to="." method="_on_clear_timeout"]

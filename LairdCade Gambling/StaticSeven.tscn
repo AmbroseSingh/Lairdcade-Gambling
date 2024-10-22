@@ -1,8 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://dtqc6fv3o7hfu"]
+[gd_scene load_steps=3 format=3 uid="uid://dtqc6fv3o7hfu"]
 
+[ext_resource type="Script" path="res://static_seven.gd" id="1_io0l2"]
 [ext_resource type="Texture2D" uid="uid://bng0qwlpn8wrj" path="res://SlotMachine/RandomSeven.png" id="1_ypgu5"]
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_io0l2")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1
@@ -12,3 +14,5 @@ texture = ExtResource("1_ypgu5")
 [node name="Timer" type="Timer" parent="."]
 wait_time = 0.2
 autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

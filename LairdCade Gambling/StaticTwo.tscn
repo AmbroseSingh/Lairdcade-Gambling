@@ -1,8 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://bl1cufrhd5kql"]
+[gd_scene load_steps=3 format=3 uid="uid://bl1cufrhd5kql"]
 
 [ext_resource type="Texture2D" uid="uid://iojun4t3bkiq" path="res://SlotMachine/RandomTwo.png" id="1_1gmur"]
+[ext_resource type="Script" path="res://static_two.gd" id="1_wbwt2"]
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_wbwt2")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1
@@ -12,3 +14,5 @@ texture = ExtResource("1_1gmur")
 [node name="Timer" type="Timer" parent="."]
 wait_time = 0.2
 autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

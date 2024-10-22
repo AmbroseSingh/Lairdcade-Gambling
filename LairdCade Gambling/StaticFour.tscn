@@ -1,8 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://c6566vo8ar62t"]
+[gd_scene load_steps=3 format=3 uid="uid://c6566vo8ar62t"]
 
+[ext_resource type="Script" path="res://static_four.gd" id="1_0memo"]
 [ext_resource type="Texture2D" uid="uid://cckwlhyvrxj7u" path="res://SlotMachine/RandomFour.png" id="1_746f6"]
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_0memo")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1
@@ -12,3 +14,5 @@ texture = ExtResource("1_746f6")
 [node name="Timer" type="Timer" parent="."]
 wait_time = 0.2
 autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

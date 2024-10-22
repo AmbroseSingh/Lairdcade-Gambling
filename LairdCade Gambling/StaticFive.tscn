@@ -1,8 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://4clbdyeli83c"]
+[gd_scene load_steps=3 format=3 uid="uid://4clbdyeli83c"]
 
 [ext_resource type="Texture2D" uid="uid://dlfjiapb8voig" path="res://SlotMachine/RandomFive.png" id="1_blj23"]
+[ext_resource type="Script" path="res://static_five.gd" id="1_e6f1y"]
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_e6f1y")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1
@@ -12,3 +14,5 @@ texture = ExtResource("1_blj23")
 [node name="Timer" type="Timer" parent="."]
 wait_time = 0.2
 autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

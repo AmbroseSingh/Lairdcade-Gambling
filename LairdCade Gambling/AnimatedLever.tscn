@@ -4,7 +4,7 @@
 [ext_resource type="Script" path="res://animated_lever.gd" id="1_mmdol"]
 [ext_resource type="Texture2D" uid="uid://56ant4uhi5ym" path="res://SlotMachine/LeverDown.png" id="2_fpwgy"]
 [ext_resource type="Texture2D" uid="uid://c52qrn847goe1" path="res://SlotMachine/LeverMoving.png" id="3_r4rkt"]
-[ext_resource type="AudioStream" uid="uid://oeqcl8lshbuj" path="res://music/Button_Plate Click (Minecraft Sound) - Sound Effect for editing.mp3" id="5_cldy2"]
+[ext_resource type="AudioStream" uid="uid://h0yoxb4fr2hr" path="res://sound/sfx/Button_Plate Click (Minecraft Sound) - Sound Effect for editing.mp3" id="5_cldy2"]
 
 [sub_resource type="Animation" id="Animation_341w7"]
 resource_name = "ButtonAnimation"
