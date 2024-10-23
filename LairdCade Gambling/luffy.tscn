@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bt8ou4314v32o"]
+
+[ext_resource type="Texture2D" uid="uid://ds3l1yk5udaue" path="res://images/Misc/luffy.png" id="1_a20c3"]
+
+[node name="Luffy" type="Sprite2D"]
+texture = ExtResource("1_a20c3")

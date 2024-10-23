@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bhwfukj7g4v8s"]
+
+[ext_resource type="Texture2D" uid="uid://c2yc0j0q4f4lh" path="res://images/TheBoys/Butcher.png" id="1_rqamf"]
+
+[node name="Butcher" type="Sprite2D"]
+texture = ExtResource("1_rqamf")

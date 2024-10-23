@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dayngjpnxj8gr"]
+
+[ext_resource type="Texture2D" path="res://images/Fortnite/Chun-Li_29_-_Outfit_-_Fortnite - Copy.png" id="1_b7tr1"]
+
+[node name="Chun_Li" type="Sprite2D"]
+texture = ExtResource("1_b7tr1")

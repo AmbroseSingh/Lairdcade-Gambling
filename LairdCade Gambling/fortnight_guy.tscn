@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://8gi176pie2ew"]
+
+[ext_resource type="Texture2D" path="res://images/Fortnite/Default.png" id="1_w0too"]
+
+[node name="Fortnight_Guy" type="Sprite2D"]
+texture = ExtResource("1_w0too")

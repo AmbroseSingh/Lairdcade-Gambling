@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dl8k2v4hqvo3b"]
+
+[ext_resource type="Texture2D" path="res://images/Marvel/MilesMorales.png" id="1_atls4"]
+
+[node name="Miles_Morales" type="Sprite2D"]
+texture = ExtResource("1_atls4")

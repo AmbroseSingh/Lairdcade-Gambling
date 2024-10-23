@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://db04m3xy6othl"]
+
+[ext_resource type="Texture2D" path="res://images/Marvel/Spiderman.png" id="1_507pd"]
+
+[node name="Spiderman" type="Sprite2D"]
+texture = ExtResource("1_507pd")

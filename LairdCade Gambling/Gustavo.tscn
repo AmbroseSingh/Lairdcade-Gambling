@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://oj57v7wekkoi"]
+
+[ext_resource type="Texture2D" uid="uid://dbrdojqs5xjfg" path="res://images/BreakingBad/Gustavo.png" id="1_ae4iu"]
+
+[node name="Gustavo" type="Sprite2D"]
+scale = Vector2(0.4, 0.36)
+texture = ExtResource("1_ae4iu")

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://d1gn1egdiqghv"]
+
+[ext_resource type="Texture2D" uid="uid://d3wek7e1dww1n" path="res://images/SpongeBob/Plankton.png" id="1_chq0q"]
+
+[node name="Plankton" type="Sprite2D"]
+texture = ExtResource("1_chq0q")

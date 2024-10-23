@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://svd6gy7hf8bx"]
+
+[ext_resource type="Texture2D" path="res://images/Fortnite/Spider-Gwen_29_-_Outfit_-_Fortnite.png" id="1_5cv5g"]
+
+[node name="Spider_Gwen" type="Sprite2D"]
+texture = ExtResource("1_5cv5g")

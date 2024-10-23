@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://b1ggdaygqe6bu"]
+
+[ext_resource type="Texture2D" uid="uid://c03al1ixe6jkl" path="res://images/TheBoys/hughie.png" id="1_yrihv"]
+
+[node name="Hughie" type="Sprite2D"]
+texture = ExtResource("1_yrihv")

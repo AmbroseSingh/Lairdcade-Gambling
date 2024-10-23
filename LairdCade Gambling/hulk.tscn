@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cgojcuj7sxbtt"]
+
+[ext_resource type="Texture2D" path="res://images/Marvel/Hulk.png" id="1_66jvs"]
+
+[node name="Hulk" type="Sprite2D"]
+texture = ExtResource("1_66jvs")

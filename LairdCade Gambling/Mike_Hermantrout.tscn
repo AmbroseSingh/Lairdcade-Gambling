@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://bwxys014ff0op"]
+
+[ext_resource type="Texture2D" uid="uid://cn0tuwl7223h2" path="res://images/BreakingBad/MikeHermantrout.png" id="1_q31om"]
+
+[node name="Mike_Hermantrout" type="Sprite2D"]
+scale = Vector2(0.291667, 0.146667)
+texture = ExtResource("1_q31om")

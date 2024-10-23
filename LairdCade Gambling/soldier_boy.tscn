@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://c2dc2wt5fu43s"]
+
+[ext_resource type="Texture2D" path="res://images/TheBoys/Soldier Boy.png" id="1_a6jdo"]
+
+[node name="Soldier_Boy" type="Sprite2D"]
+texture = ExtResource("1_a6jdo")

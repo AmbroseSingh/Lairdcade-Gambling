@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://c3tbrc2kchba"]
+
+[ext_resource type="Texture2D" path="res://images/Misc/Pucci.png" id="1_rq4hc"]
+
+[node name="Pucci" type="Sprite2D"]
+texture = ExtResource("1_rq4hc")

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cvc2s4bqn143"]
+
+[ext_resource type="Texture2D" path="res://images/Fortnite/Mrs._Incredible_(Featured)_-_Outfit_-_Fortnite.png" id="1_n0bev"]
+
+[node name="Mrs_Incredible" type="Sprite2D"]
+texture = ExtResource("1_n0bev")

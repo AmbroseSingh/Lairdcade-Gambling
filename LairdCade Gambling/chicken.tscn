@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cfg0jmqc2my7d"]
+
+[ext_resource type="Texture2D" path="res://images/FamilyGuy/Chicken.png" id="1_bayic"]
+
+[node name="Chicken" type="Sprite2D"]
+texture = ExtResource("1_bayic")

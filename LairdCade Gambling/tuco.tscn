@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://byvfbgupois5o"]
+
+[ext_resource type="Texture2D" uid="uid://etrjyelorc84" path="res://images/BreakingBad/Tuco.png" id="1_23ned"]
+
+[node name="Tuco" type="Sprite2D"]
+scale = Vector2(0.407407, 0.377143)
+texture = ExtResource("1_23ned")

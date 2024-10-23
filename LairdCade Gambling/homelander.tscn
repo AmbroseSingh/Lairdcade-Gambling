@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://clmvgnvln58hl"]
+
+[ext_resource type="Texture2D" uid="uid://cihvojhc6erih" path="res://images/TheBoys/homelander.png" id="1_8bb6n"]
+
+[node name="Homelander" type="Sprite2D"]
+texture = ExtResource("1_8bb6n")

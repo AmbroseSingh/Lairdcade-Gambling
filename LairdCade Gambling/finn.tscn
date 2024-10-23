@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://b3pld7tupdu6l"]
+
+[ext_resource type="Texture2D" path="res://images/Misc/Finn.png" id="1_wixvx"]
+
+[node name="Finn" type="Sprite2D"]
+texture = ExtResource("1_wixvx")

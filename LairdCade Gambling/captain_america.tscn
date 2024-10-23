@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://b72vfk1dickec"]
+
+[ext_resource type="Texture2D" path="res://images/Marvel/CaptainAmerica.png" id="1_jqgsi"]
+
+[node name="Captain_America" type="Sprite2D"]
+texture = ExtResource("1_jqgsi")

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://wli40mh8oeml"]
+
+[ext_resource type="Texture2D" uid="uid://bnkt6w51m40cc" path="res://images/SpongeBob/Squidward.png" id="1_lghsg"]
+
+[node name="Squidward" type="Sprite2D"]
+texture = ExtResource("1_lghsg")

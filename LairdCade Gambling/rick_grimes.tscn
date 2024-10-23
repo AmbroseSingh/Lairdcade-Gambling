@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://b06n6uw0ra32a"]
+
+[ext_resource type="Texture2D" uid="uid://ck4xjpms88p0u" path="res://images/Misc/RickGrimes.png" id="1_1w3g2"]
+
+[node name="Rick_Grimes" type="Sprite2D"]
+texture = ExtResource("1_1w3g2")

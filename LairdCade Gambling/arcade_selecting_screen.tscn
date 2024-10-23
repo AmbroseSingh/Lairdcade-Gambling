@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://7dx21ymnbiqi"]
+[gd_scene load_steps=7 format=3 uid="uid://cyx4w416yhf6c"]
 
 [ext_resource type="PackedScene" uid="uid://bek72rnr4ic2d" path="res://FBX format/floor.fbx" id="1_g4tmt"]
 [ext_resource type="PackedScene" uid="uid://dy7v0cf2l4k0o" path="res://FBX format/wall.fbx" id="2_p54ms"]
