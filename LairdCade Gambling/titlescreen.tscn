@@ -1,12 +1,15 @@
-[gd_scene load_steps=8 format=3 uid="uid://daw67cojklrht"]
+[gd_scene load_steps=11 format=3 uid="uid://daw67cojklrht"]
 
 [ext_resource type="Texture2D" uid="uid://bs7ncwo0tesgn" path="res://images/Random Images/Title Screen Background.jpg" id="1_0kuuo"]
 [ext_resource type="Script" path="res://titlescreen.gd" id="1_8i68i"]
 [ext_resource type="FontFile" uid="uid://cmeke2x4k1cq8" path="res://Miscellaneous Stuff/Budmo font/budmo jigglish.otf" id="2_pwswt"]
 [ext_resource type="FontFile" uid="uid://dpen4mjgiv7pg" path="res://Miscellaneous Stuff/Budmo font/budmo jiggler.otf" id="3_8j8jx"]
+[ext_resource type="Script" path="res://playbutton.gd" id="5_gh0y2"]
 [ext_resource type="Texture2D" uid="uid://ddf0nr1444lwn" path="res://images/Random Images/Text bubble.png" id="5_ml8e3"]
+[ext_resource type="Script" path="res://how_2_play.gd" id="5_t0mcu"]
 [ext_resource type="Texture2D" uid="uid://bhtw3wap6vaw3" path="res://images/Random Images/Mr Laird.png" id="6_nhrsh"]
 [ext_resource type="AudioStream" uid="uid://chl2q76jafi30" path="res://sound/music/kane.mp3" id="7_lyknv"]
+[ext_resource type="AudioStream" uid="uid://c0jg8gt3fbxrk" path="res://sound/sfx/button-pressed-38129.mp3" id="8_mcsry"]
 
 [node name="titlescreen" type="Control"]
 layout_mode = 3
@@ -42,6 +45,11 @@ offset_bottom = 1435.0
 theme_override_fonts/font = ExtResource("3_8j8jx")
 theme_override_font_sizes/font_size = 50
 text = "Begin your journey"
+script = ExtResource("5_gh0y2")
+
+[node name="buttonclick" type="AudioStreamPlayer" parent="playbutton"]
+stream = ExtResource("8_mcsry")
+volume_db = 2.0
 
 [node name="how2play" type="Button" parent="."]
 layout_mode = 0
@@ -52,6 +60,11 @@ offset_bottom = 1595.0
 theme_override_fonts/font = ExtResource("3_8j8jx")
 theme_override_font_sizes/font_size = 50
 text = "How 2 play"
+script = ExtResource("5_t0mcu")
+
+[node name="buttonclick" type="AudioStreamPlayer" parent="how2play"]
+stream = ExtResource("8_mcsry")
+volume_db = 2.0
 
 [node name="banterlabel" type="Label" parent="."]
 layout_mode = 0
@@ -95,5 +108,7 @@ texture = ExtResource("6_nhrsh")
 stream = ExtResource("7_lyknv")
 autoplay = true
 
-[connection signal="button_down" from="playbutton" to="." method="_on_playbutton_button_down"]
-[connection signal="button_down" from="how2play" to="." method="_on_how_2_play_button_down"]
+[connection signal="button_down" from="playbutton" to="playbutton" method="_on_button_down"]
+[connection signal="finished" from="playbutton/buttonclick" to="playbutton" method="_on_buttonclick_finished"]
+[connection signal="button_down" from="how2play" to="how2play" method="_on_button_down"]
+[connection signal="finished" from="how2play/buttonclick" to="how2play" method="_on_buttonclick_finished"]

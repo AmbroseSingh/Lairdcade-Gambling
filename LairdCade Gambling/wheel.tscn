@@ -12,11 +12,11 @@ scale = Vector2(1.7342, 5.39444)
 texture = ExtResource("1_qslrk")
 
 [node name="Button" type="Button" parent="."]
-offset_left = 17.0
-offset_top = 1531.0
-offset_right = 59.0
-offset_bottom = 1562.0
-scale = Vector2(25.2583, 12.8712)
+offset_left = 172.0
+offset_top = 1548.0
+offset_right = 934.0
+offset_bottom = 1830.0
+theme_override_font_sizes/font_size = 200
 text = "Spin"
 
 [node name="Wheel 2_0" type="Sprite2D" parent="."]
