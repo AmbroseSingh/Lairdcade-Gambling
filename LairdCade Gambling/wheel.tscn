@@ -1,14 +1,15 @@
-[gd_scene load_steps=4 format=3 uid="uid://dq5ih61ttxl2w"]
+[gd_scene load_steps=5 format=3 uid="uid://dq5ih61ttxl2w"]
 
 [ext_resource type="Texture2D" uid="uid://bs7ncwo0tesgn" path="res://images/Random Images/Title Screen Background.jpg" id="1_qslrk"]
 [ext_resource type="Texture2D" uid="uid://c48ixv2xr7xx8" path="res://Spinner/file.png" id="2_ncy2l"]
 [ext_resource type="Script" path="res://wheel_2.0.gd" id="3_eanrd"]
+[ext_resource type="AudioStream" uid="uid://df2spsufrahfq" path="res://sound/music/shake sum.mp3" id="4_q8v2g"]
 
 [node name="Wheel" type="Node2D"]
 
 [node name="Background" type="Sprite2D" parent="."]
-position = Vector2(551.999, 967)
-scale = Vector2(1.7342, 5.39444)
+position = Vector2(540.5, 960.5)
+scale = Vector2(1.74879, 5.33055)
 texture = ExtResource("1_qslrk")
 
 [node name="Button" type="Button" parent="."]
@@ -23,5 +24,9 @@ text = "Spin"
 position = Vector2(522, 880)
 texture = ExtResource("2_ncy2l")
 script = ExtResource("3_eanrd")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_q8v2g")
+autoplay = true
 
 [connection signal="pressed" from="Button" to="Wheel 2_0" method="_on_button_pressed"]
