@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://bd8e0a2kw30a0"]
+
+[ext_resource type="Texture2D" uid="uid://dxik5hg57wgrp" path="res://SlotMachine/WhiteFive.png" id="1_v72ju"]
+[ext_resource type="Texture2D" uid="uid://du3f421c32ax" path="res://images/Icons/Marvel Logo.png" id="2_x2deg"]
+
+[node name="MarvelIcon" type="Node2D"]
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+scale = Vector2(3.5, 3.5)
+texture = ExtResource("1_v72ju")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-0.0726932, 0.37197)
+scale = Vector2(0.30462, 0.30462)
+texture = ExtResource("2_x2deg")

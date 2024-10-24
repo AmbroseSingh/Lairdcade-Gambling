@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://bemwtmbksh4qh"]
+
+[ext_resource type="Texture2D" uid="uid://dxik5hg57wgrp" path="res://SlotMachine/WhiteFive.png" id="1_fkrby"]
+[ext_resource type="Texture2D" uid="uid://dj0o117gge446" path="res://images/Icons/SpongeBobIconNew.png" id="2_bqp7r"]
+
+[node name="SpongeBobIcon" type="Node2D"]
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+scale = Vector2(3.5, 3.5)
+texture = ExtResource("1_fkrby")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(5.96046e-08, -3)
+scale = Vector2(0.256522, 0.256522)
+texture = ExtResource("2_bqp7r")

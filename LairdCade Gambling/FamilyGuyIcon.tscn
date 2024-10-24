@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://7435c88po1cs"]
+
+[ext_resource type="Texture2D" uid="uid://dxik5hg57wgrp" path="res://SlotMachine/WhiteFive.png" id="1_dr4dk"]
+[ext_resource type="Texture2D" uid="uid://blgfaspurafx1" path="res://images/Icons/Family Guy Logo.png" id="2_q275b"]
+
+[node name="FamilyGuyIcon" type="Node2D"]
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+scale = Vector2(3.5, 3.5)
+texture = ExtResource("1_dr4dk")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(4.76837e-07, -1)
+scale = Vector2(0.0934449, 0.0934449)
+texture = ExtResource("2_q275b")
