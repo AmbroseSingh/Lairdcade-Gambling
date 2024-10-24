@@ -14,3 +14,11 @@ func _process(delta):
 func _on_button_pressed():
 	$ButtonClick.play()
 	$AnimationPlayer.play("ButtonAnimation")
+	get_parent().get_node("StaticSpawner").start = true
+	get_parent().get_node("StaticSpawner2").start = true
+	get_parent().get_node("StaticSpawner3").start = true
+	$SpinWaitTimer.start()
+
+
+func _on_spin_wait_timer_timeout():
+	get_parent().get_node("SlotAnimationOne").SlotOne = true
