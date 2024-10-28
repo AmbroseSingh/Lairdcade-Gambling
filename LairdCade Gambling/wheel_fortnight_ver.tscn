@@ -8,8 +8,8 @@
 [node name="Wheel" type="Node2D"]
 
 [node name="Background" type="Sprite2D" parent="."]
-position = Vector2(549, 959)
-scale = Vector2(1.77634, 5.36111)
+position = Vector2(540, 960)
+scale = Vector2(1.75041, 5.33333)
 texture = ExtResource("1_eg8wy")
 
 [node name="Button" type="Button" parent="."]

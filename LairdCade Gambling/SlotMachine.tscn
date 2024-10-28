@@ -54,8 +54,8 @@ autoplay = true
 
 [node name="Sprite2D2" type="Sprite2D" parent="."]
 z_index = -2
-position = Vector2(540, 963)
-scale = Vector2(1.2, 1.195)
+position = Vector2(540, 959.5)
+scale = Vector2(1.2, 1.19938)
 texture = ExtResource("9_myi68")
 
 [node name="Panel" type="Panel" parent="Sprite2D2"]
