@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://dk3ohw7lkq55e"]
+
+[ext_resource type="Texture2D" uid="uid://djt328qqibrmx" path="res://images/BreakingBad/WaltJr.png" id="1_7sq24"]
+[ext_resource type="Texture2D" uid="uid://c58f6hyspalen" path="res://CharacterBackgrounds/Common.png" id="1_fdql8"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(-6, 0)
+scale = Vector2(0.178125, 0.396296)
+texture = ExtResource("1_fdql8")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_7sq24")

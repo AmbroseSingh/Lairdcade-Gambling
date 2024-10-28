@@ -1,6 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://c1wxhbfs5esop"]
+[gd_scene load_steps=3 format=3 uid="uid://c1wxhbfs5esop"]
 
 [ext_resource type="Texture2D" uid="uid://dc43cautrcxte" path="res://images/Fortnite/NickEh30.png" id="1_v3xb4"]
+[ext_resource type="Texture2D" uid="uid://pyt6h243jht0" path="res://CharacterBackgrounds/Epic.jpg" id="2_2v60v"]
 
 [node name="Nick_Eh" type="Sprite2D"]
 texture = ExtResource("1_v3xb4")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(-44.5, -57.5)
+scale = Vector2(0.301562, 0.884259)
+texture = ExtResource("2_2v60v")

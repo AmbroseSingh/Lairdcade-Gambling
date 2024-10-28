@@ -1,6 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://8yloq1o2a1wr"]
+[gd_scene load_steps=3 format=3 uid="uid://8yloq1o2a1wr"]
 
 [ext_resource type="Texture2D" uid="uid://bf8xorgigbaj7" path="res://images/Fortnite/Klombo_-_Wildlife_-_Fortnite.png" id="1_xpl4h"]
+[ext_resource type="Texture2D" uid="uid://d2115tspt6qoi" path="res://CharacterBackgrounds/Rare.jpg" id="2_yidcm"]
 
 [node name="Klombo" type="Sprite2D"]
 texture = ExtResource("1_xpl4h")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(-0.348536, -24.5)
+scale = Vector2(0.211095, 0.330556)
+texture = ExtResource("2_yidcm")

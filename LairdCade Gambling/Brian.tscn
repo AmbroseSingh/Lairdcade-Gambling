@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://b3r7xsqefyrbv"]
+
+[ext_resource type="Texture2D" uid="uid://c80gw8alpoutk" path="res://images/FamilyGuy/Byranup.png" id="1_1n4l6"]
+[ext_resource type="Texture2D" uid="uid://d2115tspt6qoi" path="res://CharacterBackgrounds/Rare.jpg" id="2_ck4yd"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Brian" type="Sprite2D" parent="."]
+texture = ExtResource("1_1n4l6")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(3, 4)
+scale = Vector2(0.128646, 0.276852)
+texture = ExtResource("2_ck4yd")

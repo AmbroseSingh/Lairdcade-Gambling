@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://brwb5s5v1wu05"]
+
+[ext_resource type="Texture2D" uid="uid://bgk4div6idfj5" path="res://images/FamilyGuy/dj-herbert.png" id="1_kbcpc"]
+[ext_resource type="Texture2D" uid="uid://du6u6xmkhqa2b" path="res://CharacterBackgrounds/Uncommon.jpg" id="2_myhk4"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Herbert" type="Sprite2D" parent="."]
+texture = ExtResource("1_kbcpc")
+
+[node name="Sprite2D" type="Sprite2D" parent="Herbert"]
+z_index = -1
+position = Vector2(-6.20446, -3.00001)
+scale = Vector2(0.662634, 2.11321)
+texture = ExtResource("2_myhk4")

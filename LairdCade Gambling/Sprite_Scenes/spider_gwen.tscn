@@ -1,6 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://cfdxkrcwb658x"]
+[gd_scene load_steps=3 format=3 uid="uid://cfdxkrcwb658x"]
 
 [ext_resource type="Texture2D" uid="uid://brwxr0gocojcf" path="res://images/Fortnite/Spider-Gwen_29_-_Outfit_-_Fortnite.png" id="1_5cv5g"]
+[ext_resource type="Texture2D" uid="uid://d2115tspt6qoi" path="res://CharacterBackgrounds/Rare.jpg" id="2_im52n"]
 
 [node name="Spider_Gwen" type="Sprite2D"]
 texture = ExtResource("1_5cv5g")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(-6.20446, -16)
+scale = Vector2(0.662634, 1.02593)
+texture = ExtResource("2_im52n")

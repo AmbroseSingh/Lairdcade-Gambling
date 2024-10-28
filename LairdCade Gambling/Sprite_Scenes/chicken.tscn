@@ -1,6 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://u2iv1ox6v4pe"]
+[gd_scene load_steps=3 format=3 uid="uid://u2iv1ox6v4pe"]
 
 [ext_resource type="Texture2D" uid="uid://cegmvxrrv0q4k" path="res://images/FamilyGuy/Chicken.png" id="1_dl876"]
+[ext_resource type="Texture2D" uid="uid://mdj8cp01ngl" path="res://CharacterBackgrounds/Mythic.jpg" id="2_4cges"]
 
 [node name="Chicken" type="Sprite2D"]
 texture = ExtResource("1_dl876")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(21, -21.7538)
+scale = Vector2(0.41875, 0.948447)
+texture = ExtResource("2_4cges")
