@@ -28,19 +28,19 @@ func _on_timer_timeout():
 	var NewIconFive = RanIconFive.instantiate()
 	var NewIconSix = RanIconSix.instantiate()
 	var NewIconSeven = RanIconSeven.instantiate()
-	var randomStatic = randi_range(1,10)
-	if randomStatic == 1:
+	var randomIcon = randi_range(1,7)
+	if randomIcon == 1:
 		add_child(NewIconOne)
-	elif randomStatic == 2:
+	elif randomIcon == 2:
 		add_child(NewIconTwo)
-	elif randomStatic == 3:
+	elif randomIcon == 3:
 		add_child(NewIconThree)
-	elif randomStatic == 4:
+	elif randomIcon == 4:
 		add_child(NewIconFour)
-	elif randomStatic == 5:
+	elif randomIcon == 5:
 		add_child(NewIconFive)
-	elif randomStatic == 6:
+	elif randomIcon == 6:
 		add_child(NewIconSix)
-	elif randomStatic == 7:
+	elif randomIcon == 7:
 		add_child(NewIconSeven)
 	

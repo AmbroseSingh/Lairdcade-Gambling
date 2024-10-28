@@ -16,3 +16,4 @@ func _on_animation_player_animation_finished(WhiteOutRVS):
 	SlotTwo = false
 	get_parent().get_node("SlotAnimationThree").SlotThree = true
 	$WhiteRFive.visible = true
+	get_parent().get_node("IconSpawner2").start = true

@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://bubuhhu282tam"]
+[gd_scene load_steps=11 format=3 uid="uid://bubuhhu282tam"]
 
 [ext_resource type="PackedScene" uid="uid://bfatxylpa8tye" path="res://Spawner.tscn" id="1_3gm2i"]
 [ext_resource type="Script" path="res://slot_machine.gd" id="1_ayar6"]
@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://cwxl00vlyg6kj" path="res://slot_animation_two.tscn" id="6_e2hbv"]
 [ext_resource type="PackedScene" uid="uid://kqieruxcc7cl" path="res://slot_animation_three.tscn" id="7_tq1v7"]
 [ext_resource type="Texture2D" uid="uid://similhkjd2x4" path="res://images/Random Images/blkback.jpg" id="9_myi68"]
+[ext_resource type="PackedScene" uid="uid://bqevapkmr1lsk" path="res://icon_spawner.tscn" id="10_fvpnl"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_ayar6")
@@ -61,6 +62,15 @@ texture = ExtResource("9_myi68")
 [node name="Panel" type="Panel" parent="Sprite2D2"]
 offset_right = 40.0
 offset_bottom = 40.0
+
+[node name="IconSpawner" parent="." instance=ExtResource("10_fvpnl")]
+position = Vector2(788, 753)
+
+[node name="IconSpawner2" parent="." instance=ExtResource("10_fvpnl")]
+position = Vector2(596, 754)
+
+[node name="IconSpawner3" parent="." instance=ExtResource("10_fvpnl")]
+position = Vector2(403, 754)
 
 [connection signal="pressed" from="Lever/Button" to="." method="_on_button_pressed"]
 

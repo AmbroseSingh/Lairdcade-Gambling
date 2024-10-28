@@ -17,3 +17,4 @@ func _on_animation_player_animation_finished(WhiteOutFWD):
 	SlotOne = false
 	$WhiteFive.visible = true
 	get_parent().get_node("SlotAnimationTwo").SlotTwo = true
+	get_parent().get_node("IconSpawner3").start = true

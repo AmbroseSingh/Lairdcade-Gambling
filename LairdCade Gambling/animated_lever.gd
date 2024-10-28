@@ -18,6 +18,7 @@ func _on_button_pressed():
 	get_parent().get_node("StaticSpawner2").start = true
 	get_parent().get_node("StaticSpawner3").start = true
 	$SpinWaitTimer.start()
+	
 
 
 func _on_spin_wait_timer_timeout():
