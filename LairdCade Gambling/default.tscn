@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://dyn1jhj577wxg"]
+
+[ext_resource type="Texture2D" uid="uid://b0i0cn1me8w4s" path="res://images/Fortnite/Default.png" id="1_u48fs"]
+[ext_resource type="Texture2D" uid="uid://c58f6hyspalen" path="res://CharacterBackgrounds/Common.png" id="2_s0mr0"]
+
+[node name="Default" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_u48fs")
+
+[node name="Sprite2D" type="Sprite2D" parent="Sprite2D"]
+z_index = -1
+position = Vector2(7.50001, 32)
+scale = Vector2(0.324479, 0.409259)
+texture = ExtResource("2_s0mr0")

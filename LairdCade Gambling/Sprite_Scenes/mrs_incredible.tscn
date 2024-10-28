@@ -1,6 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://vyvj8btkgo4a"]
+[gd_scene load_steps=3 format=3 uid="uid://vyvj8btkgo4a"]
 
 [ext_resource type="Texture2D" uid="uid://d3mh0oujwigr5" path="res://images/Fortnite/Mrs._Incredible_(Featured)_-_Outfit_-_Fortnite.png" id="1_n0bev"]
+[ext_resource type="Texture2D" uid="uid://cdto041nf1wsm" path="res://CharacterBackgrounds/Legendary.jpg" id="2_m0sss"]
 
 [node name="Mrs_Incredible" type="Sprite2D"]
 texture = ExtResource("1_n0bev")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(-2.49999, 9.99998)
+scale = Vector2(0.282812, 0.935933)
+texture = ExtResource("2_m0sss")

@@ -1,6 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://bykai8i8t2x17"]
-
-[ext_resource type="Texture2D" uid="uid://dgbokfyl3m1xw" path="res://images/Fortnite/Fishstick_29_-_Outfit_-_Fortnite.png" id="1_fhxow"]
-
-[node name="Fishstick" type="Sprite2D"]
-texture = ExtResource("1_fhxow")

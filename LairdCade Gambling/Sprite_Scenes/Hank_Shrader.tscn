@@ -1,7 +1,14 @@
-[gd_scene load_steps=2 format=3 uid="uid://2pyu3ka4s831"]
+[gd_scene load_steps=3 format=3 uid="uid://2pyu3ka4s831"]
 
 [ext_resource type="Texture2D" uid="uid://de5rw2p3ntuya" path="res://images/BreakingBad/HankShrader.png" id="1_5hpr7"]
+[ext_resource type="Texture2D" uid="uid://pyt6h243jht0" path="res://CharacterBackgrounds/Epic.jpg" id="2_emu3u"]
 
 [node name="Hank_Shrader" type="Sprite2D"]
 scale = Vector2(0.386207, 0.339375)
 texture = ExtResource("1_5hpr7")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(9.0625, -1.47331)
+scale = Vector2(0.192848, 0.55385)
+texture = ExtResource("2_emu3u")

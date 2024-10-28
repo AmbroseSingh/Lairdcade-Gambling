@@ -1,7 +1,14 @@
-[gd_scene load_steps=2 format=3 uid="uid://bguddmhh0j5cu"]
+[gd_scene load_steps=3 format=3 uid="uid://bguddmhh0j5cu"]
 
 [ext_resource type="Texture2D" uid="uid://ch4e5ea7sexb2" path="res://images/BreakingBad/Walterwhite.png" id="1_w71pv"]
+[ext_resource type="Texture2D" uid="uid://cdto041nf1wsm" path="res://CharacterBackgrounds/Legendary.jpg" id="2_krlvp"]
 
 [node name="Sprite2D" type="Sprite2D"]
 scale = Vector2(-6.83036, 7.3634)
 texture = ExtResource("1_w71pv")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(-6.20446, -1.72658)
+scale = Vector2(0.662634, 1.10581)
+texture = ExtResource("2_krlvp")

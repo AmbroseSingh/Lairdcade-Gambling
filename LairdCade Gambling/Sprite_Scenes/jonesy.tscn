@@ -1,6 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://6ufxd0aub0wm"]
+[gd_scene load_steps=3 format=3 uid="uid://6ufxd0aub0wm"]
 
 [ext_resource type="Texture2D" uid="uid://cmsmetjhdvu8" path="res://images/Fortnite/Jonesy_The_First_29_-_Outfit_-_Fortnite.png" id="1_wnk2b"]
+[ext_resource type="Texture2D" uid="uid://c58f6hyspalen" path="res://CharacterBackgrounds/Common.png" id="2_af1mx"]
 
 [node name="Jonesy" type="Sprite2D"]
 texture = ExtResource("1_wnk2b")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(12, -13)
+scale = Vector2(0.402083, 0.97037)
+texture = ExtResource("2_af1mx")

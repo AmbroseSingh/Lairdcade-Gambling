@@ -1,7 +1,14 @@
-[gd_scene load_steps=2 format=3 uid="uid://bxmdce8n817pb"]
+[gd_scene load_steps=3 format=3 uid="uid://bxmdce8n817pb"]
 
 [ext_resource type="Texture2D" uid="uid://dsvkrcpetorrl" path="res://images/BreakingBad/Tuco.png" id="1_23ned"]
+[ext_resource type="Texture2D" uid="uid://d2115tspt6qoi" path="res://CharacterBackgrounds/Rare.jpg" id="2_ua7nc"]
 
 [node name="Tuco" type="Sprite2D"]
 scale = Vector2(0.407407, 0.377143)
 texture = ExtResource("1_23ned")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(-75.711, -38.4469)
+scale = Vector2(0.331991, 0.699705)
+texture = ExtResource("2_ua7nc")

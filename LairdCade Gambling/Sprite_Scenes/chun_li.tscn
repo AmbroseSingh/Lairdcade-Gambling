@@ -1,6 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://dimvth6a6w2u4"]
+[gd_scene load_steps=3 format=3 uid="uid://dimvth6a6w2u4"]
 
 [ext_resource type="Texture2D" uid="uid://bpl846b4d1go5" path="res://images/Fortnite/Chun-Li_29_-_Outfit_-_Fortnite - Copy.png" id="1_b7tr1"]
+[ext_resource type="Texture2D" uid="uid://cdto041nf1wsm" path="res://CharacterBackgrounds/Legendary.jpg" id="2_wy1wa"]
 
 [node name="Chun_Li" type="Sprite2D"]
 texture = ExtResource("1_b7tr1")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(-2.5, -9.5)
+scale = Vector2(0.264062, 0.743733)
+texture = ExtResource("2_wy1wa")

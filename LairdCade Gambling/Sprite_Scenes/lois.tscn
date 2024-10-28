@@ -1,6 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://dp65t8qo2qdbv"]
+[gd_scene load_steps=3 format=3 uid="uid://dp65t8qo2qdbv"]
 
 [ext_resource type="Texture2D" uid="uid://clk1ndqjdlwmb" path="res://images/FamilyGuy/Lois.png" id="1_4ckjc"]
+[ext_resource type="Texture2D" uid="uid://du6u6xmkhqa2b" path="res://CharacterBackgrounds/Uncommon.jpg" id="2_pnnwy"]
 
 [node name="Lois" type="Sprite2D"]
 texture = ExtResource("1_4ckjc")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(-1, -3.00001)
+scale = Vector2(0.54717, 2.27673)
+texture = ExtResource("2_pnnwy")

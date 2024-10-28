@@ -1,6 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://bykai8i8t2x17"]
+[gd_scene load_steps=3 format=3 uid="uid://bykai8i8t2x17"]
 
 [ext_resource type="Texture2D" uid="uid://dgbokfyl3m1xw" path="res://images/Fortnite/Fishstick_29_-_Outfit_-_Fortnite.png" id="1_fhxow"]
+[ext_resource type="Texture2D" uid="uid://du6u6xmkhqa2b" path="res://CharacterBackgrounds/Uncommon.jpg" id="2_xyb2b"]
 
 [node name="Fishstick" type="Sprite2D"]
 texture = ExtResource("1_fhxow")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(39.5, -4.50002)
+scale = Vector2(1.19811, 3.27673)
+texture = ExtResource("2_xyb2b")

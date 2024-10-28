@@ -1,6 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://c5jfxnkp2ljsf"]
+[gd_scene load_steps=3 format=3 uid="uid://c5jfxnkp2ljsf"]
 
 [ext_resource type="Texture2D" uid="uid://i52tpgdlalr3" path="res://images/FamilyGuy/stewie.png" id="1_ir1ip"]
+[ext_resource type="Texture2D" uid="uid://pyt6h243jht0" path="res://CharacterBackgrounds/Epic.jpg" id="2_5ii78"]
 
 [node name="Stewie" type="Sprite2D"]
 texture = ExtResource("1_ir1ip")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(-0.15451, -17.5)
+scale = Vector2(0.166506, 0.317593)
+texture = ExtResource("2_5ii78")
