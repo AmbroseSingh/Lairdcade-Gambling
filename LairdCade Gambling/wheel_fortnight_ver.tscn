@@ -1,9 +1,20 @@
-[gd_scene load_steps=5 format=3 uid="uid://dodt8jdto1141"]
+[gd_scene load_steps=16 format=3 uid="uid://dodt8jdto1141"]
 
 [ext_resource type="Texture2D" uid="uid://bs7ncwo0tesgn" path="res://images/Random Images/Title Screen Background.jpg" id="1_eg8wy"]
 [ext_resource type="Texture2D" uid="uid://dtgjm8fdc3hw1" path="res://Spinner/file (1).png" id="2_5x8bi"]
+[ext_resource type="PackedScene" uid="uid://dwtuy0lcgdorw" path="res://Sprite_Scenes/peely.tscn" id="2_ec3qb"]
+[ext_resource type="PackedScene" uid="uid://6ufxd0aub0wm" path="res://Sprite_Scenes/jonesy.tscn" id="3_gng7e"]
 [ext_resource type="Script" path="res://wheel_(fortnight_ver_).gd" id="3_idhh2"]
 [ext_resource type="AudioStream" uid="uid://df2spsufrahfq" path="res://sound/music/shake sum.mp3" id="4_3di2n"]
+[ext_resource type="PackedScene" uid="uid://dimvth6a6w2u4" path="res://Sprite_Scenes/chun_li.tscn" id="4_fjdkb"]
+[ext_resource type="Texture2D" uid="uid://cj0afi3db0g22" path="res://Spinner/ar.png" id="5_aejej"]
+[ext_resource type="PackedScene" uid="uid://bykai8i8t2x17" path="res://Sprite_Scenes/fishstick.tscn" id="5_af2dy"]
+[ext_resource type="PackedScene" uid="uid://db0t3kt4qdxbl" path="res://fortnight_guy.tscn" id="5_saxvg"]
+[ext_resource type="PackedScene" uid="uid://c1wxhbfs5esop" path="res://nick_eh.tscn" id="6_pswh6"]
+[ext_resource type="PackedScene" uid="uid://cfdxkrcwb658x" path="res://spider_gwen.tscn" id="8_0c7b6"]
+[ext_resource type="PackedScene" uid="uid://8yloq1o2a1wr" path="res://klombo.tscn" id="9_2hieh"]
+[ext_resource type="PackedScene" uid="uid://vyvj8btkgo4a" path="res://mrs_incredible.tscn" id="10_x05nb"]
+[ext_resource type="PackedScene" uid="uid://i501c67w1cw2" path="res://travis_scott.tscn" id="11_jqa1a"]
 
 [node name="Wheel" type="Node2D"]
 
@@ -20,11 +31,117 @@ offset_bottom = 1808.0
 theme_override_font_sizes/font_size = 150
 text = "Spin"
 
+[node name="Peely" parent="." instance=ExtResource("2_ec3qb")]
+position = Vector2(713, 475)
+rotation = 0.819605
+scale = Vector2(0.373183, 0.513346)
+skew = -0.312186
+
+[node name="Jonesy" parent="." instance=ExtResource("3_gng7e")]
+position = Vector2(324, 1029)
+rotation = -2.04461
+scale = Vector2(0.239732, 0.319051)
+skew = -0.312629
+
+[node name="Nick_Eh" parent="." instance=ExtResource("6_pswh6")]
+position = Vector2(275, 653)
+rotation = -0.782481
+scale = Vector2(0.32134, 0.31332)
+skew = -0.358427
+
+[node name="Fortnight_Guy" parent="." instance=ExtResource("5_saxvg")]
+position = Vector2(180, 852)
+rotation = 1.87408
+scale = Vector2(0.357206, -0.427955)
+skew = -0.0413511
+
+[node name="Fishstick" parent="." instance=ExtResource("5_af2dy")]
+position = Vector2(865, 786)
+rotation = 1.33676
+scale = Vector2(0.349552, 0.530678)
+
+[node name="Chun_Li" parent="." instance=ExtResource("4_fjdkb")]
+position = Vector2(557, 418)
+rotation = 0.108555
+scale = Vector2(0.442571, 0.664848)
+skew = 0.0167811
+
+[node name="Spider_Gwen" parent="." instance=ExtResource("8_0c7b6")]
+position = Vector2(819, 595)
+rotation = -2.32199
+scale = Vector2(0.204325, -0.212242)
+skew = -0.312186
+
+[node name="Klombo" parent="." instance=ExtResource("9_2hieh")]
+position = Vector2(936, 915)
+rotation = -1.43662
+scale = Vector2(0.330212, -0.322199)
+skew = -0.402396
+
+[node name="Mrs_Incredible" parent="." instance=ExtResource("10_x05nb")]
+position = Vector2(562, 1076)
+rotation = 0.28444
+scale = Vector2(0.459642, -0.603644)
+skew = -0.401622
+
+[node name="Travis_Scott" parent="." instance=ExtResource("11_jqa1a")]
+position = Vector2(626, 424)
+rotation = -3.03304
+scale = Vector2(0.138693, -0.141131)
+skew = 0.016781
+
 [node name="Wheel (Fortnight ver_)" type="Sprite2D" parent="."]
 position = Vector2(535, 815)
 scale = Vector2(2.55129, 2.48666)
 texture = ExtResource("2_5x8bi")
 script = ExtResource("3_idhh2")
+
+[node name="Common" type="Label" parent="Wheel (Fortnight ver_)"]
+offset_left = -119.547
+offset_top = -18.0966
+offset_right = -48.5474
+offset_bottom = 4.90344
+text = "Common"
+
+[node name="Rare" type="Label" parent="Wheel (Fortnight ver_)"]
+offset_left = 90.9344
+offset_top = -84.0485
+offset_right = 130.934
+offset_bottom = -61.0485
+rotation = -0.459911
+text = "Rare"
+
+[node name="Uncommon" type="Label" parent="Wheel (Fortnight ver_)"]
+offset_left = 74.4721
+offset_top = 6.83649
+offset_right = 165.472
+offset_bottom = 29.8365
+rotation = 0.211731
+text = "Uncommon"
+
+[node name="Epic" type="Label" parent="Wheel (Fortnight ver_)"]
+offset_left = 50.5626
+offset_top = -129.089
+offset_right = 90.5627
+offset_bottom = -106.089
+rotation = -1.08817
+text = "Epic"
+
+[node name="Mythical" type="Label" parent="Wheel (Fortnight ver_)"]
+offset_left = 13.7185
+offset_top = -117.829
+offset_right = 79.7185
+offset_bottom = -94.8287
+rotation = -1.39657
+text = "Mythical"
+
+[node name="Label" type="Label" parent="Wheel (Fortnight ver_)"]
+offset_left = -5.09544
+offset_top = -105.362
+offset_right = 75.9046
+offset_bottom = -82.3622
+rotation = -1.55918
+text = "Legendary"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("4_3di2n")
@@ -62,5 +179,20 @@ polygon = PackedVector2Array(688, 356, 725, 368, 765, 386, 802, 407, 826, 424, 5
 [node name="Uncommon_Collision_Shape" type="CollisionPolygon2D" parent="Uncommon_Body"]
 build_mode = 1
 polygon = PackedVector2Array(1006, 662, 1016, 697, 1033, 783, 1032, 859, 1019, 939, 1005, 975, 972, 1047, 949, 1083, 931, 1110, 870, 1174, 826, 1205, 535, 815)
+
+[node name="Arrow" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Arrow"]
+position = Vector2(530, 305)
+rotation = -1.5708
+scale = Vector2(0.197143, 0.131649)
+build_mode = 1
+polygon = PackedVector2Array(-136.956, -113.939, -136.956, 98.7476, 370.289, 364.606, 207.971, 0, 365.217, -364.606)
+
+[node name="Ar" type="Sprite2D" parent="Arrow"]
+position = Vector2(530, 305)
+rotation = -1.5708
+scale = Vector2(0.197143, 0.131649)
+texture = ExtResource("5_aejej")
 
 [connection signal="pressed" from="Button" to="Wheel (Fortnight ver_)" method="_on_button_pressed"]
