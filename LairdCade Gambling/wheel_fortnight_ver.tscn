@@ -29,4 +29,38 @@ script = ExtResource("3_idhh2")
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("4_3di2n")
 
+[node name="Rare_Body" type="Area2D" parent="."]
+
+[node name="Rare_Collision_Shape" type="CollisionPolygon2D" parent="Rare_Body"]
+polygon = PackedVector2Array(826, 424, 862, 452, 916, 506, 926, 517, 962, 567, 1006, 662, 536, 814)
+
+[node name="Legendary_Body" type="Area2D" parent="."]
+
+[node name="Legendary_Collision_Shape" type="CollisionPolygon2D" parent="Legendary_Body"]
+build_mode = 1
+polygon = PackedVector2Array(598, 337, 625, 339, 665, 348, 688, 356, 536, 813, 598, 337)
+
+[node name="Mythical_Body" type="Area2D" parent="."]
+
+[node name="Mythical_Collision_Shape" type="CollisionPolygon2D" parent="Mythical_Body"]
+build_mode = 1
+polygon = PackedVector2Array(535, 332, 535, 814, 598, 337)
+
+[node name="Common_Body" type="Area2D" parent="."]
+
+[node name="Common_Collision_Shape" type="CollisionPolygon2D" parent="Common_Body"]
+build_mode = 1
+polygon = PackedVector2Array(534, 813, 826, 1203, 826, 1206, 805, 1221, 767, 1244, 703, 1271, 633, 1292, 545, 1300, 476, 1298, 402, 1283, 340, 1264, 247, 1218, 146, 1132, 81, 1021, 37, 870, 37, 733, 113, 539, 248, 411, 371, 354, 493, 333, 535, 332)
+
+[node name="Epic_Body" type="Area2D" parent="."]
+
+[node name="Epic_Collision_Shape" type="CollisionPolygon2D" parent="Epic_Body"]
+polygon = PackedVector2Array(688, 356, 725, 368, 765, 386, 802, 407, 826, 424, 536, 813)
+
+[node name="Uncommon_Body" type="Area2D" parent="."]
+
+[node name="Uncommon_Collision_Shape" type="CollisionPolygon2D" parent="Uncommon_Body"]
+build_mode = 1
+polygon = PackedVector2Array(1006, 662, 1016, 697, 1033, 783, 1032, 859, 1019, 939, 1005, 975, 972, 1047, 949, 1083, 931, 1110, 870, 1174, 826, 1205, 535, 815)
+
 [connection signal="pressed" from="Button" to="Wheel (Fortnight ver_)" method="_on_button_pressed"]

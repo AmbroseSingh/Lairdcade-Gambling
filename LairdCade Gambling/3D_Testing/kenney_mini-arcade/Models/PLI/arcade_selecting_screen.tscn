@@ -1,0 +1,70 @@
+[gd_scene load_steps=7 format=3 uid="uid://7dx21ymnbiqi"]
+
+[ext_resource type="PackedScene" uid="uid://bek72rnr4ic2d" path="res://FBX format/floor.fbx" id="1_g4tmt"]
+[ext_resource type="PackedScene" uid="uid://dy7v0cf2l4k0o" path="res://FBX format/wall.fbx" id="2_p54ms"]
+[ext_resource type="PackedScene" uid="uid://b7tasc46ns4g8" path="res://FBX format/gambling-machine.fbx" id="3_hyrkc"]
+[ext_resource type="PackedScene" uid="uid://df4fbwmiojh48" path="res://FBX format/claw-machine.fbx" id="4_ektmi"]
+[ext_resource type="PackedScene" uid="uid://bteu2qfbbx8h6" path="res://FBX format/wall-corner.fbx" id="5_2qjv1"]
+[ext_resource type="PackedScene" uid="uid://b1oovffxalpgy" path="res://FBX format/wall-door-rotate.fbx" id="6_14s32"]
+
+[node name="Arcade Selecting Screen" type="Node3D"]
+
+[node name="floor" parent="." instance=ExtResource("1_g4tmt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.0485533)
+
+[node name="floor2" parent="floor" instance=ExtResource("1_g4tmt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.985934, 0, -0.00145578)
+
+[node name="floor5" parent="floor" instance=ExtResource("1_g4tmt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0131105, 0, 1.94663)
+
+[node name="floor3" parent="floor" instance=ExtResource("1_g4tmt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.985934, 0, 0.959297)
+
+[node name="floor6" parent="floor" instance=ExtResource("1_g4tmt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.996861, 0, 1.93344)
+
+[node name="floor4" parent="floor" instance=ExtResource("1_g4tmt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00930824, 0, 0.966718)
+
+[node name="floor7" parent="floor" instance=ExtResource("1_g4tmt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.00249, 0, 0.966718)
+
+[node name="floor8" parent="floor" instance=ExtResource("1_g4tmt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.993458, 0, 1.94567)
+
+[node name="floor9" parent="floor" instance=ExtResource("1_g4tmt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.00545, 0, -0.0269527)
+
+[node name="wall" parent="." instance=ExtResource("2_p54ms")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.982055, 0, -0.833783)
+
+[node name="wall2" parent="wall" instance=ExtResource("2_p54ms")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.998638, 0, 0)
+
+[node name="wall4" parent="wall" instance=ExtResource("2_p54ms")]
+transform = Transform3D(-0.0472808, 0, 0.998882, 0, 1, 0, -0.998882, 0, -0.0472808, -1.90114, 0, 1.96802)
+
+[node name="wall3" parent="wall" instance=ExtResource("2_p54ms")]
+transform = Transform3D(-0.0472808, 0, 0.998882, 0, 1, 0, -0.998882, 0, -0.0472808, -1.94835, 0, 0.970502)
+
+[node name="gambling-machine" parent="." instance=ExtResource("3_hyrkc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.235561, 0, -0.328859)
+
+[node name="gambling-machine2" parent="gambling-machine" instance=ExtResource("3_hyrkc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.460279, 0, 0.0287826)
+
+[node name="claw-machine2" parent="." instance=ExtResource("4_ektmi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.736538, 0, -0.301781)
+
+[node name="claw-machine2" parent="claw-machine2" instance=ExtResource("4_ektmi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.513483, 0, -0.00912118)
+
+[node name="wall-corner" parent="claw-machine2" instance=ExtResource("5_2qjv1")]
+transform = Transform3D(-0.00239114, 0, 0.999997, 0, 1, 0, -0.999997, 0, -0.00239114, -1.73246, 0.00413537, -0.541615)
+
+[node name="wall-corner2" parent="claw-machine2/wall-corner" instance=ExtResource("5_2qjv1")]
+transform = Transform3D(-0.00239114, 0, 0.999997, 0, 1, 0, -0.999997, 0, -0.00239114, -2.9016, 0.00413537, 0.0886641)
+
+[node name="wall-door-rotate" parent="." instance=ExtResource("6_14s32")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0950996, 0, 2.0878)

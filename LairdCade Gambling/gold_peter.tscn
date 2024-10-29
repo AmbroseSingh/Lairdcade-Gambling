@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://b0ac2m0thjbk3"]
+
+[ext_resource type="Texture2D" uid="uid://d12u1rj36xn3p" path="res://images/FamilyGuy/GoldPeter.png" id="1_lh2ps"]
+
+[node name="Gold_Peter" type="Sprite2D"]
+texture = ExtResource("1_lh2ps")
