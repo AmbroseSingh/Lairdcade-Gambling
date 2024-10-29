@@ -1,6 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://cu4c6dsyoaqjg"]
+[gd_scene load_steps=3 format=3 uid="uid://cu4c6dsyoaqjg"]
 
 [ext_resource type="Texture2D" uid="uid://d15sakdfm1aan" path="res://images/TheBoys/Soldier Boy.png" id="1_a6jdo"]
+[ext_resource type="Texture2D" uid="uid://cdto041nf1wsm" path="res://CharacterBackgrounds/Legendary.jpg" id="2_tvlua"]
 
 [node name="Soldier_Boy" type="Sprite2D"]
 texture = ExtResource("1_a6jdo")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(-22.5, 15)
+scale = Vector2(1.06719, 4.12256)
+texture = ExtResource("2_tvlua")

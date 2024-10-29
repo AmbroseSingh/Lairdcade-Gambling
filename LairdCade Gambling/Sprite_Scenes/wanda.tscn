@@ -1,6 +1,15 @@
-[gd_scene load_steps=2 format=3 uid="uid://dx7ej82de14dm"]
+[gd_scene load_steps=3 format=3 uid="uid://dx7ej82de14dm"]
 
 [ext_resource type="Texture2D" uid="uid://duowpa1o7e43i" path="res://images/Marvel/Wanda.png" id="1_k75kw"]
+[ext_resource type="Texture2D" uid="uid://mdj8cp01ngl" path="res://CharacterBackgrounds/Mythic.jpg" id="2_ky42j"]
 
 [node name="Wanda" type="Sprite2D"]
+position = Vector2(8, 18.137)
+scale = Vector2(0.232877, 0.232877)
 texture = ExtResource("1_k75kw")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(8.58826, 5.85296)
+scale = Vector2(1.30165, 3.59036)
+texture = ExtResource("2_ky42j")

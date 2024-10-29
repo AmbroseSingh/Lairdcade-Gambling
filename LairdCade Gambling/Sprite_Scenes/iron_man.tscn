@@ -1,6 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://ctivul832bokh"]
+[gd_scene load_steps=3 format=3 uid="uid://ctivul832bokh"]
 
 [ext_resource type="Texture2D" uid="uid://dumiamvbdg6ve" path="res://images/Marvel/IronMan.png" id="1_et5ba"]
+[ext_resource type="Texture2D" uid="uid://d2115tspt6qoi" path="res://CharacterBackgrounds/Rare.jpg" id="2_aue84"]
 
 [node name="Iron_Man" type="Sprite2D"]
 texture = ExtResource("1_et5ba")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(75, 64)
+scale = Vector2(0.377083, 1.00926)
+texture = ExtResource("2_aue84")

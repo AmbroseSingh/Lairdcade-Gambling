@@ -1,6 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://cqfhrxk2lx1ah"]
+[gd_scene load_steps=3 format=3 uid="uid://cqfhrxk2lx1ah"]
 
 [ext_resource type="Texture2D" uid="uid://cs0q8xgnwlmmw" path="res://images/TheBoys/ATrain.png" id="1_j1n8j"]
+[ext_resource type="Texture2D" uid="uid://pyt6h243jht0" path="res://CharacterBackgrounds/Epic.jpg" id="2_rhxae"]
 
 [node name="A_Train" type="Sprite2D"]
 texture = ExtResource("1_j1n8j")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(4.49999, -10.5)
+scale = Vector2(0.348438, 1.23981)
+texture = ExtResource("2_rhxae")

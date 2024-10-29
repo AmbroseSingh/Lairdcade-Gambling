@@ -1,6 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://cdhg6i24qp50f"]
+[gd_scene load_steps=3 format=3 uid="uid://cdhg6i24qp50f"]
 
 [ext_resource type="Texture2D" uid="uid://d0pwlaasudi7l" path="res://images/TheBoys/hughie.png" id="1_yrihv"]
+[ext_resource type="Texture2D" uid="uid://c58f6hyspalen" path="res://CharacterBackgrounds/Common.png" id="2_1bklt"]
 
 [node name="Hughie" type="Sprite2D"]
 texture = ExtResource("1_yrihv")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(-12, 0.499969)
+scale = Vector2(0.365625, 1.30463)
+texture = ExtResource("2_1bklt")

@@ -1,6 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://cgfratmql68ij"]
+[gd_scene load_steps=3 format=3 uid="uid://cgfratmql68ij"]
 
 [ext_resource type="Texture2D" uid="uid://fqslqxp5oitj" path="res://images/SpongeBob/MrKrabs.png" id="1_4j1dq"]
+[ext_resource type="Texture2D" uid="uid://du6u6xmkhqa2b" path="res://CharacterBackgrounds/Uncommon.jpg" id="2_i76a7"]
 
 [node name="Mr_Krabs" type="Sprite2D"]
 texture = ExtResource("1_4j1dq")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(6.5, -2.50001)
+scale = Vector2(0.694969, 1.36478)
+texture = ExtResource("2_i76a7")

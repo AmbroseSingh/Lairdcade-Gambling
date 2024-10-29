@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://bktbatt14x72v"]
+
+[ext_resource type="Texture2D" uid="uid://gfm5s2bblqtq" path="res://images/Misc/HelloKitt.png" id="1_lyqai"]
+[ext_resource type="Texture2D" uid="uid://cdto041nf1wsm" path="res://CharacterBackgrounds/Legendary.jpg" id="2_cb6dk"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_lyqai")
+
+[node name="Sprite2D" type="Sprite2D" parent="Sprite2D"]
+z_index = -1
+position = Vector2(-3.00001, -21.8704)
+scale = Vector2(0.565625, 1.04808)
+texture = ExtResource("2_cb6dk")

@@ -1,6 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://bk75stvkqs158"]
+[gd_scene load_steps=3 format=3 uid="uid://bk75stvkqs158"]
 
 [ext_resource type="Texture2D" uid="uid://uxff587m5rh4" path="res://images/Marvel/CaptainMarvel.png" id="1_04g6q"]
+[ext_resource type="Texture2D" uid="uid://pyt6h243jht0" path="res://CharacterBackgrounds/Epic.jpg" id="2_xphai"]
 
 [node name="Captain_Marvel" type="Sprite2D"]
 texture = ExtResource("1_04g6q")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(-47, -21.5)
+scale = Vector2(0.661458, 2.18981)
+texture = ExtResource("2_xphai")

@@ -1,6 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://b51b0ut07iq43"]
+[gd_scene load_steps=3 format=3 uid="uid://b51b0ut07iq43"]
 
 [ext_resource type="Texture2D" uid="uid://dv3y0i7o8da3n" path="res://images/Misc/RickGrimes.png" id="1_1w3g2"]
+[ext_resource type="Texture2D" uid="uid://d2115tspt6qoi" path="res://CharacterBackgrounds/Rare.jpg" id="2_3y2km"]
 
 [node name="Rick_Grimes" type="Sprite2D"]
 texture = ExtResource("1_1w3g2")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(15, 27.9999)
+scale = Vector2(0.451042, 1.30741)
+texture = ExtResource("2_3y2km")

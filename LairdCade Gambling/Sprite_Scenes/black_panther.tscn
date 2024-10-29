@@ -1,6 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://c1h5linofg3pm"]
+[gd_scene load_steps=3 format=3 uid="uid://c1h5linofg3pm"]
 
 [ext_resource type="Texture2D" uid="uid://bruq4g2wofn14" path="res://images/Marvel/BlackPanther.png" id="1_os5xg"]
+[ext_resource type="Texture2D" uid="uid://pyt6h243jht0" path="res://CharacterBackgrounds/Epic.jpg" id="2_7r4qk"]
 
 [node name="Black_Panther" type="Sprite2D"]
 texture = ExtResource("1_os5xg")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(-47, -74.5)
+scale = Vector2(0.661458, 1.22685)
+texture = ExtResource("2_7r4qk")

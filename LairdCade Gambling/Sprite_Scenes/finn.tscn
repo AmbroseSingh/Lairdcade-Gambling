@@ -1,6 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://cwipmeceewydv"]
+[gd_scene load_steps=3 format=3 uid="uid://cwipmeceewydv"]
 
 [ext_resource type="Texture2D" uid="uid://ngs7c0oyqykm" path="res://images/Misc/Finn.png" id="1_wixvx"]
+[ext_resource type="Texture2D" uid="uid://c58f6hyspalen" path="res://CharacterBackgrounds/Common.png" id="2_6h8ro"]
 
 [node name="Finn" type="Sprite2D"]
 texture = ExtResource("1_wixvx")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(61, 61)
+scale = Vector2(0.247917, 0.55)
+texture = ExtResource("2_6h8ro")

@@ -1,6 +1,14 @@
-[gd_scene load_steps=2 format=3 uid="uid://cnt7onhuh850f"]
+[gd_scene load_steps=3 format=3 uid="uid://cnt7onhuh850f"]
 
 [ext_resource type="Texture2D" uid="uid://b3h5u8awe5j5k" path="res://images/SpongeBob/Plankton.png" id="1_chq0q"]
+[ext_resource type="Texture2D" uid="uid://du6u6xmkhqa2b" path="res://CharacterBackgrounds/Uncommon.jpg" id="2_ftqp4"]
 
 [node name="Plankton" type="Sprite2D"]
+scale = Vector2(0.1, 0.1)
 texture = ExtResource("1_chq0q")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(-210, 700)
+scale = Vector2(8.05031, 29.9371)
+texture = ExtResource("2_ftqp4")

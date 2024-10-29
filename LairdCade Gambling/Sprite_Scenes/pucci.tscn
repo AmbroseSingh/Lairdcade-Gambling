@@ -1,6 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://db3ub47rhph2k"]
+[gd_scene load_steps=3 format=3 uid="uid://db3ub47rhph2k"]
 
 [ext_resource type="Texture2D" uid="uid://b0y06b7i7ikon" path="res://images/Misc/Pucci.png" id="1_rq4hc"]
+[ext_resource type="Texture2D" uid="uid://pyt6h243jht0" path="res://CharacterBackgrounds/Epic.jpg" id="2_0hmx6"]
 
 [node name="Pucci" type="Sprite2D"]
 texture = ExtResource("1_rq4hc")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(-47, -56)
+scale = Vector2(0.661458, 2.15556)
+texture = ExtResource("2_0hmx6")

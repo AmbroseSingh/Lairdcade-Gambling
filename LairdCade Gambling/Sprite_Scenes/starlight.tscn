@@ -1,6 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://d3vguvdbg5151"]
+[gd_scene load_steps=3 format=3 uid="uid://d3vguvdbg5151"]
 
 [ext_resource type="Texture2D" uid="uid://v15wvikpm10r" path="res://images/TheBoys/Starlight.png" id="1_8vjb3"]
+[ext_resource type="Texture2D" uid="uid://du6u6xmkhqa2b" path="res://CharacterBackgrounds/Uncommon.jpg" id="2_k6vbb"]
 
 [node name="Starlight" type="Sprite2D"]
 texture = ExtResource("1_8vjb3")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(7.50005, -16)
+scale = Vector2(1.91509, 7.84906)
+texture = ExtResource("2_k6vbb")
