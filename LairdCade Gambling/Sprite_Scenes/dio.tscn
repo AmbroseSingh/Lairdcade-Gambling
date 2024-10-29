@@ -1,6 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://ctw51rt764o5j"]
+[gd_scene load_steps=3 format=3 uid="uid://ctw51rt764o5j"]
 
 [ext_resource type="Texture2D" uid="uid://c3g6kxwcxg2pk" path="res://images/Misc/Dio.png" id="1_igmnu"]
+[ext_resource type="Texture2D" uid="uid://mdj8cp01ngl" path="res://CharacterBackgrounds/Mythic.jpg" id="2_jnors"]
 
 [node name="Dio" type="Sprite2D"]
 texture = ExtResource("1_igmnu")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(-56, -19.5)
+scale = Vector2(1.29375, 4.04167)
+texture = ExtResource("2_jnors")

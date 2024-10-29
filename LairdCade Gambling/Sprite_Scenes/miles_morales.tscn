@@ -1,6 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://jsgcnsv8d2pl"]
+[gd_scene load_steps=3 format=3 uid="uid://jsgcnsv8d2pl"]
 
 [ext_resource type="Texture2D" uid="uid://c8tb3vp532fxs" path="res://images/Marvel/MilesMorales.png" id="1_atls4"]
+[ext_resource type="Texture2D" uid="uid://cdto041nf1wsm" path="res://CharacterBackgrounds/Legendary.jpg" id="2_sry1v"]
 
 [node name="Miles_Morales" type="Sprite2D"]
 texture = ExtResource("1_atls4")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(-115.5, 36)
+scale = Vector2(1.42344, 3.74373)
+texture = ExtResource("2_sry1v")

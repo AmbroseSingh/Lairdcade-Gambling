@@ -1,6 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://cmwqo0bq2nkle"]
+[gd_scene load_steps=3 format=3 uid="uid://cmwqo0bq2nkle"]
 
 [ext_resource type="Texture2D" uid="uid://cjl5tdrth65at" path="res://images/TheBoys/thedeep (1).png" id="1_glmi6"]
+[ext_resource type="Texture2D" uid="uid://du6u6xmkhqa2b" path="res://CharacterBackgrounds/Uncommon.jpg" id="2_dyc4a"]
 
 [node name="The_Deep" type="Sprite2D"]
 texture = ExtResource("1_glmi6")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(-17.0001, -72.5)
+scale = Vector2(3.22013, 12.0314)
+texture = ExtResource("2_dyc4a")

@@ -1,6 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://23q7pkq8d6n4"]
+[gd_scene load_steps=3 format=3 uid="uid://23q7pkq8d6n4"]
 
 [ext_resource type="Texture2D" uid="uid://cf0e1wcq87uys" path="res://images/TheBoys/frenchie.png" id="1_ehwoy"]
+[ext_resource type="Texture2D" uid="uid://c58f6hyspalen" path="res://CharacterBackgrounds/Common.png" id="2_jwnn1"]
 
 [node name="Frenchie" type="Sprite2D"]
 texture = ExtResource("1_ehwoy")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(19, -33.9999)
+scale = Vector2(0.832292, 2.39259)
+texture = ExtResource("2_jwnn1")

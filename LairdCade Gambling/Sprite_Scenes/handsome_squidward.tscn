@@ -1,6 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://ba3u3kc6ib30w"]
+[gd_scene load_steps=3 format=3 uid="uid://ba3u3kc6ib30w"]
 
 [ext_resource type="Texture2D" uid="uid://bryeust6f3ret" path="res://images/SpongeBob/HandsomeSquidward.png" id="1_xcnwi"]
+[ext_resource type="Texture2D" uid="uid://mdj8cp01ngl" path="res://CharacterBackgrounds/Mythic.jpg" id="2_fvyd3"]
 
 [node name="Handsome_Squidward" type="Sprite2D"]
 texture = ExtResource("1_xcnwi")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(7, -9.00001)
+scale = Vector2(0.571875, 0.855556)
+texture = ExtResource("2_fvyd3")

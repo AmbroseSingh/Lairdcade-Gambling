@@ -1,8 +1,15 @@
-[gd_scene load_steps=2 format=3 uid="uid://bpk1cqy0komn8"]
+[gd_scene load_steps=3 format=3 uid="uid://bpk1cqy0komn8"]
 
 [ext_resource type="Texture2D" uid="uid://c04ueed1vkqri" path="res://images/BreakingBad/Skylar.png" id="1_fon5w"]
+[ext_resource type="Texture2D" uid="uid://du6u6xmkhqa2b" path="res://CharacterBackgrounds/Uncommon.jpg" id="2_bcnk0"]
 
 [node name="Skylar" type="Sprite2D"]
 position = Vector2(358, -79)
 scale = Vector2(0.861172, 0.979538)
 texture = ExtResource("1_fon5w")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(-388.849, 107.251)
+scale = Vector2(1.5473, 4.03292)
+texture = ExtResource("2_bcnk0")

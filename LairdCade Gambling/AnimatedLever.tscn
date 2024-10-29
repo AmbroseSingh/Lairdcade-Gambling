@@ -130,7 +130,7 @@ libraries = {
 stream = ExtResource("5_cldy2")
 
 [node name="SpinWaitTimer" type="Timer" parent="."]
-wait_time = 4.0
+wait_time = 0.5
 one_shot = true
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

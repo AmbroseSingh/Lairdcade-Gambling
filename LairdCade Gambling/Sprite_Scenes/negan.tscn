@@ -1,6 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://bqrtukuth5wir"]
+[gd_scene load_steps=3 format=3 uid="uid://bqrtukuth5wir"]
 
 [ext_resource type="Texture2D" uid="uid://cwsh7fm7d82yb" path="res://images/Misc/Negan.png" id="1_7bn88"]
+[ext_resource type="Texture2D" uid="uid://c58f6hyspalen" path="res://CharacterBackgrounds/Common.png" id="2_wont6"]
 
 [node name="Negan" type="Sprite2D"]
 texture = ExtResource("1_7bn88")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(-2.00001, 5)
+scale = Vector2(0.425, 1.50556)
+texture = ExtResource("2_wont6")

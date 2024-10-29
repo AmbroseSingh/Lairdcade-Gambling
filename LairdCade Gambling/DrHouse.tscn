@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://b0ghjlmg118rb"]
+
+[ext_resource type="Texture2D" uid="uid://du87bwvydyuvv" path="res://images/Misc/DrHouse.png" id="1_0jvdg"]
+[ext_resource type="Texture2D" uid="uid://mdj8cp01ngl" path="res://CharacterBackgrounds/Mythic.jpg" id="2_rmxum"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_0jvdg")
+
+[node name="Sprite2D" type="Sprite2D" parent="Sprite2D"]
+z_index = -1
+position = Vector2(6.5, -31)
+scale = Vector2(1.42344, 1.72222)
+texture = ExtResource("2_rmxum")

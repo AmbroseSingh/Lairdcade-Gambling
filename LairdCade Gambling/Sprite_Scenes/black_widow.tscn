@@ -1,6 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://cp03bngrkj0kf"]
+[gd_scene load_steps=3 format=3 uid="uid://cp03bngrkj0kf"]
 
 [ext_resource type="Texture2D" uid="uid://blma7780s6das" path="res://images/Marvel/BlackWidow.png" id="1_clsop"]
+[ext_resource type="Texture2D" uid="uid://d2115tspt6qoi" path="res://CharacterBackgrounds/Rare.jpg" id="2_r1vxm"]
 
 [node name="Black_Widow" type="Sprite2D"]
 texture = ExtResource("1_clsop")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(-11.5, 3.00002)
+scale = Vector2(0.210938, 0.283333)
+texture = ExtResource("2_r1vxm")

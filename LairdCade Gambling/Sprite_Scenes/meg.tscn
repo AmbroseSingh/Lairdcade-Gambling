@@ -1,6 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://5cl85w335g66"]
+[gd_scene load_steps=3 format=3 uid="uid://5cl85w335g66"]
 
 [ext_resource type="Texture2D" uid="uid://c1ukyuucs7vme" path="res://images/FamilyGuy/Meg.png" id="1_xrqea"]
+[ext_resource type="Texture2D" uid="uid://c58f6hyspalen" path="res://CharacterBackgrounds/Common.png" id="2_fr3pw"]
 
 [node name="Meg" type="Sprite2D"]
 texture = ExtResource("1_xrqea")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(1, 0)
+scale = Vector2(0.096875, 0.310248)
+texture = ExtResource("2_fr3pw")

@@ -1,6 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://dcgdpbk7x4tja"]
+[gd_scene load_steps=3 format=3 uid="uid://dcgdpbk7x4tja"]
 
 [ext_resource type="Texture2D" uid="uid://smly20ojih3l" path="res://images/SpongeBob/Spongebob.png" id="1_oqnu8"]
+[ext_resource type="Texture2D" uid="uid://pyt6h243jht0" path="res://CharacterBackgrounds/Epic.jpg" id="2_ov632"]
 
 [node name="Spongebob" type="Sprite2D"]
 texture = ExtResource("1_oqnu8")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(10.5, 40.5)
+scale = Vector2(0.285938, 0.575)
+texture = ExtResource("2_ov632")

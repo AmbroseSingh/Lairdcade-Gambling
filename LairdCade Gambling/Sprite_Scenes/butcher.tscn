@@ -1,6 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://bo0q25o6d8sdk"]
+[gd_scene load_steps=3 format=3 uid="uid://bo0q25o6d8sdk"]
 
 [ext_resource type="Texture2D" uid="uid://de7pjwiuksd6a" path="res://images/TheBoys/Butcher.png" id="1_rqamf"]
+[ext_resource type="Texture2D" uid="uid://d2115tspt6qoi" path="res://CharacterBackgrounds/Rare.jpg" id="2_0i61a"]
 
 [node name="Butcher" type="Sprite2D"]
 texture = ExtResource("1_rqamf")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(-33, -9)
+scale = Vector2(0.490625, 1.66667)
+texture = ExtResource("2_0i61a")

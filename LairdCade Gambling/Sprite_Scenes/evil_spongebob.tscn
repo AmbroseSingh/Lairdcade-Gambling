@@ -1,6 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://bxi308ewdck46"]
+[gd_scene load_steps=3 format=3 uid="uid://bxi308ewdck46"]
 
 [ext_resource type="Texture2D" uid="uid://bqaikvy8a6vix" path="res://images/SpongeBob/EvilSpongebob.png" id="1_mxxsv"]
+[ext_resource type="Texture2D" uid="uid://cdto041nf1wsm" path="res://CharacterBackgrounds/Legendary.jpg" id="2_nuisc"]
 
 [node name="Evil_Spongebob" type="Sprite2D"]
 texture = ExtResource("1_mxxsv")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(-64.5, -17)
+scale = Vector2(1.71406, 3.6546)
+texture = ExtResource("2_nuisc")

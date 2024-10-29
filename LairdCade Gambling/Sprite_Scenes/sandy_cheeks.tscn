@@ -1,6 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://vnjuu4nt4ref"]
+[gd_scene load_steps=3 format=3 uid="uid://vnjuu4nt4ref"]
 
 [ext_resource type="Texture2D" uid="uid://djs50owhm7dh3" path="res://images/SpongeBob/SandyCheeks.png" id="1_6ylt7"]
+[ext_resource type="Texture2D" uid="uid://d2115tspt6qoi" path="res://CharacterBackgrounds/Rare.jpg" id="2_fcd77"]
 
 [node name="Sandy_Cheeks" type="Sprite2D"]
 texture = ExtResource("1_6ylt7")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(53, -15)
+scale = Vector2(0.297917, 0.566667)
+texture = ExtResource("2_fcd77")

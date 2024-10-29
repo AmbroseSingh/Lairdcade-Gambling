@@ -1,6 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://fat2yd4ey8nv"]
+[gd_scene load_steps=3 format=3 uid="uid://fat2yd4ey8nv"]
 
 [ext_resource type="Texture2D" uid="uid://cvdit2pnsvo3p" path="res://images/TheBoys/Victoria Neumann.png" id="1_7hjh4"]
+[ext_resource type="Texture2D" uid="uid://d2115tspt6qoi" path="res://CharacterBackgrounds/Rare.jpg" id="2_pgy5b"]
 
 [node name="Victoria_Neumann" type="Sprite2D"]
 texture = ExtResource("1_7hjh4")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(-8.49999, -12.5)
+scale = Vector2(0.174479, 0.658333)
+texture = ExtResource("2_pgy5b")

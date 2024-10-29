@@ -1,7 +1,14 @@
-[gd_scene load_steps=2 format=3 uid="uid://cd7rkkmwlfnew"]
+[gd_scene load_steps=3 format=3 uid="uid://cd7rkkmwlfnew"]
 
 [ext_resource type="Texture2D" uid="uid://b7nltcyld0m4s" path="res://images/BreakingBad/MikeHermantrout.png" id="1_q31om"]
+[ext_resource type="Texture2D" uid="uid://pyt6h243jht0" path="res://CharacterBackgrounds/Epic.jpg" id="2_jm3xk"]
 
 [node name="Mike_Hermantrout" type="Sprite2D"]
-scale = Vector2(0.291667, 0.146667)
+position = Vector2(0, -48.9632)
 texture = ExtResource("1_q31om")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(-3.99996, 52.9632)
+scale = Vector2(0.4375, 1.60093)
+texture = ExtResource("2_jm3xk")

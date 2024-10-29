@@ -1,6 +1,14 @@
-[gd_scene load_steps=2 format=3 uid="uid://b3fj3olpp5go6"]
+[gd_scene load_steps=3 format=3 uid="uid://b3fj3olpp5go6"]
 
 [ext_resource type="Texture2D" uid="uid://vjpljueunqkd" path="res://images/Marvel/Hulk.png" id="1_66jvs"]
+[ext_resource type="Texture2D" uid="uid://du6u6xmkhqa2b" path="res://CharacterBackgrounds/Uncommon.jpg" id="2_mgelc"]
 
 [node name="Hulk" type="Sprite2D"]
+scale = Vector2(0.5, 0.5)
 texture = ExtResource("1_66jvs")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(-12.9999, -20)
+scale = Vector2(4.15723, 9.83648)
+texture = ExtResource("2_mgelc")

@@ -1,6 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://c1x006jrlasdx"]
+[gd_scene load_steps=3 format=3 uid="uid://c1x006jrlasdx"]
 
 [ext_resource type="Texture2D" uid="uid://3tytpqivgnsq" path="res://images/SpongeBob/PatrickStar.png" id="1_x70wu"]
+[ext_resource type="Texture2D" uid="uid://c58f6hyspalen" path="res://CharacterBackgrounds/Common.png" id="2_0xhxg"]
 
 [node name="Patrick_Star" type="Sprite2D"]
 texture = ExtResource("1_x70wu")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(-1.99995, -4)
+scale = Vector2(0.378125, 0.761111)
+texture = ExtResource("2_0xhxg")

@@ -1,7 +1,14 @@
-[gd_scene load_steps=2 format=3 uid="uid://dsw37by15juqv"]
+[gd_scene load_steps=3 format=3 uid="uid://dsw37by15juqv"]
 
 [ext_resource type="Texture2D" uid="uid://bx6k00ad6lyi3" path="res://images/BreakingBad/JessePinkman.png" id="1_xv6mu"]
+[ext_resource type="Texture2D" uid="uid://cdto041nf1wsm" path="res://CharacterBackgrounds/Legendary.jpg" id="2_kx74v"]
 
 [node name="Jesse_Pinkman" type="Sprite2D"]
 scale = Vector2(0.36, 0.323478)
 texture = ExtResource("1_xv6mu")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(-11.1111, 4.63711)
+scale = Vector2(0.47309, 1.50695)
+texture = ExtResource("2_kx74v")

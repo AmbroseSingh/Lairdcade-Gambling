@@ -1,7 +1,14 @@
-[gd_scene load_steps=2 format=3 uid="uid://dq5o3gn081s3a"]
+[gd_scene load_steps=3 format=3 uid="uid://dq5o3gn081s3a"]
 
 [ext_resource type="Texture2D" uid="uid://bnkb20n7tj1ba" path="res://images/TheBoys/kimiko.png" id="1_wreqg"]
+[ext_resource type="Texture2D" uid="uid://mdj8cp01ngl" path="res://CharacterBackgrounds/Mythic.jpg" id="2_on1d4"]
 
 [node name="Kimiko" type="Sprite2D"]
-scale = Vector2(0.479998, 0.400001)
+scale = Vector2(0.576, 0.48)
 texture = ExtResource("1_wreqg")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(39.9305, -61.4583)
+scale = Vector2(2.03451, 7.33218)
+texture = ExtResource("2_on1d4")

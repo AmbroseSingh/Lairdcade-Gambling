@@ -1,7 +1,14 @@
-[gd_scene load_steps=2 format=3 uid="uid://cqhn8wx16obmk"]
+[gd_scene load_steps=3 format=3 uid="uid://cqhn8wx16obmk"]
 
 [ext_resource type="Texture2D" uid="uid://c7ohiav4knoqe" path="res://images/BreakingBad/SaulGoodman.png" id="1_7x8ar"]
+[ext_resource type="Texture2D" uid="uid://mdj8cp01ngl" path="res://CharacterBackgrounds/Mythic.jpg" id="2_3dpat"]
 
 [node name="Saul_Goodman" type="Sprite2D"]
 scale = Vector2(0.348387, 0.337143)
 texture = ExtResource("1_7x8ar")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(-2.3365e-05, -30.9858)
+scale = Vector2(0.771412, 1.52513)
+texture = ExtResource("2_3dpat")
