@@ -1,9 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://k45ipr101o44"]
+[gd_scene load_steps=4 format=3 uid="uid://k45ipr101o44"]
 
+[ext_resource type="Script" path="res://the_boys_icon.gd" id="1_cdkcu"]
 [ext_resource type="Texture2D" uid="uid://dxik5hg57wgrp" path="res://SlotMachine/WhiteFive.png" id="1_nk34m"]
 [ext_resource type="Texture2D" uid="uid://cnwca07apx88v" path="res://images/Icons/The Boys Logo.png" id="2_gw2m2"]
 
 [node name="TheBoysIcon" type="Node2D"]
+script = ExtResource("1_cdkcu")
 
 [node name="Sprite2D2" type="Sprite2D" parent="."]
 scale = Vector2(3.5, 3.5)
@@ -14,3 +16,5 @@ texture_filter = 1
 position = Vector2(-0.500001, -0.535567)
 scale = Vector2(0.119109, 0.119109)
 texture = ExtResource("2_gw2m2")
+
+[node name="iconTimer" type="Timer" parent="."]

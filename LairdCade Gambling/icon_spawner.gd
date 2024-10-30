@@ -7,7 +7,7 @@ var RanIconFive = preload("res://MiscIcon.tscn")
 var RanIconSix = preload("res://SpongeBobIcon.tscn")
 var RanIconSeven = preload("res://the_boys_icon.tscn")
 var start = false
-
+var leverpull = false
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
@@ -18,6 +18,9 @@ func _process(delta):
 	if start == true:
 		start = false
 		$Timer.start()
+		
+	#if leverpull == true:
+		#var child = get_child(name)
 
 
 func _on_timer_timeout():
@@ -43,4 +46,5 @@ func _on_timer_timeout():
 		add_child(NewIconSix)
 	elif randomIcon == 7:
 		add_child(NewIconSeven)
+	get_parent().get_node("Lever").leverTimeout = false
 	

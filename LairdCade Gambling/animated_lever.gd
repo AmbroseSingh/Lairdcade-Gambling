@@ -1,5 +1,5 @@
 extends Node2D
-
+var leverTimeout = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -8,7 +8,10 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	pass
+	if leverTimeout == true:
+		$Button.visible = false
+	else:
+		$Button.visible = true
 
 
 func _on_button_pressed():
@@ -18,7 +21,7 @@ func _on_button_pressed():
 	get_parent().get_node("StaticSpawner2").start = true
 	get_parent().get_node("StaticSpawner3").start = true
 	$SpinWaitTimer.start()
-	
+	leverTimeout = true
 
 
 func _on_spin_wait_timer_timeout():
