@@ -29,3 +29,4 @@ func _on_button_pressed() -> void:
 	else:
 		spin_velocity = randf_range(535,815)
 		spinning = true
+		
