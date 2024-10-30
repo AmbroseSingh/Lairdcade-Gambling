@@ -1,0 +1,215 @@
+[gd_scene load_steps=18 format=3 uid="uid://blcknufm6puux"]
+
+[ext_resource type="Script" path="res://plinko.gd" id="1_gilrr"]
+[ext_resource type="Texture2D" uid="uid://dvogl30btppak" path="res://images/Random Images/Wall.png" id="1_kkeg3"]
+[ext_resource type="Texture2D" uid="uid://dbd0b5864jede" path="res://images/Random Images/Plinko Background.jpg" id="1_robqe"]
+[ext_resource type="PackedScene" uid="uid://cgbrqbrea8ir4" path="res://plinko_peg.tscn" id="4_f1lw3"]
+[ext_resource type="PackedScene" uid="uid://hc7igeg23y3" path="res://pokerchip.tscn" id="5_aqh37"]
+[ext_resource type="Script" path="res://green.gd" id="6_s6kga"]
+[ext_resource type="Texture2D" uid="uid://b1fy0ho8x5aoc" path="res://images/Random Images/Green.png" id="6_skt6h"]
+[ext_resource type="Texture2D" uid="uid://bhwv5dm3dw88p" path="res://images/Random Images/Yellow.png" id="7_f5jqq"]
+[ext_resource type="Texture2D" uid="uid://5gwkv76auqwl" path="res://images/Random Images/Red.png" id="8_ouhdd"]
+[ext_resource type="Script" path="res://yellow.gd" id="8_pvqdc"]
+[ext_resource type="Script" path="res://red.gd" id="10_7155y"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j55p2"]
+size = Vector2(19.2, 12.58)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1va1a"]
+size = Vector2(0.318, 0.552)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kiiu4"]
+size = Vector2(199.099, 272.362)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_74mli"]
+size = Vector2(205.45, 270.578)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h0bwr"]
+size = Vector2(217.117, 272.362)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ik58q"]
+size = Vector2(211.802, 272.312)
+
+[node name="plinko" type="Node2D"]
+script = ExtResource("1_gilrr")
+
+[node name="leftwall" type="StaticBody2D" parent="."]
+position = Vector2(-3, 1002)
+scale = Vector2(0.5, 5)
+
+[node name="Wall2" type="Sprite2D" parent="leftwall"]
+position = Vector2(-30, -45.45)
+scale = Vector2(6, 0.801111)
+texture = ExtResource("1_kkeg3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="leftwall"]
+position = Vector2(-34, -185.6)
+scale = Vector2(5, 50)
+shape = SubResource("RectangleShape2D_j55p2")
+
+[node name="rightwall" type="StaticBody2D" parent="."]
+position = Vector2(35.691, 1000)
+scale = Vector2(0.5, 5)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="rightwall"]
+position = Vector2(2118.62, -122.2)
+scale = Vector2(5, 40)
+shape = SubResource("RectangleShape2D_j55p2")
+
+[node name="Wall" type="Sprite2D" parent="rightwall"]
+position = Vector2(2120.62, -55.7)
+scale = Vector2(6, 0.847555)
+texture = ExtResource("1_kkeg3")
+
+[node name="PlinkoBackground" type="Sprite2D" parent="."]
+visible = false
+modulate = Color(0.169245, 0.169245, 0.169245, 1)
+self_modulate = Color(0.4, 1, 0, 1)
+position = Vector2(540, 961.875)
+scale = Vector2(0.85625, 2.26231)
+texture = ExtResource("1_robqe")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 4.0
+autostart = true
+
+[node name="Chip" parent="." instance=ExtResource("5_aqh37")]
+position = Vector2(589, 179)
+
+[node name="Row 5" type="Area2D" parent="."]
+position = Vector2(224, 1500)
+scale = Vector2(0.044, 0.044)
+
+[node name="PlinkoPeg" parent="Row 5" instance=ExtResource("4_f1lw3")]
+position = Vector2(-772.729, -1909.09)
+
+[node name="PlinkoPeg2" parent="Row 5" instance=ExtResource("4_f1lw3")]
+position = Vector2(7863.64, -1909.09)
+
+[node name="PlinkoPeg3" parent="Row 5" instance=ExtResource("4_f1lw3")]
+position = Vector2(3545.45, -1909.09)
+
+[node name="PlinkoPeg4" parent="Row 5" instance=ExtResource("4_f1lw3")]
+position = Vector2(16500, -1909.09)
+
+[node name="PlinkoPeg5" parent="Row 5" instance=ExtResource("4_f1lw3")]
+position = Vector2(12181.8, -1909.09)
+
+[node name="Row 4" type="Area2D" parent="."]
+position = Vector2(224, 1500)
+scale = Vector2(0.044, 0.044)
+
+[node name="PlinkoPeg6" parent="Row 4" instance=ExtResource("4_f1lw3")]
+position = Vector2(5863.63, -7590.89)
+
+[node name="PlinkoPeg7" parent="Row 4" instance=ExtResource("4_f1lw3")]
+position = Vector2(10045.5, -7590.89)
+
+[node name="PlinkoPeg8" parent="Row 4" instance=ExtResource("4_f1lw3")]
+position = Vector2(14227.3, -7590.89)
+
+[node name="PlinkoPeg9" parent="Row 4" instance=ExtResource("4_f1lw3")]
+position = Vector2(1500, -7590.89)
+
+[node name="Row 3" type="Area2D" parent="."]
+position = Vector2(400, 1000)
+scale = Vector2(0.044, 0.044)
+
+[node name="PlinkoPeg10" parent="Row 3" instance=ExtResource("4_f1lw3")]
+position = Vector2(7840.91, -1909.09)
+
+[node name="PlinkoPeg11" parent="Row 3" instance=ExtResource("4_f1lw3")]
+position = Vector2(3977.27, -1909.09)
+
+[node name="PlinkoPeg12" parent="Row 3" instance=ExtResource("4_f1lw3")]
+position = Vector2(0, -1909.09)
+
+[node name="Row 2" type="Area2D" parent="."]
+position = Vector2(400, 1000)
+scale = Vector2(0.044, 0.044)
+
+[node name="PlinkoPeg13" parent="Row 2" instance=ExtResource("4_f1lw3")]
+position = Vector2(6045.44, -7590.91)
+
+[node name="PlinkoPeg14" parent="Row 2" instance=ExtResource("4_f1lw3")]
+position = Vector2(1863.64, -7590.91)
+
+[node name="Row 1" type="Area2D" parent="."]
+position = Vector2(575, 500)
+scale = Vector2(0.044, 0.044)
+
+[node name="PlinkoPeg15" parent="Row 1" instance=ExtResource("4_f1lw3")]
+position = Vector2(0, -1909.09)
+
+[node name="Green" type="Area2D" parent="."]
+script = ExtResource("6_s6kga")
+
+[node name="Green" type="Sprite2D" parent="Green"]
+position = Vector2(540, 1784.47)
+scale = Vector2(0.513333, 0.903167)
+texture = ExtResource("6_skt6h")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Green"]
+position = Vector2(540.5, 1784)
+scale = Vector2(500, 500)
+shape = SubResource("RectangleShape2D_1va1a")
+
+[node name="Yellow" type="Area2D" parent="."]
+position = Vector2(352, 1820.5)
+scale = Vector2(1.11, 0.995)
+script = ExtResource("8_pvqdc")
+
+[node name="YellowLeft" type="Sprite2D" parent="Yellow"]
+position = Vector2(0, -36.1809)
+scale = Vector2(1, 1.36181)
+texture = ExtResource("7_f5jqq")
+
+[node name="YellowRight" type="Sprite2D" parent="Yellow"]
+position = Vector2(341.441, -36.1809)
+scale = Vector2(1.02703, 1.36181)
+texture = ExtResource("7_f5jqq")
+
+[node name="CollisionShape2DLeft" type="CollisionShape2D" parent="Yellow"]
+position = Vector2(1.35135, -36.1809)
+shape = SubResource("RectangleShape2D_kiiu4")
+
+[node name="CollisionShape2DRight" type="CollisionShape2D" parent="Yellow"]
+position = Vector2(340.563, -35.2892)
+shape = SubResource("RectangleShape2D_74mli")
+
+[node name="Red" type="Area2D" parent="."]
+position = Vector2(352, 1820.5)
+scale = Vector2(1.11, 0.995)
+script = ExtResource("10_7155y")
+
+[node name="RedLeft" type="Sprite2D" parent="Red"]
+position = Vector2(-207.207, -35.6784)
+scale = Vector2(1.08108, 1.36683)
+texture = ExtResource("8_ouhdd")
+
+[node name="RedRight" type="Sprite2D" parent="Red"]
+position = Vector2(549.55, -35.9297)
+scale = Vector2(1.06306, 1.36432)
+texture = ExtResource("8_ouhdd")
+
+[node name="CollisionShape2DLeft" type="CollisionShape2D" parent="Red"]
+position = Vector2(-207.658, -36.181)
+shape = SubResource("RectangleShape2D_h0bwr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Red"]
+position = Vector2(550.045, -35.201)
+shape = SubResource("RectangleShape2D_ik58q")
+
+[node name="scoretext" type="Label" parent="."]
+offset_left = 34.0
+offset_top = 38.0
+offset_right = 181.0
+offset_bottom = 107.0
+theme_override_font_sizes/font_size = 50
+text = "Score:"
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="body_entered" from="Green" to="." method="_on_green_body_entered"]
+[connection signal="body_entered" from="Yellow" to="." method="_on_yellow_body_entered"]
+[connection signal="body_entered" from="Red" to="." method="_on_red_body_entered"]
+[connection signal="body_exited" from="Red" to="." method="_on_red_body_exited"]

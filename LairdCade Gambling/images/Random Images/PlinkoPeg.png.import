@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bnkb20n7tj1ba"
-path="res://.godot/imported/Kimiko.png-f3e3e47b53ba90f9bbc086d5154cef15.ctex"
+uid="uid://gnl1mjifk204"
+path="res://.godot/imported/PlinkoPeg.png-f69bd8e78234b58c944a87b52c76fae1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/TheBoys/Kimiko.png"
-dest_files=["res://.godot/imported/Kimiko.png-f3e3e47b53ba90f9bbc086d5154cef15.ctex"]
+source_file="res://images/Random Images/PlinkoPeg.png"
+dest_files=["res://.godot/imported/PlinkoPeg.png-f69bd8e78234b58c944a87b52c76fae1.ctex"]
 
 [params]
 
