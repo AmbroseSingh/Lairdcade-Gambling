@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://cgbrqbrea8ir4"]
+
+[ext_resource type="Texture2D" uid="uid://bmx4j3l03eyj3" path="res://images/Random Images/PlinkoPegPixelated.png" id="1_s7bkl"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_iuylq"]
+radius = 1328.18
+
+[node name="Area2D" type="StaticBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(25, 81)
+scale = Vector2(0.85, 0.85)
+shape = SubResource("CircleShape2D_iuylq")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.85, 0.85)
+texture = ExtResource("1_s7bkl")
