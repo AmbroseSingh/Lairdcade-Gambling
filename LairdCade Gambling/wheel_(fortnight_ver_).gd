@@ -17,11 +17,15 @@ func _process(delta: float) -> void:
 			var current_angle = self. rotation
 			current_angle += spin_velocity * delta
 			spin_velocity *= friction
-			if abs(spin_velocity)< 0.01:
+			if abs(spin_velocity)< 0.001:
 				spin_velocity = 0
 				spinning = false
 			self.rotation = current_angle
 
 func _on_button_pressed() -> void:
-	spin_velocity = randf_range(535,815)
-	spinning = true
+	if spinning:
+		spin_velocity = randf_range(535,815)
+		spinning = false
+	else:
+		spin_velocity = randf_range(535,815)
+		spinning = true

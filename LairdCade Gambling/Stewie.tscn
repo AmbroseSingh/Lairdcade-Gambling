@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://ba50wed4i23h"]
+
+[ext_resource type="Texture2D" uid="uid://i52tpgdlalr3" path="res://images/FamilyGuy/stewie.png" id="1_mxv6n"]
+
+[node name="Stewie" type="Sprite2D"]
+texture = ExtResource("1_mxv6n")
