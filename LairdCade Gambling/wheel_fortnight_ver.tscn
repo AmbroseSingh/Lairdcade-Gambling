@@ -207,3 +207,4 @@ scale = Vector2(0.197143, 0.131649)
 texture = ExtResource("5_aejej")
 
 [connection signal="pressed" from="Button" to="Wheel (Fortnight ver_)" method="_on_button_pressed"]
+[connection signal="child_entered_tree" from="Wheel (Fortnight ver_)/Uncommon" to="Wheel (Fortnight ver_)" method="_on_uncommon_child_entered_tree"]
