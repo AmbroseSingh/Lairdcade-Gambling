@@ -25,19 +25,19 @@ func _process(delta: float) -> void:
 
 
 func _on_green_body_entered(body: Node2D) -> void:
-	score = score + 25
-	dropable = true
+
+		score = score + 25
+		dropable = true
+		
 
 func _on_yellow_body_entered(body: Node2D) -> void:
-	score = score + 5
-	dropable = true
+	
+		score = score + 5
+		dropable = true
+		
 
 func _on_red_body_entered(body: Node2D) -> void:
-	score = score - 1
-	dropable = true
-
-func _on_dropbutton_pressed() -> void:
-	pass
-		#dropable = false
-		
+	
+		score = score - 1
+		dropable = true
 		

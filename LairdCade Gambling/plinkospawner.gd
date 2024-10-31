@@ -19,3 +19,4 @@ func _on_dropbutton_pressed() -> void:
 		var newchip = chip.instantiate()
 		add_child(newchip)
 		get_parent().get_node(".").dropable = false
+	

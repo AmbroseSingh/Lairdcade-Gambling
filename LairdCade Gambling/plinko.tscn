@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://blcknufm6puux"]
+[gd_scene load_steps=21 format=3 uid="uid://blcknufm6puux"]
 
 [ext_resource type="Script" path="res://plinko.gd" id="1_gilrr"]
 [ext_resource type="Texture2D" uid="uid://dvogl30btppak" path="res://images/Random Images/Wall.png" id="1_kkeg3"]
@@ -18,19 +18,22 @@
 size = Vector2(19.2, 12.58)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1va1a"]
-size = Vector2(0.318, 0.552)
+size = Vector2(0.246, 0.542)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kiiu4"]
-size = Vector2(199.099, 272.362)
+size = Vector2(169.369, 269.347)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_74mli"]
-size = Vector2(205.45, 270.578)
+size = Vector2(190.991, 270.578)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h0bwr"]
-size = Vector2(217.117, 272.362)
+size = Vector2(210.811, 267.337)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ik58q"]
-size = Vector2(211.802, 272.312)
+size = Vector2(200.09, 272.312)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d4lni"]
+size = Vector2(15, 273)
 
 [node name="plinko" type="Node2D"]
 script = ExtResource("1_gilrr")
@@ -184,7 +187,7 @@ scale = Vector2(0.513333, 0.903167)
 texture = ExtResource("6_skt6h")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Green"]
-position = Vector2(540.5, 1784)
+position = Vector2(536.5, 1786.5)
 scale = Vector2(500, 500)
 shape = SubResource("RectangleShape2D_1va1a")
 
@@ -204,11 +207,11 @@ scale = Vector2(1.02703, 1.36181)
 texture = ExtResource("7_f5jqq")
 
 [node name="CollisionShape2DLeft" type="CollisionShape2D" parent="Yellow"]
-position = Vector2(1.35135, -36.1809)
+position = Vector2(1.80173, -34.6733)
 shape = SubResource("RectangleShape2D_kiiu4")
 
 [node name="CollisionShape2DRight" type="CollisionShape2D" parent="Yellow"]
-position = Vector2(340.563, -35.2892)
+position = Vector2(339.64, -35.2899)
 shape = SubResource("RectangleShape2D_74mli")
 
 [node name="Red" type="Area2D" parent="."]
@@ -227,11 +230,11 @@ scale = Vector2(1.06306, 1.36432)
 texture = ExtResource("8_ouhdd")
 
 [node name="CollisionShape2DLeft" type="CollisionShape2D" parent="Red"]
-position = Vector2(-207.658, -36.181)
+position = Vector2(-210.811, -33.6683)
 shape = SubResource("RectangleShape2D_h0bwr")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Red"]
-position = Vector2(550.045, -35.201)
+position = Vector2(555.901, -35.201)
 shape = SubResource("RectangleShape2D_ik58q")
 
 [node name="dropbutton" type="Button" parent="."]
@@ -250,6 +253,52 @@ offset_right = 181.0
 offset_bottom = 107.0
 theme_override_font_sizes/font_size = 50
 text = "Score:"
+
+[node name="LWall" type="StaticBody2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="LWall"]
+position = Vector2(461, 1782)
+scale = Vector2(1, 0.617778)
+texture = ExtResource("1_kkeg3")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="LWall"]
+position = Vector2(461, 1786)
+shape = SubResource("RectangleShape2D_d4lni")
+
+[node name="LLWall" type="StaticBody2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="LLWall"]
+position = Vector2(245, 1785)
+scale = Vector2(1, 0.617778)
+texture = ExtResource("1_kkeg3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LLWall"]
+position = Vector2(246.5, 1783.5)
+shape = SubResource("RectangleShape2D_d4lni")
+
+[node name="RWall" type="StaticBody2D" parent="."]
+position = Vector2(461, 1786)
+
+[node name="Sprite2D" type="Sprite2D" parent="RWall"]
+position = Vector2(151, 0)
+scale = Vector2(1, 0.617778)
+texture = ExtResource("1_kkeg3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RWall"]
+position = Vector2(151, -2)
+shape = SubResource("RectangleShape2D_d4lni")
+
+[node name="RRWall" type="StaticBody2D" parent="."]
+position = Vector2(922, 3572)
+
+[node name="Sprite2D" type="Sprite2D" parent="RRWall"]
+position = Vector2(-76, -1788)
+scale = Vector2(1, 0.617778)
+texture = ExtResource("1_kkeg3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RRWall"]
+position = Vector2(-76, -1787)
+shape = SubResource("RectangleShape2D_d4lni")
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="body_entered" from="Green" to="." method="_on_green_body_entered"]
