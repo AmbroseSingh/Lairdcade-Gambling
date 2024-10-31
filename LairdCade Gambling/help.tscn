@@ -1,0 +1,47 @@
+[gd_scene load_steps=4 format=3 uid="uid://iegqbqu7jvv3"]
+
+[ext_resource type="Texture2D" uid="uid://similhkjd2x4" path="res://images/Random Images/blkback.jpg" id="1_sl387"]
+[ext_resource type="Script" path="res://backbutton.gd" id="2_hp5up"]
+[ext_resource type="AudioStream" uid="uid://c0jg8gt3fbxrk" path="res://sound/sfx/button-pressed-38129.mp3" id="3_syvpc"]
+
+[node name="help" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(542, 960)
+scale = Vector2(1.2, 1.20125)
+texture = ExtResource("1_sl387")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 28.0
+offset_top = 72.0
+offset_right = 1056.0
+offset_bottom = 1616.0
+theme_override_font_sizes/font_size = 85
+text = "The Slot Machine 
+will have a show in each 
+slot. The ones that land 
+in that slot after you
+spin it will give you 
+points for that specific
+ show that will be 
+displayed on the bottom.
+
+You can spend these
+points in other games 
+such as the Character 
+Wheel."
+
+[node name="backbutton" type="Button" parent="."]
+offset_left = 81.0
+offset_top = 1673.0
+offset_right = 389.0
+offset_bottom = 1850.0
+theme_override_font_sizes/font_size = 100
+text = "BACK"
+script = ExtResource("2_hp5up")
+
+[node name="buttonclick" type="AudioStreamPlayer" parent="backbutton"]
+stream = ExtResource("3_syvpc")
+
+[connection signal="button_down" from="backbutton" to="backbutton" method="_on_button_down"]
+[connection signal="finished" from="backbutton/buttonclick" to="backbutton" method="_on_audio_stream_player_finished"]

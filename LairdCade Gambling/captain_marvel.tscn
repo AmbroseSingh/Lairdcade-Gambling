@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://bk75stvkqs158"]
+[gd_scene load_steps=2 format=3 uid="uid://4padpficor14"]
 
 [ext_resource type="Texture2D" uid="uid://uxff587m5rh4" path="res://images/Marvel/CaptainMarvel.png" id="1_04g6q"]
 
 [node name="Captain_Marvel" type="Sprite2D"]
+position = Vector2(686, 736)
 texture = ExtResource("1_04g6q")
