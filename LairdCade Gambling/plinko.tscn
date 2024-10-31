@@ -1,34 +1,39 @@
-[gd_scene load_steps=18 format=3 uid="uid://blcknufm6puux"]
+[gd_scene load_steps=21 format=3 uid="uid://blcknufm6puux"]
 
 [ext_resource type="Script" path="res://plinko.gd" id="1_gilrr"]
 [ext_resource type="Texture2D" uid="uid://dvogl30btppak" path="res://images/Random Images/Wall.png" id="1_kkeg3"]
 [ext_resource type="Texture2D" uid="uid://dbd0b5864jede" path="res://images/Random Images/Plinko Background.jpg" id="1_robqe"]
 [ext_resource type="PackedScene" uid="uid://cgbrqbrea8ir4" path="res://plinko_peg.tscn" id="4_f1lw3"]
 [ext_resource type="PackedScene" uid="uid://hc7igeg23y3" path="res://pokerchip.tscn" id="5_aqh37"]
+[ext_resource type="FontFile" uid="uid://dpen4mjgiv7pg" path="res://Miscellaneous Stuff/Budmo font/budmo jiggler.otf" id="5_bj1ud"]
 [ext_resource type="Script" path="res://green.gd" id="6_s6kga"]
 [ext_resource type="Texture2D" uid="uid://b1fy0ho8x5aoc" path="res://images/Random Images/Green.png" id="6_skt6h"]
 [ext_resource type="Texture2D" uid="uid://bhwv5dm3dw88p" path="res://images/Random Images/Yellow.png" id="7_f5jqq"]
 [ext_resource type="Texture2D" uid="uid://5gwkv76auqwl" path="res://images/Random Images/Red.png" id="8_ouhdd"]
 [ext_resource type="Script" path="res://yellow.gd" id="8_pvqdc"]
 [ext_resource type="Script" path="res://red.gd" id="10_7155y"]
+[ext_resource type="Script" path="res://plinkospawner.gd" id="13_81u3k"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_j55p2"]
 size = Vector2(19.2, 12.58)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1va1a"]
-size = Vector2(0.318, 0.552)
+size = Vector2(0.246, 0.542)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kiiu4"]
-size = Vector2(199.099, 272.362)
+size = Vector2(169.369, 269.347)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_74mli"]
-size = Vector2(205.45, 270.578)
+size = Vector2(190.991, 270.578)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h0bwr"]
-size = Vector2(217.117, 272.362)
+size = Vector2(210.811, 267.337)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ik58q"]
-size = Vector2(211.802, 272.312)
+size = Vector2(200.09, 272.312)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d4lni"]
+size = Vector2(15, 273)
 
 [node name="plinko" type="Node2D"]
 script = ExtResource("1_gilrr")
@@ -62,19 +67,21 @@ scale = Vector2(6, 0.847555)
 texture = ExtResource("1_kkeg3")
 
 [node name="PlinkoBackground" type="Sprite2D" parent="."]
-visible = false
 modulate = Color(0.169245, 0.169245, 0.169245, 1)
 self_modulate = Color(0.4, 1, 0, 1)
 position = Vector2(540, 961.875)
 scale = Vector2(0.85625, 2.26231)
 texture = ExtResource("1_robqe")
 
+[node name="spawner" type="Node2D" parent="."]
+script = ExtResource("13_81u3k")
+
+[node name="Chip" parent="spawner" instance=ExtResource("5_aqh37")]
+position = Vector2(503, 173)
+
 [node name="Timer" type="Timer" parent="."]
 wait_time = 4.0
 autostart = true
-
-[node name="Chip" parent="." instance=ExtResource("5_aqh37")]
-position = Vector2(589, 179)
 
 [node name="Row 5" type="Area2D" parent="."]
 position = Vector2(224, 1500)
@@ -100,32 +107,41 @@ position = Vector2(224, 1500)
 scale = Vector2(0.044, 0.044)
 
 [node name="PlinkoPeg6" parent="Row 4" instance=ExtResource("4_f1lw3")]
-position = Vector2(5863.63, -7590.89)
+position = Vector2(6113.66, -7590.89)
 
 [node name="PlinkoPeg7" parent="Row 4" instance=ExtResource("4_f1lw3")]
-position = Vector2(10045.5, -7590.89)
+position = Vector2(10295.5, -7590.89)
 
 [node name="PlinkoPeg8" parent="Row 4" instance=ExtResource("4_f1lw3")]
-position = Vector2(14227.3, -7590.89)
+position = Vector2(14477.3, -7590.89)
 
 [node name="PlinkoPeg9" parent="Row 4" instance=ExtResource("4_f1lw3")]
-position = Vector2(1500, -7590.89)
+position = Vector2(1750, -7590.89)
+
+[node name="PlinkoPeg10" parent="Row 4" instance=ExtResource("4_f1lw3")]
+position = Vector2(-2840.92, -7590.89)
 
 [node name="Row 3" type="Area2D" parent="."]
-position = Vector2(400, 1000)
+position = Vector2(445, 995)
 scale = Vector2(0.044, 0.044)
 
 [node name="PlinkoPeg10" parent="Row 3" instance=ExtResource("4_f1lw3")]
-position = Vector2(7840.91, -1909.09)
+position = Vector2(7499.91, -1909.09)
 
 [node name="PlinkoPeg11" parent="Row 3" instance=ExtResource("4_f1lw3")]
-position = Vector2(3977.27, -1909.09)
+position = Vector2(2454.56, -1909.09)
 
 [node name="PlinkoPeg12" parent="Row 3" instance=ExtResource("4_f1lw3")]
-position = Vector2(0, -1909.09)
+position = Vector2(-1840.9, -1909.09)
+
+[node name="PlinkoPeg13" parent="Row 3" instance=ExtResource("4_f1lw3")]
+position = Vector2(-6522.81, -1909.09)
+
+[node name="PlinkoPeg14" parent="Row 3" instance=ExtResource("4_f1lw3")]
+position = Vector2(12000, -1909.09)
 
 [node name="Row 2" type="Area2D" parent="."]
-position = Vector2(400, 1000)
+position = Vector2(429, 1000)
 scale = Vector2(0.044, 0.044)
 
 [node name="PlinkoPeg13" parent="Row 2" instance=ExtResource("4_f1lw3")]
@@ -134,12 +150,33 @@ position = Vector2(6045.44, -7590.91)
 [node name="PlinkoPeg14" parent="Row 2" instance=ExtResource("4_f1lw3")]
 position = Vector2(1863.64, -7590.91)
 
+[node name="PlinkoPeg10" parent="Row 2" instance=ExtResource("4_f1lw3")]
+position = Vector2(-6977.27, -7590.91)
+
+[node name="PlinkoPeg11" parent="Row 2" instance=ExtResource("4_f1lw3")]
+position = Vector2(-2954.54, -7590.91)
+
+[node name="PlinkoPeg12" parent="Row 2" instance=ExtResource("4_f1lw3")]
+position = Vector2(10159.1, -7590.91)
+
 [node name="Row 1" type="Area2D" parent="."]
 position = Vector2(575, 500)
 scale = Vector2(0.044, 0.044)
 
 [node name="PlinkoPeg15" parent="Row 1" instance=ExtResource("4_f1lw3")]
 position = Vector2(0, -1909.09)
+
+[node name="PlinkoPeg16" parent="Row 1" instance=ExtResource("4_f1lw3")]
+position = Vector2(10250, -1909.09)
+
+[node name="PlinkoPeg17" parent="Row 1" instance=ExtResource("4_f1lw3")]
+position = Vector2(-9727.27, -1909.09)
+
+[node name="PlinkoPeg18" parent="Row 1" instance=ExtResource("4_f1lw3")]
+position = Vector2(5409.09, -1909.09)
+
+[node name="PlinkoPeg19" parent="Row 1" instance=ExtResource("4_f1lw3")]
+position = Vector2(-4704.54, -1909.09)
 
 [node name="Green" type="Area2D" parent="."]
 script = ExtResource("6_s6kga")
@@ -150,7 +187,7 @@ scale = Vector2(0.513333, 0.903167)
 texture = ExtResource("6_skt6h")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Green"]
-position = Vector2(540.5, 1784)
+position = Vector2(536.5, 1786.5)
 scale = Vector2(500, 500)
 shape = SubResource("RectangleShape2D_1va1a")
 
@@ -170,11 +207,11 @@ scale = Vector2(1.02703, 1.36181)
 texture = ExtResource("7_f5jqq")
 
 [node name="CollisionShape2DLeft" type="CollisionShape2D" parent="Yellow"]
-position = Vector2(1.35135, -36.1809)
+position = Vector2(1.80173, -34.6733)
 shape = SubResource("RectangleShape2D_kiiu4")
 
 [node name="CollisionShape2DRight" type="CollisionShape2D" parent="Yellow"]
-position = Vector2(340.563, -35.2892)
+position = Vector2(339.64, -35.2899)
 shape = SubResource("RectangleShape2D_74mli")
 
 [node name="Red" type="Area2D" parent="."]
@@ -193,12 +230,21 @@ scale = Vector2(1.06306, 1.36432)
 texture = ExtResource("8_ouhdd")
 
 [node name="CollisionShape2DLeft" type="CollisionShape2D" parent="Red"]
-position = Vector2(-207.658, -36.181)
+position = Vector2(-210.811, -33.6683)
 shape = SubResource("RectangleShape2D_h0bwr")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Red"]
-position = Vector2(550.045, -35.201)
+position = Vector2(555.901, -35.201)
 shape = SubResource("RectangleShape2D_ik58q")
+
+[node name="dropbutton" type="Button" parent="."]
+offset_left = 390.0
+offset_top = 3.0
+offset_right = 650.0
+offset_bottom = 132.0
+theme_override_fonts/font = ExtResource("5_bj1ud")
+theme_override_font_sizes/font_size = 100
+text = "Drop"
 
 [node name="scoretext" type="Label" parent="."]
 offset_left = 34.0
@@ -208,8 +254,56 @@ offset_bottom = 107.0
 theme_override_font_sizes/font_size = 50
 text = "Score:"
 
+[node name="LWall" type="StaticBody2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="LWall"]
+position = Vector2(461, 1782)
+scale = Vector2(1, 0.617778)
+texture = ExtResource("1_kkeg3")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="LWall"]
+position = Vector2(461, 1786)
+shape = SubResource("RectangleShape2D_d4lni")
+
+[node name="LLWall" type="StaticBody2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="LLWall"]
+position = Vector2(245, 1785)
+scale = Vector2(1, 0.617778)
+texture = ExtResource("1_kkeg3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LLWall"]
+position = Vector2(246.5, 1783.5)
+shape = SubResource("RectangleShape2D_d4lni")
+
+[node name="RWall" type="StaticBody2D" parent="."]
+position = Vector2(461, 1786)
+
+[node name="Sprite2D" type="Sprite2D" parent="RWall"]
+position = Vector2(151, 0)
+scale = Vector2(1, 0.617778)
+texture = ExtResource("1_kkeg3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RWall"]
+position = Vector2(151, -2)
+shape = SubResource("RectangleShape2D_d4lni")
+
+[node name="RRWall" type="StaticBody2D" parent="."]
+position = Vector2(922, 3572)
+
+[node name="Sprite2D" type="Sprite2D" parent="RRWall"]
+position = Vector2(-76, -1788)
+scale = Vector2(1, 0.617778)
+texture = ExtResource("1_kkeg3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RRWall"]
+position = Vector2(-76, -1787)
+shape = SubResource("RectangleShape2D_d4lni")
+
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="body_entered" from="Green" to="." method="_on_green_body_entered"]
 [connection signal="body_entered" from="Yellow" to="." method="_on_yellow_body_entered"]
 [connection signal="body_entered" from="Red" to="." method="_on_red_body_entered"]
 [connection signal="body_exited" from="Red" to="." method="_on_red_body_exited"]
+[connection signal="pressed" from="dropbutton" to="." method="_on_dropbutton_pressed"]
+[connection signal="pressed" from="dropbutton" to="spawner" method="_on_dropbutton_pressed"]
