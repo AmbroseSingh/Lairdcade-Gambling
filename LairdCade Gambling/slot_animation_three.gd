@@ -9,7 +9,7 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	if SlotThree == true:
-		$AnimationPlayer.play("WhiteOutFWD")
+		$AnimationPlayer.play("WhiteOutFinal")
 		
 	if clear == true:
 		$WhiteFive.visible = false
@@ -20,4 +20,4 @@ func _process(delta):
 func _on_animation_player_animation_finished(WhiteOutFinal):
 	SlotThree = false
 	clear = false
-	get_parent().get_node("IconSpawner").start = true
+	get_parent().get_node("IconSpawner3").start = true

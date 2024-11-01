@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://cyhwumpvdaoeu"]
+
+[ext_resource type="Script" path="res://icon_spawner_2.gd" id="1_8b0xm"]
+
+[node name="IconSpawner2" type="Node2D"]
+script = ExtResource("1_8b0xm")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.001
+one_shot = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

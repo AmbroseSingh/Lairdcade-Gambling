@@ -26,6 +26,10 @@ window/size/viewport_height=1920
 window/stretch/mode="viewport"
 window/handheld/orientation=1
 
+[global_group]
+
+SlotIcons=""
+
 [input_devices]
 
 pointing/emulate_touch_from_mouse=true

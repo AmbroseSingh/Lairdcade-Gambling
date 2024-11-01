@@ -34,22 +34,22 @@ func _on_timer_timeout():
 	var randomIcon = randi_range(1,7)
 	if randomIcon == 1:
 		add_child(NewIconOne)
-		Global.iconOne = 1
+		Global.iconTwo = 1
 	elif randomIcon == 2:
 		add_child(NewIconTwo)
-		Global.iconOne = 2
+		Global.iconTwo = 2
 	elif randomIcon == 3:
 		add_child(NewIconThree)
-		Global.iconOne = 3
+		Global.iconTwo = 3
 	elif randomIcon == 4:
 		add_child(NewIconFour)
-		Global.iconOne = 4
+		Global.iconTwo = 4
 	elif randomIcon == 5:
 		add_child(NewIconFive)
-		Global.iconOne = 5
+		Global.iconTwo = 5
 	elif randomIcon == 6:
 		add_child(NewIconSix)
-		Global.iconOne = 6
+		Global.iconTwo = 6
 	elif randomIcon == 7:
 		add_child(NewIconSeven)
-		Global.iconOne = 7
+		Global.iconTwo = 7

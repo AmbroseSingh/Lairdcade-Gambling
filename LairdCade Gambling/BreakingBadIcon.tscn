@@ -1,13 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://4leexfyxriak"]
+[gd_scene load_steps=2 format=3 uid="uid://4leexfyxriak"]
 
-[ext_resource type="Texture2D" uid="uid://dxik5hg57wgrp" path="res://SlotMachine/WhiteFive.png" id="1_gepcd"]
 [ext_resource type="Texture2D" uid="uid://dywhvg32bta3q" path="res://images/Icons/Breaking Bad Logo.png" id="2_0bjr0"]
 
-[node name="BreakingBadIcon" type="Node2D"]
-
-[node name="Sprite2D2" type="Sprite2D" parent="."]
-scale = Vector2(3.5, 3.5)
-texture = ExtResource("1_gepcd")
+[node name="BreakingBadIcon" type="Node2D" groups=["SlotIcons"]]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1

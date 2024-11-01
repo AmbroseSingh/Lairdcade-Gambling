@@ -10,7 +10,7 @@ func _ready():
 func _process(delta):
 	if leverTimeout == true:
 		$Button.visible = false
-	else:
+	elif leverTimeout == false:
 		$Button.visible = true
 
 
@@ -20,9 +20,15 @@ func _on_button_pressed():
 	get_parent().get_node("StaticSpawner").start = true
 	get_parent().get_node("StaticSpawner2").start = true
 	get_parent().get_node("StaticSpawner3").start = true
+	get_parent().get_node("SlotAnimationOne").clear = true
+	get_parent().get_node("SlotAnimationTwo").clear = true
+	get_parent().get_node("SlotAnimationThree").clear = true
+	
 	$SpinWaitTimer.start()
 	leverTimeout = true
-
+	var deleteitems = get_tree().get_nodes_in_group("SlotIcons")
+	for items in deleteitems:
+		items.queue_free()
 
 func _on_spin_wait_timer_timeout():
 	get_parent().get_node("SlotAnimationOne").SlotOne = true

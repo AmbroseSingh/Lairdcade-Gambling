@@ -1,7 +1,6 @@
 extends Node2D
 var SlotOne = false
 var clear = true
-
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
@@ -22,4 +21,4 @@ func _on_animation_player_animation_finished(WhiteOutFWD):
 	SlotOne = false
 	clear = false
 	get_parent().get_node("SlotAnimationTwo").SlotTwo = true
-	get_parent().get_node("IconSpawner3").start = true
+	get_parent().get_node("IconSpawner").start = true

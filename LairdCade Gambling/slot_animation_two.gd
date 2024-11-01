@@ -13,7 +13,7 @@ func _process(delta):
 
 	if clear == true:
 		$WhiteRFive.visible = false
-	else:
+	elif clear == false:
 		$WhiteRFive.visible = true
 
 func _on_animation_player_animation_finished(WhiteOutRVS):
