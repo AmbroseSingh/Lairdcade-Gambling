@@ -2,8 +2,8 @@
 
 [ext_resource type="Texture2D" uid="uid://bs7ncwo0tesgn" path="res://images/Random Images/Title Screen Background.jpg" id="1_eg8wy"]
 [ext_resource type="Texture2D" uid="uid://dtgjm8fdc3hw1" path="res://Spinner/file (1).png" id="2_5x8bi"]
-[ext_resource type="PackedScene" uid="uid://dwtuy0lcgdorw" path="res://peely.tscn" id="2_ec3qb"]
-[ext_resource type="PackedScene" uid="uid://6ufxd0aub0wm" path="res://jonesy.tscn" id="3_gng7e"]
+[ext_resource type="PackedScene" uid="uid://dwtuy0lcgdorw" path="res://Sprite_Scenes/peely.tscn" id="2_ec3qb"]
+[ext_resource type="PackedScene" uid="uid://6ufxd0aub0wm" path="res://Sprite_Scenes/jonesy.tscn" id="3_gng7e"]
 [ext_resource type="Script" path="res://wheel_(fortnight_ver_).gd" id="3_idhh2"]
 [ext_resource type="AudioStream" uid="uid://df2spsufrahfq" path="res://sound/music/shake sum.mp3" id="4_3di2n"]
 [ext_resource type="PackedScene" uid="uid://dimvth6a6w2u4" path="res://Sprite_Scenes/chun_li.tscn" id="4_fjdkb"]
@@ -15,12 +15,6 @@
 [ext_resource type="PackedScene" uid="uid://8yloq1o2a1wr" path="res://Sprite_Scenes/klombo.tscn" id="9_2hieh"]
 [ext_resource type="PackedScene" uid="uid://vyvj8btkgo4a" path="res://Sprite_Scenes/mrs_incredible.tscn" id="10_x05nb"]
 [ext_resource type="PackedScene" uid="uid://i501c67w1cw2" path="res://Sprite_Scenes/travis_scott.tscn" id="11_jqa1a"]
-[ext_resource type="PackedScene" uid="uid://db0t3kt4qdxbl" path="res://fortnight_guy.tscn" id="5_saxvg"]
-[ext_resource type="PackedScene" uid="uid://c1wxhbfs5esop" path="res://nick_eh.tscn" id="6_pswh6"]
-[ext_resource type="PackedScene" uid="uid://cfdxkrcwb658x" path="res://spider_gwen.tscn" id="8_0c7b6"]
-[ext_resource type="PackedScene" uid="uid://8yloq1o2a1wr" path="res://klombo.tscn" id="9_2hieh"]
-[ext_resource type="PackedScene" uid="uid://vyvj8btkgo4a" path="res://mrs_incredible.tscn" id="10_x05nb"]
-[ext_resource type="PackedScene" uid="uid://i501c67w1cw2" path="res://travis_scott.tscn" id="11_jqa1a"]
 [ext_resource type="FontFile" uid="uid://bjwi76q461gp1" path="res://Spinner/Luckiest_Guy/LuckiestGuy-Regular.ttf" id="14_awala"]
 
 [node name="Wheel" type="Node2D"]

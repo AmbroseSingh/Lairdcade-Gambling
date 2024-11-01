@@ -2,11 +2,10 @@ extends Node2D
 var iconOne 
 var iconTwo
 var iconThree
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
+var BreakingBadToken = 0 
+var FamilyGuyToken = 0
+var FortniteToken = 0
+var MiscToken = 0
+var MarvelToken = 0
+var TheBoysToken = 0
+var SpongebobToken = 0

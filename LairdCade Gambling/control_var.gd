@@ -1,4 +1,4 @@
-extends Node2D
+extends Control
 var tokens = 0
 var matchingicon
 var processPOne = false
@@ -11,24 +11,24 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	if processPOne == true:
-		if Global.iconOne == Global.iconTwo and Global.iconOne != Global.iconThree:
+		if Global.IconOne == Global.IconTwo and Global.IconOne != Global.iconThree:
 			tokens = tokens + 10
-			matchingicon = Global.iconOne
+			matchingicon = Global.IconOne
 			processPOne = false
 			processPTwo = true
-		elif Global.iconOne == Global.iconThree and Global.iconOne != Global.iconTwo:
+		elif Global.IconOne == Global.IconThree and Global.IconOne != Global.iconTwo:
 			tokens = tokens + 10
-			matchingicon = Global.iconOne
+			matchingicon = Global.IconOne
 			processPOne = false
 			processPTwo = true
-		elif Global.iconTwo == Global.iconThree and Global.iconTwo != Global.iconOne:
+		elif Global.IconTwo == Global.IconThree and Global.IconTwo != Global.iconOne:
 			tokens = tokens + 10
-			matchingicon = Global.iconTwo 
+			matchingicon = Global.IconTwo 
 			processPOne = false
 			processPTwo = true
-		elif Global.iconOne == Global.iconTwo and Global.iconOne == Global.iconThree:
-			tokens = tokens + 500
-			matchingicon = Global.iconOne
+		elif Global.IconOne == Global.IconTwo and Global.IconOne == Global.iconThree:
+			tokens = tokens + 50
+			matchingicon = Global.IconOne
 			processPOne = false
 			processPTwo = true
 		else: 
@@ -38,31 +38,22 @@ func _process(delta):
 	if processPTwo == true:
 		if matchingicon == 1:
 			Global.BreakingBadToken = Global.BreakingBadToken + tokens
-			tokens = 0
 			processPTwo = false
 		elif matchingicon == 2:
 			Global.FamilyGuyToken =  Global.FamilyGuyToken + tokens
-			tokens = 0
 			processPTwo = false
 		elif matchingicon == 3:
 			Global.FortniteToken = Global.FortniteToken + tokens
-			tokens = 0
 			processPTwo = false
 		elif matchingicon == 4:
 			Global.MarvelToken = Global.MarvelToken + tokens
-			tokens = 0
 			processPTwo = false
 		elif matchingicon == 5:
 			Global.MiscToken = Global.MiscToken + tokens
-			tokens = 0
 			processPTwo = false
 		elif matchingicon == 6:
 			Global.SpongebobToken = Global.SpongebobToken + tokens
-			tokens = 0
 			processPTwo = false
 		elif matchingicon == 7:
 			Global.TheBoysToken = Global.TheBoysToken + tokens
-			tokens = 0
 			processPTwo = false
-
-		
