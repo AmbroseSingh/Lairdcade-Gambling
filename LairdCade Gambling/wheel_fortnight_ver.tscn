@@ -1,9 +1,9 @@
-[gd_scene load_steps=16 format=3 uid="uid://dodt8jdto1141"]
+[gd_scene load_steps=17 format=3 uid="uid://dodt8jdto1141"]
 
 [ext_resource type="Texture2D" uid="uid://bs7ncwo0tesgn" path="res://images/Random Images/Title Screen Background.jpg" id="1_eg8wy"]
 [ext_resource type="Texture2D" uid="uid://dtgjm8fdc3hw1" path="res://Spinner/file (1).png" id="2_5x8bi"]
-[ext_resource type="PackedScene" uid="uid://dwtuy0lcgdorw" path="res://Sprite_Scenes/peely.tscn" id="2_ec3qb"]
-[ext_resource type="PackedScene" uid="uid://6ufxd0aub0wm" path="res://Sprite_Scenes/jonesy.tscn" id="3_gng7e"]
+[ext_resource type="PackedScene" uid="uid://dwtuy0lcgdorw" path="res://peely.tscn" id="2_ec3qb"]
+[ext_resource type="PackedScene" uid="uid://6ufxd0aub0wm" path="res://jonesy.tscn" id="3_gng7e"]
 [ext_resource type="Script" path="res://wheel_(fortnight_ver_).gd" id="3_idhh2"]
 [ext_resource type="AudioStream" uid="uid://df2spsufrahfq" path="res://sound/music/shake sum.mp3" id="4_3di2n"]
 [ext_resource type="PackedScene" uid="uid://dimvth6a6w2u4" path="res://Sprite_Scenes/chun_li.tscn" id="4_fjdkb"]
@@ -15,6 +15,13 @@
 [ext_resource type="PackedScene" uid="uid://8yloq1o2a1wr" path="res://Sprite_Scenes/klombo.tscn" id="9_2hieh"]
 [ext_resource type="PackedScene" uid="uid://vyvj8btkgo4a" path="res://Sprite_Scenes/mrs_incredible.tscn" id="10_x05nb"]
 [ext_resource type="PackedScene" uid="uid://i501c67w1cw2" path="res://Sprite_Scenes/travis_scott.tscn" id="11_jqa1a"]
+[ext_resource type="PackedScene" uid="uid://db0t3kt4qdxbl" path="res://fortnight_guy.tscn" id="5_saxvg"]
+[ext_resource type="PackedScene" uid="uid://c1wxhbfs5esop" path="res://nick_eh.tscn" id="6_pswh6"]
+[ext_resource type="PackedScene" uid="uid://cfdxkrcwb658x" path="res://spider_gwen.tscn" id="8_0c7b6"]
+[ext_resource type="PackedScene" uid="uid://8yloq1o2a1wr" path="res://klombo.tscn" id="9_2hieh"]
+[ext_resource type="PackedScene" uid="uid://vyvj8btkgo4a" path="res://mrs_incredible.tscn" id="10_x05nb"]
+[ext_resource type="PackedScene" uid="uid://i501c67w1cw2" path="res://travis_scott.tscn" id="11_jqa1a"]
+[ext_resource type="FontFile" uid="uid://bjwi76q461gp1" path="res://Spinner/Luckiest_Guy/LuckiestGuy-Regular.ttf" id="14_awala"]
 
 [node name="Wheel" type="Node2D"]
 
@@ -97,50 +104,60 @@ texture = ExtResource("2_5x8bi")
 script = ExtResource("3_idhh2")
 
 [node name="Common" type="Label" parent="Wheel (Fortnight ver_)"]
-offset_left = -119.547
-offset_top = -18.0966
-offset_right = -48.5474
-offset_bottom = 4.90344
+offset_left = -172.854
+offset_top = -22.118
+offset_right = -12.8537
+offset_bottom = 16.882
+theme_override_fonts/font = ExtResource("14_awala")
+theme_override_font_sizes/font_size = 38
 text = "Common"
 
-[node name="Rare" type="Label" parent="Wheel (Fortnight ver_)"]
-offset_left = 90.9344
-offset_top = -84.0485
-offset_right = 130.934
-offset_bottom = -61.0485
-rotation = -0.459911
-text = "Rare"
-
 [node name="Uncommon" type="Label" parent="Wheel (Fortnight ver_)"]
-offset_left = 74.4721
-offset_top = 6.83649
-offset_right = 165.472
-offset_bottom = 29.8365
-rotation = 0.211731
+offset_left = 28.221
+offset_top = -5.22788
+offset_right = 192.221
+offset_bottom = 25.7721
+rotation = 0.321085
+theme_override_fonts/font = ExtResource("14_awala")
+theme_override_font_sizes/font_size = 29
 text = "Uncommon"
 
+[node name="Rare" type="Label" parent="Wheel (Fortnight ver_)"]
+offset_left = 56.0
+offset_top = -58.0
+offset_right = 167.0
+offset_bottom = -11.0
+rotation = -0.701724
+theme_override_fonts/font = ExtResource("14_awala")
+theme_override_font_sizes/font_size = 43
+text = "Rare"
+
 [node name="Epic" type="Label" parent="Wheel (Fortnight ver_)"]
-offset_left = 50.5626
-offset_top = -129.089
-offset_right = 90.5627
-offset_bottom = -106.089
+offset_left = 41.1556
+offset_top = -113.807
+offset_right = 105.156
+offset_bottom = -78.8073
 rotation = -1.08817
+theme_override_fonts/font = ExtResource("14_awala")
+theme_override_font_sizes/font_size = 32
 text = "Epic"
 
 [node name="Mythical" type="Label" parent="Wheel (Fortnight ver_)"]
-offset_left = 13.7185
-offset_top = -117.829
-offset_right = 79.7185
-offset_bottom = -94.8287
+offset_left = 19.5979
+offset_top = -113.807
+offset_right = 91.5979
+offset_bottom = -90.8069
 rotation = -1.39657
+theme_override_fonts/font = ExtResource("14_awala")
 text = "Mythical"
 
-[node name="Label" type="Label" parent="Wheel (Fortnight ver_)"]
-offset_left = -5.09544
-offset_top = -105.362
-offset_right = 75.9046
-offset_bottom = -82.3622
+[node name="Legendary" type="Label" parent="Wheel (Fortnight ver_)"]
+offset_left = 1.95979
+offset_top = -106.569
+offset_right = 86.9598
+offset_bottom = -83.5688
 rotation = -1.55918
+theme_override_fonts/font = ExtResource("14_awala")
 text = "Legendary"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
@@ -196,3 +213,4 @@ scale = Vector2(0.197143, 0.131649)
 texture = ExtResource("5_aejej")
 
 [connection signal="pressed" from="Button" to="Wheel (Fortnight ver_)" method="_on_button_pressed"]
+[connection signal="child_entered_tree" from="Wheel (Fortnight ver_)/Uncommon" to="Wheel (Fortnight ver_)" method="_on_uncommon_child_entered_tree"]

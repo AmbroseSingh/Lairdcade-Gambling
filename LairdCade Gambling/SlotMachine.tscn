@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://cf5qynd84bpcu"]
+[gd_scene load_steps=23 format=3 uid="uid://cf5qynd84bpcu"]
 
 [ext_resource type="PackedScene" uid="uid://bfatxylpa8tye" path="res://Spawner.tscn" id="1_3gm2i"]
 [ext_resource type="Script" path="res://slot_machine.gd" id="1_ayar6"]
@@ -12,6 +12,18 @@
 [ext_resource type="PackedScene" uid="uid://bqevapkmr1lsk" path="res://icon_spawner.tscn" id="10_fvpnl"]
 [ext_resource type="PackedScene" uid="uid://cojxcxm86tspm" path="res://IconSpawner3.tscn" id="11_0ffyd"]
 [ext_resource type="PackedScene" uid="uid://cyhwumpvdaoeu" path="res://icon_spawner_2.tscn" id="12_4gixx"]
+[ext_resource type="Theme" uid="uid://dluerf6cuvrxj" path="res://theme.tres" id="11_vxkxe"]
+[ext_resource type="Script" path="res://backb.gd" id="12_6tb6p"]
+[ext_resource type="AudioStream" uid="uid://c0jg8gt3fbxrk" path="res://sound/sfx/button-pressed-38129.mp3" id="13_m6kln"]
+[ext_resource type="Script" path="res://help.gd" id="14_8xp8a"]
+[ext_resource type="Texture2D" uid="uid://dywhvg32bta3q" path="res://images/Icons/Breaking Bad Logo.png" id="15_3qied"]
+[ext_resource type="Texture2D" uid="uid://blgfaspurafx1" path="res://images/Icons/Family Guy Logo.png" id="16_q05jm"]
+[ext_resource type="Texture2D" uid="uid://cltxdfih3igjh" path="res://images/Icons/Fortnite Logo.png" id="17_jbsmv"]
+[ext_resource type="Texture2D" uid="uid://du3f421c32ax" path="res://images/Icons/Marvel Logo.png" id="18_3ef26"]
+[ext_resource type="Texture2D" uid="uid://dxik5hg57wgrp" path="res://SlotMachine/WhiteFive.png" id="18_e7qs7"]
+[ext_resource type="Texture2D" uid="uid://c3v3dvgn4stan" path="res://images/Icons/Miscellaneous Logo.png" id="20_x8gw6"]
+[ext_resource type="Texture2D" uid="uid://dj0o117gge446" path="res://images/Icons/SpongeBobIconNew.png" id="21_wu208"]
+[ext_resource type="Texture2D" uid="uid://cnwca07apx88v" path="res://images/Icons/The Boys Logo.png" id="22_e0fc0"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_ayar6")
@@ -57,7 +69,7 @@ autoplay = true
 
 [node name="Sprite2D2" type="Sprite2D" parent="."]
 z_index = -2
-position = Vector2(540, 959.5)
+position = Vector2(540, 956)
 scale = Vector2(1.2, 1.19938)
 texture = ExtResource("9_myi68")
 
@@ -74,6 +86,146 @@ position = Vector2(788, 753)
 [node name="IconSpawner2" parent="." instance=ExtResource("12_4gixx")]
 position = Vector2(596, 754)
 
+[node name="IconSpawner3" parent="." instance=ExtResource("10_fvpnl")]
+position = Vector2(403, 754)
+
+[node name="Panel" type="Panel" parent="."]
+offset_left = 279.0
+offset_top = 561.0
+offset_right = 914.0
+offset_bottom = 959.0
+theme = ExtResource("11_vxkxe")
+
+[node name="backb" type="Button" parent="."]
+offset_left = 72.0
+offset_top = 72.0
+offset_right = 388.0
+offset_bottom = 242.0
+theme_override_font_sizes/font_size = 100
+text = "BACK"
+script = ExtResource("12_6tb6p")
+
+[node name="buttonclick" type="AudioStreamPlayer" parent="backb"]
+stream = ExtResource("13_m6kln")
+
+[node name="help" type="Button" parent="."]
+offset_left = 54.0
+offset_top = 1244.0
+offset_right = 146.0
+offset_bottom = 1328.0
+theme_override_font_sizes/font_size = 50
+text = "?"
+script = ExtResource("14_8xp8a")
+
+[node name="buttonclick" type="AudioStreamPlayer" parent="help"]
+
+[node name="BreakingBadLogo" type="Sprite2D" parent="."]
+position = Vector2(128, 1392.5)
+scale = Vector2(0.078711, 0.070118)
+texture = ExtResource("15_3qied")
+
+[node name="scorevalue" type="Label" parent="BreakingBadLogo"]
+offset_left = 1537.0
+offset_top = -549.0
+offset_right = 2249.0
+offset_bottom = 399.0
+theme_override_font_sizes/font_size = 650
+text = "0"
+
+[node name="FamilyGuyLogo" type="Sprite2D" parent="."]
+position = Vector2(128, 1517)
+scale = Vector2(0.166667, 0.174686)
+texture = ExtResource("16_q05jm")
+
+[node name="scorevalue" type="Label" parent="FamilyGuyLogo"]
+offset_left = 713.999
+offset_top = -160.288
+offset_right = 1110.0
+offset_bottom = 317.712
+theme_override_font_sizes/font_size = 300
+text = "0"
+
+[node name="FortniteLogo" type="Sprite2D" parent="."]
+position = Vector2(123, 1743)
+scale = Vector2(0.426667, 0.453737)
+texture = ExtResource("17_jbsmv")
+
+[node name="Sprite2D" type="Sprite2D" parent="FortniteLogo"]
+z_index = -1
+position = Vector2(0, -2.20413)
+scale = Vector2(9.78125, 8.40625)
+texture = ExtResource("18_e7qs7")
+
+[node name="Label" type="Label" parent="FortniteLogo"]
+offset_left = 285.938
+offset_top = -361.443
+offset_right = 447.938
+offset_bottom = -156.443
+theme_override_font_sizes/font_size = 120
+text = "0"
+
+[node name="MarvelLogo" type="Sprite2D" parent="."]
+position = Vector2(128, 1629)
+scale = Vector2(0.525424, 0.56338)
+texture = ExtResource("18_3ef26")
+
+[node name="scorevalue" type="Label" parent="MarvelLogo"]
+offset_left = 150.0
+offset_top = 146.0
+offset_right = 297.0
+offset_bottom = 283.0
+theme_override_font_sizes/font_size = 100
+text = "0"
+
+[node name="MiscellaneousLogo" type="Sprite2D" parent="."]
+position = Vector2(459, 1394)
+scale = Vector2(0.0756849, 0.07363)
+texture = ExtResource("20_x8gw6")
+
+[node name="Sprite2D" type="Sprite2D" parent="MiscellaneousLogo"]
+z_index = -1
+position = Vector2(3.05176e-05, -0.00128174)
+scale = Vector2(37.4409, 38.5278)
+texture = ExtResource("18_e7qs7")
+
+[node name="Label" type="Label" parent="MiscellaneousLogo"]
+offset_left = 766.335
+offset_top = -488.934
+offset_right = 1664.33
+offset_bottom = 397.066
+theme_override_font_sizes/font_size = 650
+text = "0"
+
+[node name="SpongeBobIconNew" type="Sprite2D" parent="."]
+position = Vector2(459, 1509)
+scale = Vector2(0.409513, 0.46087)
+texture = ExtResource("21_wu208")
+
+[node name="Label" type="Label" parent="SpongeBobIconNew"]
+offset_left = 239.0
+offset_top = -59.0
+offset_right = 329.0
+offset_bottom = 78.0
+theme_override_font_sizes/font_size = 100
+text = "0"
+
+[node name="TheBoysLogo" type="Sprite2D" parent="."]
+position = Vector2(464, 1597)
+scale = Vector2(0.197515, 0.1856)
+texture = ExtResource("22_e0fc0")
+
+[node name="Label" type="Label" parent="TheBoysLogo"]
+offset_left = 501.228
+offset_top = -150.862
+offset_right = 734.228
+offset_bottom = 191.138
+theme_override_font_sizes/font_size = 250
+text = "0"
+
 [connection signal="pressed" from="Lever/Button" to="." method="_on_button_pressed"]
+[connection signal="button_down" from="backb" to="backb" method="_on_button_down"]
+[connection signal="finished" from="backb/buttonclick" to="backb" method="_on_buttonclick_finished"]
+[connection signal="button_down" from="help" to="help" method="_on_button_down"]
+[connection signal="finished" from="help/buttonclick" to="help" method="_on_buttonclick_finished"]
 
 [editable path="Lever"]

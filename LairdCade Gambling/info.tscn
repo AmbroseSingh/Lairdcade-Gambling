@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://br0222h53ols5"]
+[gd_scene load_steps=7 format=3 uid="uid://br0222h53ols5"]
 
 [ext_resource type="Texture2D" uid="uid://bs7ncwo0tesgn" path="res://images/Random Images/Title Screen Background.jpg" id="1_d3v6f"]
 [ext_resource type="Script" path="res://info.gd" id="1_mtl47"]
 [ext_resource type="FontFile" uid="uid://cmeke2x4k1cq8" path="res://Miscellaneous Stuff/Budmo font/budmo jigglish.otf" id="2_5lfum"]
+[ext_resource type="FontFile" uid="uid://dpen4mjgiv7pg" path="res://Miscellaneous Stuff/Budmo font/budmo jiggler.otf" id="4_qa7qm"]
 [ext_resource type="AudioStream" uid="uid://c0jg8gt3fbxrk" path="res://sound/sfx/button-pressed-38129.mp3" id="4_v6nam"]
 [ext_resource type="AudioStream" uid="uid://chl2q76jafi30" path="res://sound/music/kane.mp3" id="5_nn181"]
 
@@ -59,6 +60,7 @@ offset_left = 225.0
 offset_top = 1589.0
 offset_right = 902.0
 offset_bottom = 1778.0
+theme_override_fonts/font = ExtResource("4_qa7qm")
 theme_override_font_sizes/font_size = 100
 text = "BACK 2 MENU"
 
