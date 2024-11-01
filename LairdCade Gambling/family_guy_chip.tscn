@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://cqi6wrbtpt4dc"]
+
+[ext_resource type="Texture2D" uid="uid://ccy201ewyee7n" path="res://images/Random Images/Chip.png" id="1_i7e6i"]
+[ext_resource type="Texture2D" uid="uid://blgfaspurafx1" path="res://images/Icons/Family Guy Logo.png" id="2_2n326"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mxvdo"]
+radius = 132.242
+
+[node name="FamilyGuyChip" type="Area2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(0.15, 0.15)
+shape = SubResource("CircleShape2D_mxvdo")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("1_i7e6i")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+scale = Vector2(0.025, 0.025)
+texture = ExtResource("2_2n326")
