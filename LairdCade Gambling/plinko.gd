@@ -3,7 +3,7 @@ var r = randi_range(0,255)
 var g = randi_range(0,255)
 var b = randi_range(0,255)
 var score = 0
-var dropable = false
+var dropable = true
 
 
 

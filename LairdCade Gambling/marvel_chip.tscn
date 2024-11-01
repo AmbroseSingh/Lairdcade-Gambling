@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://cga2kt50gl5ds"]
+
+[ext_resource type="Texture2D" uid="uid://ccy201ewyee7n" path="res://images/Random Images/Chip.png" id="1_cslyl"]
+[ext_resource type="Texture2D" uid="uid://du3f421c32ax" path="res://images/Icons/Marvel Logo.png" id="2_y51p5"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_xmkjo"]
+radius = 132.242
+
+[node name="MarvelChip" type="Area2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(0.15, 0.15)
+shape = SubResource("CircleShape2D_xmkjo")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("1_cslyl")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+scale = Vector2(0.08, 0.08)
+texture = ExtResource("2_y51p5")
