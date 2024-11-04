@@ -1,32 +1,25 @@
-[gd_scene load_steps=20 format=3 uid="uid://dodt8jdto1141"]
+[gd_scene load_steps=22 format=3 uid="uid://dodt8jdto1141"]
 
 [ext_resource type="Texture2D" uid="uid://bs7ncwo0tesgn" path="res://images/Random Images/Title Screen Background.jpg" id="1_eg8wy"]
 [ext_resource type="Texture2D" uid="uid://dtgjm8fdc3hw1" path="res://Spinner/file (1).png" id="2_5x8bi"]
-[ext_resource type="PackedScene" uid="uid://dwtuy0lcgdorw" path="res://Sprite_Scenes/peely.tscn" id="2_ec3qb"]
-[ext_resource type="PackedScene" uid="uid://6ufxd0aub0wm" path="res://Sprite_Scenes/jonesy.tscn" id="3_gng7e"]
+[ext_resource type="PackedScene" uid="uid://dwtuy0lcgdorw" path="res://peely.tscn" id="2_ec3qb"]
+[ext_resource type="PackedScene" uid="uid://6ufxd0aub0wm" path="res://jonesy.tscn" id="3_gng7e"]
 [ext_resource type="Script" path="res://wheel_(fortnight_ver_).gd" id="3_idhh2"]
-[ext_resource type="AudioStream" uid="uid://df2spsufrahfq" path="res://sound/music/shake sum.mp3" id="4_3di2n"]
 [ext_resource type="PackedScene" uid="uid://dimvth6a6w2u4" path="res://Sprite_Scenes/chun_li.tscn" id="4_fjdkb"]
 [ext_resource type="Texture2D" uid="uid://cj0afi3db0g22" path="res://Spinner/ar.png" id="5_aejej"]
 [ext_resource type="PackedScene" uid="uid://bykai8i8t2x17" path="res://Sprite_Scenes/fishstick.tscn" id="5_af2dy"]
-<<<<<<< Updated upstream
-[ext_resource type="PackedScene" uid="uid://db0t3kt4qdxbl" path="res://Sprite_Scenes/fortnight_guy.tscn" id="5_saxvg"]
-[ext_resource type="PackedScene" uid="uid://c1wxhbfs5esop" path="res://Sprite_Scenes/nick_eh.tscn" id="6_pswh6"]
-[ext_resource type="PackedScene" uid="uid://cfdxkrcwb658x" path="res://Sprite_Scenes/spider_gwen.tscn" id="8_0c7b6"]
-[ext_resource type="PackedScene" uid="uid://8yloq1o2a1wr" path="res://Sprite_Scenes/klombo.tscn" id="9_2hieh"]
-[ext_resource type="PackedScene" uid="uid://vyvj8btkgo4a" path="res://Sprite_Scenes/mrs_incredible.tscn" id="10_x05nb"]
-[ext_resource type="PackedScene" uid="uid://i501c67w1cw2" path="res://Sprite_Scenes/travis_scott.tscn" id="11_jqa1a"]
-=======
 [ext_resource type="PackedScene" uid="uid://db0t3kt4qdxbl" path="res://fortnight_guy.tscn" id="5_saxvg"]
 [ext_resource type="PackedScene" uid="uid://c1wxhbfs5esop" path="res://nick_eh.tscn" id="6_pswh6"]
 [ext_resource type="PackedScene" uid="uid://cfdxkrcwb658x" path="res://spider_gwen.tscn" id="8_0c7b6"]
 [ext_resource type="PackedScene" uid="uid://8yloq1o2a1wr" path="res://klombo.tscn" id="9_2hieh"]
 [ext_resource type="PackedScene" uid="uid://vyvj8btkgo4a" path="res://mrs_incredible.tscn" id="10_x05nb"]
 [ext_resource type="PackedScene" uid="uid://i501c67w1cw2" path="res://travis_scott.tscn" id="11_jqa1a"]
->>>>>>> Stashed changes
 [ext_resource type="FontFile" uid="uid://bjwi76q461gp1" path="res://Spinner/Luckiest_Guy/LuckiestGuy-Regular.ttf" id="14_awala"]
+[ext_resource type="AudioStream" uid="uid://dbh3imt8n4bhu" path="res://sound/music/156.mp3" id="15_fwtbd"]
 [ext_resource type="Script" path="res://arrow.gd" id="16_ntjuo"]
 [ext_resource type="AudioStream" uid="uid://dh03fu6t4qfpn" path="res://sound/sfx/wheelclick.mp3" id="18_584ji"]
+[ext_resource type="Script" path="res://button_2.gd" id="19_b1l3o"]
+[ext_resource type="AudioStream" uid="uid://c0jg8gt3fbxrk" path="res://sound/sfx/button-pressed-38129.mp3" id="20_p1oaw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sxkqv"]
 size = Vector2(227, 208.5)
@@ -219,7 +212,8 @@ build_mode = 1
 polygon = PackedVector2Array(1006, 662, 1016, 697, 1033, 783, 1032, 859, 1019, 939, 1005, 975, 972, 1047, 949, 1083, 931, 1110, 870, 1174, 826, 1205, 535, 815)
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("4_3di2n")
+stream = ExtResource("15_fwtbd")
+autoplay = true
 
 [node name="Arrow" type="Area2D" parent="."]
 script = ExtResource("16_ntjuo")
@@ -241,8 +235,22 @@ texture = ExtResource("5_aejej")
 stream = ExtResource("18_584ji")
 volume_db = 20.0
 
+[node name="Button2" type="Button" parent="."]
+offset_left = 740.0
+offset_top = 89.0
+offset_right = 1057.0
+offset_bottom = 246.0
+theme_override_font_sizes/font_size = 100
+text = "BACK"
+script = ExtResource("19_b1l3o")
+
+[node name="buttonclick" type="AudioStreamPlayer" parent="Button2"]
+stream = ExtResource("20_p1oaw")
+
 [connection signal="pressed" from="Button" to="Wheel (Fortnight ver_)" method="_on_button_pressed"]
 [connection signal="child_entered_tree" from="Wheel (Fortnight ver_)/Uncommon" to="Wheel (Fortnight ver_)" method="_on_uncommon_child_entered_tree"]
 [connection signal="area_entered" from="Wheel (Fortnight ver_)/Rare_Body" to="Arrow" method="_on_rare_body_area_entered"]
 [connection signal="area_exited" from="Wheel (Fortnight ver_)/Rare_Body" to="Arrow" method="_on_rare_body_area_exited"]
 [connection signal="area_entered" from="Arrow" to="Arrow" method="_on_area_entered"]
+[connection signal="button_down" from="Button2" to="Button2" method="_on_button_down"]
+[connection signal="finished" from="Button2/buttonclick" to="Button2" method="_on_audio_stream_player_finished"]
