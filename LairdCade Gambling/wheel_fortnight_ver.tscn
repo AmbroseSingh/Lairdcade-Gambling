@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://dodt8jdto1141"]
+[gd_scene load_steps=20 format=3 uid="uid://dodt8jdto1141"]
 
 [ext_resource type="Texture2D" uid="uid://bs7ncwo0tesgn" path="res://images/Random Images/Title Screen Background.jpg" id="1_eg8wy"]
 [ext_resource type="Texture2D" uid="uid://dtgjm8fdc3hw1" path="res://Spinner/file (1).png" id="2_5x8bi"]
@@ -9,13 +9,27 @@
 [ext_resource type="PackedScene" uid="uid://dimvth6a6w2u4" path="res://Sprite_Scenes/chun_li.tscn" id="4_fjdkb"]
 [ext_resource type="Texture2D" uid="uid://cj0afi3db0g22" path="res://Spinner/ar.png" id="5_aejej"]
 [ext_resource type="PackedScene" uid="uid://bykai8i8t2x17" path="res://Sprite_Scenes/fishstick.tscn" id="5_af2dy"]
+<<<<<<< Updated upstream
 [ext_resource type="PackedScene" uid="uid://db0t3kt4qdxbl" path="res://Sprite_Scenes/fortnight_guy.tscn" id="5_saxvg"]
 [ext_resource type="PackedScene" uid="uid://c1wxhbfs5esop" path="res://Sprite_Scenes/nick_eh.tscn" id="6_pswh6"]
 [ext_resource type="PackedScene" uid="uid://cfdxkrcwb658x" path="res://Sprite_Scenes/spider_gwen.tscn" id="8_0c7b6"]
 [ext_resource type="PackedScene" uid="uid://8yloq1o2a1wr" path="res://Sprite_Scenes/klombo.tscn" id="9_2hieh"]
 [ext_resource type="PackedScene" uid="uid://vyvj8btkgo4a" path="res://Sprite_Scenes/mrs_incredible.tscn" id="10_x05nb"]
 [ext_resource type="PackedScene" uid="uid://i501c67w1cw2" path="res://Sprite_Scenes/travis_scott.tscn" id="11_jqa1a"]
+=======
+[ext_resource type="PackedScene" uid="uid://db0t3kt4qdxbl" path="res://fortnight_guy.tscn" id="5_saxvg"]
+[ext_resource type="PackedScene" uid="uid://c1wxhbfs5esop" path="res://nick_eh.tscn" id="6_pswh6"]
+[ext_resource type="PackedScene" uid="uid://cfdxkrcwb658x" path="res://spider_gwen.tscn" id="8_0c7b6"]
+[ext_resource type="PackedScene" uid="uid://8yloq1o2a1wr" path="res://klombo.tscn" id="9_2hieh"]
+[ext_resource type="PackedScene" uid="uid://vyvj8btkgo4a" path="res://mrs_incredible.tscn" id="10_x05nb"]
+[ext_resource type="PackedScene" uid="uid://i501c67w1cw2" path="res://travis_scott.tscn" id="11_jqa1a"]
+>>>>>>> Stashed changes
 [ext_resource type="FontFile" uid="uid://bjwi76q461gp1" path="res://Spinner/Luckiest_Guy/LuckiestGuy-Regular.ttf" id="14_awala"]
+[ext_resource type="Script" path="res://arrow.gd" id="16_ntjuo"]
+[ext_resource type="AudioStream" uid="uid://dh03fu6t4qfpn" path="res://sound/sfx/wheelclick.mp3" id="18_584ji"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sxkqv"]
+size = Vector2(227, 208.5)
 
 [node name="Wheel" type="Node2D"]
 
@@ -154,44 +168,61 @@ rotation = -1.55918
 theme_override_fonts/font = ExtResource("14_awala")
 text = "Legendary"
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("4_3di2n")
+[node name="Rare_Body" type="Area2D" parent="Wheel (Fortnight ver_)"]
+position = Vector2(-209.698, -327.749)
+scale = Vector2(0.391959, 0.402146)
 
-[node name="Rare_Body" type="Area2D" parent="."]
-
-[node name="Rare_Collision_Shape" type="CollisionPolygon2D" parent="Rare_Body"]
+[node name="Rare_Collision_Shape" type="CollisionPolygon2D" parent="Wheel (Fortnight ver_)/Rare_Body"]
 polygon = PackedVector2Array(826, 424, 862, 452, 916, 506, 926, 517, 962, 567, 1006, 662, 536, 814)
 
-[node name="Legendary_Body" type="Area2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wheel (Fortnight ver_)/Rare_Body"]
+position = Vector2(902.5, 547.25)
+shape = SubResource("RectangleShape2D_sxkqv")
 
-[node name="Legendary_Collision_Shape" type="CollisionPolygon2D" parent="Legendary_Body"]
+[node name="Legendary_Body" type="Area2D" parent="Wheel (Fortnight ver_)"]
+position = Vector2(-209.698, -327.749)
+scale = Vector2(0.391959, 0.402146)
+
+[node name="Legendary_Collision_Shape" type="CollisionPolygon2D" parent="Wheel (Fortnight ver_)/Legendary_Body"]
 build_mode = 1
 polygon = PackedVector2Array(598, 337, 625, 339, 665, 348, 688, 356, 536, 813, 598, 337)
 
-[node name="Mythical_Body" type="Area2D" parent="."]
+[node name="Mythical_Body" type="Area2D" parent="Wheel (Fortnight ver_)"]
+position = Vector2(-209.698, -327.749)
+scale = Vector2(0.391959, 0.402146)
 
-[node name="Mythical_Collision_Shape" type="CollisionPolygon2D" parent="Mythical_Body"]
+[node name="Mythical_Collision_Shape" type="CollisionPolygon2D" parent="Wheel (Fortnight ver_)/Mythical_Body"]
 build_mode = 1
 polygon = PackedVector2Array(535, 332, 535, 814, 598, 337)
 
-[node name="Common_Body" type="Area2D" parent="."]
+[node name="Common_Body" type="Area2D" parent="Wheel (Fortnight ver_)"]
+position = Vector2(-209.698, -327.749)
+scale = Vector2(0.391959, 0.402146)
 
-[node name="Common_Collision_Shape" type="CollisionPolygon2D" parent="Common_Body"]
+[node name="Common_Collision_Shape" type="CollisionPolygon2D" parent="Wheel (Fortnight ver_)/Common_Body"]
 build_mode = 1
 polygon = PackedVector2Array(534, 813, 826, 1203, 826, 1206, 805, 1221, 767, 1244, 703, 1271, 633, 1292, 545, 1300, 476, 1298, 402, 1283, 340, 1264, 247, 1218, 146, 1132, 81, 1021, 37, 870, 37, 733, 113, 539, 248, 411, 371, 354, 493, 333, 535, 332)
 
-[node name="Epic_Body" type="Area2D" parent="."]
+[node name="Epic_Body" type="Area2D" parent="Wheel (Fortnight ver_)"]
+position = Vector2(-209.698, -327.749)
+scale = Vector2(0.391959, 0.402146)
 
-[node name="Epic_Collision_Shape" type="CollisionPolygon2D" parent="Epic_Body"]
+[node name="Epic_Collision_Shape" type="CollisionPolygon2D" parent="Wheel (Fortnight ver_)/Epic_Body"]
 polygon = PackedVector2Array(688, 356, 725, 368, 765, 386, 802, 407, 826, 424, 536, 813)
 
-[node name="Uncommon_Body" type="Area2D" parent="."]
+[node name="Uncommon_Body" type="Area2D" parent="Wheel (Fortnight ver_)"]
+position = Vector2(-209.698, -327.749)
+scale = Vector2(0.391959, 0.402146)
 
-[node name="Uncommon_Collision_Shape" type="CollisionPolygon2D" parent="Uncommon_Body"]
+[node name="Uncommon_Collision_Shape" type="CollisionPolygon2D" parent="Wheel (Fortnight ver_)/Uncommon_Body"]
 build_mode = 1
 polygon = PackedVector2Array(1006, 662, 1016, 697, 1033, 783, 1032, 859, 1019, 939, 1005, 975, 972, 1047, 949, 1083, 931, 1110, 870, 1174, 826, 1205, 535, 815)
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_3di2n")
+
 [node name="Arrow" type="Area2D" parent="."]
+script = ExtResource("16_ntjuo")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Arrow"]
 position = Vector2(530, 305)
@@ -206,5 +237,12 @@ rotation = -1.5708
 scale = Vector2(0.197143, 0.131649)
 texture = ExtResource("5_aejej")
 
+[node name="wheelclick" type="AudioStreamPlayer" parent="Arrow"]
+stream = ExtResource("18_584ji")
+volume_db = 20.0
+
 [connection signal="pressed" from="Button" to="Wheel (Fortnight ver_)" method="_on_button_pressed"]
 [connection signal="child_entered_tree" from="Wheel (Fortnight ver_)/Uncommon" to="Wheel (Fortnight ver_)" method="_on_uncommon_child_entered_tree"]
+[connection signal="area_entered" from="Wheel (Fortnight ver_)/Rare_Body" to="Arrow" method="_on_rare_body_area_entered"]
+[connection signal="area_exited" from="Wheel (Fortnight ver_)/Rare_Body" to="Arrow" method="_on_rare_body_area_exited"]
+[connection signal="area_entered" from="Arrow" to="Arrow" method="_on_area_entered"]

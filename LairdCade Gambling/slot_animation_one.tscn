@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://c7wj8nkeenxf7"]
+[gd_scene load_steps=11 format=3 uid="uid://c7wj8nkeenxf7"]
 
 [ext_resource type="Script" path="res://slot_animation_one.gd" id="1_g4aq7"]
 [ext_resource type="Texture2D" uid="uid://dhhkaep57kkt2" path="res://SlotMachine/WhiteOne.png" id="2_jan3v"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://bx0jv3nas8h5d" path="res://SlotMachine/WhiteThree.png" id="4_vsm1g"]
 [ext_resource type="Texture2D" uid="uid://b3q2mjlnf2nyj" path="res://SlotMachine/WhiteFour.png" id="5_vfhtt"]
 [ext_resource type="Texture2D" uid="uid://dxik5hg57wgrp" path="res://SlotMachine/WhiteFive.png" id="6_7owj3"]
+[ext_resource type="AudioStream" uid="uid://c8a05khr2q387" path="res://sound/sfx/melancholy-ui-chime-47804.mp3" id="7_xgn20"]
 
 [sub_resource type="Animation" id="Animation_o2mpy"]
 length = 0.001
@@ -64,6 +65,18 @@ tracks/4/path = NodePath("WhiteFive:visible")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("AudioStreamPlayer:playing")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
@@ -133,6 +146,18 @@ tracks/4/keys = {
 "update": 1,
 "values": [false, false, false, true]
 }
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("AudioStreamPlayer:playing")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0.233333, 0.533333, 0.9, 1.2, 1.43333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [true, true, true, true, true]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_fu1ac"]
 _data = {
@@ -172,5 +197,10 @@ texture = ExtResource("6_7owj3")
 libraries = {
 "": SubResource("AnimationLibrary_fu1ac")
 }
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_xgn20")
+volume_db = -1.0
+autoplay = true
 
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
