@@ -12,5 +12,6 @@ func _process(delta: float) -> void:
 
 func _on_button_down() -> void:
 	$buttonclick.play()
-func _on_buttonclick_finished() -> void:
-	get_tree().change_scene_to_file("res://SlotMachine.tscn")
+	
+func _on_buttonclick_4_finished():
+	get_tree().change_scene_to_file("res://plinko_select.tscn")

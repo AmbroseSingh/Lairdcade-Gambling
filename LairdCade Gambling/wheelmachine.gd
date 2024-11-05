@@ -12,7 +12,7 @@ func _process(delta: float) -> void:
 
 
 func _on_button_down() -> void:
-	$buttonclick.play()
+	$buttonclick3.play()
 
-func _on_buttonclick_finished() -> void:
+func _on_buttonclick_3_finished():
 	get_tree().change_scene_to_file("res://wheel_fortnight_ver.tscn")
