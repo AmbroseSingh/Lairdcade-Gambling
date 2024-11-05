@@ -41,3 +41,7 @@ func _on_boysbutton_pressed() -> void:
 func _on_miscbutton_pressed() -> void:
 	Global.current_plinko_select = ("res://misc_chip.tscn")
 	get_tree().change_scene_to_file("res://plinko.tscn")
+
+
+func _on_backbutton_ps_pressed() -> void:
+	get_tree().change_scene_to_file("res://titlescreen.tscn")

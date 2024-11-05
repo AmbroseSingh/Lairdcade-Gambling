@@ -315,6 +315,15 @@ texture = ExtResource("1_kkeg3")
 position = Vector2(-76, -1787)
 shape = SubResource("RectangleShape2D_d4lni")
 
+[node name="backbuttonP" type="Button" parent="."]
+offset_left = 835.0
+offset_top = 26.0
+offset_right = 976.0
+offset_bottom = 119.0
+theme_override_fonts/font = ExtResource("5_bj1ud")
+theme_override_font_sizes/font_size = 70
+text = "Exit"
+
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="body_entered" from="Green" to="." method="_on_green_body_entered"]
 [connection signal="body_entered" from="Yellow" to="." method="_on_yellow_body_entered"]
@@ -322,3 +331,4 @@ shape = SubResource("RectangleShape2D_d4lni")
 [connection signal="body_exited" from="Red" to="." method="_on_red_body_exited"]
 [connection signal="pressed" from="dropbutton" to="." method="_on_dropbutton_pressed"]
 [connection signal="pressed" from="dropbutton" to="spawner" method="_on_dropbutton_pressed"]
+[connection signal="pressed" from="backbuttonP" to="." method="_on_backbutton_p_pressed"]
