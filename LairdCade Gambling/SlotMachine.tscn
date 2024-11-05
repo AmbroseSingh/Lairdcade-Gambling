@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=3 uid="uid://dmx783qp25b82"]
+[gd_scene load_steps=34 format=3 uid="uid://dmx783qp25b82"]
 
 [ext_resource type="PackedScene" uid="uid://bfatxylpa8tye" path="res://Spawner.tscn" id="1_3gm2i"]
 [ext_resource type="Script" path="res://slot_machine.gd" id="1_ayar6"]
@@ -13,6 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://cojxcxm86tspm" path="res://IconSpawner3.tscn" id="11_0ffyd"]
 [ext_resource type="PackedScene" uid="uid://cyhwumpvdaoeu" path="res://icon_spawner_2.tscn" id="12_4gixx"]
 [ext_resource type="Script" path="res://backb.gd" id="12_6tb6p"]
+[ext_resource type="FontFile" uid="uid://cmeke2x4k1cq8" path="res://Miscellaneous Stuff/Budmo font/budmo jigglish.otf" id="13_ennh2"]
 [ext_resource type="AudioStream" uid="uid://c0jg8gt3fbxrk" path="res://sound/sfx/button-pressed-38129.mp3" id="13_m6kln"]
 [ext_resource type="Script" path="res://help.gd" id="14_8xp8a"]
 [ext_resource type="Texture2D" uid="uid://dywhvg32bta3q" path="res://images/Icons/Breaking Bad Logo.png" id="15_3qied"]
@@ -95,10 +96,11 @@ position = Vector2(788, 753)
 position = Vector2(596, 754)
 
 [node name="backb" type="Button" parent="."]
-offset_left = 706.0
-offset_top = 1696.0
-offset_right = 1022.0
-offset_bottom = 1866.0
+offset_left = 717.0
+offset_top = 1698.0
+offset_right = 1033.0
+offset_bottom = 1868.0
+theme_override_fonts/font = ExtResource("13_ennh2")
 theme_override_font_sizes/font_size = 100
 text = "BACK"
 script = ExtResource("12_6tb6p")
