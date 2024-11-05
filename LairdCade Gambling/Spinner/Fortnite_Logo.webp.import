@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bnkb20n7tj1ba"
-path="res://.godot/imported/Kimiko.png-f3e3e47b53ba90f9bbc086d5154cef15.ctex"
+uid="uid://bq27cxi8udlge"
+path="res://.godot/imported/Fortnite_Logo.webp-6316077dd22d98233d677f47d6662777.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/TheBoys/Kimiko.png"
-dest_files=["res://.godot/imported/Kimiko.png-f3e3e47b53ba90f9bbc086d5154cef15.ctex"]
+source_file="res://Spinner/Fortnite_Logo.webp"
+dest_files=["res://.godot/imported/Fortnite_Logo.webp-6316077dd22d98233d677f47d6662777.ctex"]
 
 [params]
 

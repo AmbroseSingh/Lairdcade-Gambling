@@ -3,8 +3,8 @@
 [ext_resource type="Script" path="res://plinko.gd" id="1_gilrr"]
 [ext_resource type="Texture2D" uid="uid://dvogl30btppak" path="res://images/Random Images/Wall.png" id="1_kkeg3"]
 [ext_resource type="Texture2D" uid="uid://dbd0b5864jede" path="res://images/Random Images/Plinko Background.jpg" id="1_robqe"]
-[ext_resource type="PackedScene" path="res://plinko_peg.tscn" id="4_f1lw3"]
-[ext_resource type="PackedScene" path="res://pokerchip.tscn" id="5_aqh37"]
+[ext_resource type="PackedScene" uid="uid://cgbrqbrea8ir4" path="res://plinko_peg.tscn" id="4_f1lw3"]
+[ext_resource type="PackedScene" uid="uid://hc7igeg23y3" path="res://pokerchip.tscn" id="5_aqh37"]
 [ext_resource type="FontFile" uid="uid://dpen4mjgiv7pg" path="res://Miscellaneous Stuff/Budmo font/budmo jiggler.otf" id="5_bj1ud"]
 [ext_resource type="PackedScene" uid="uid://cga2kt50gl5ds" path="res://marvel_chip.tscn" id="6_lcv85"]
 [ext_resource type="Texture2D" uid="uid://b1fy0ho8x5aoc" path="res://images/Random Images/Green.png" id="6_skt6h"]
@@ -315,6 +315,15 @@ texture = ExtResource("1_kkeg3")
 position = Vector2(-76, -1787)
 shape = SubResource("RectangleShape2D_d4lni")
 
+[node name="backbuttonP" type="Button" parent="."]
+offset_left = 835.0
+offset_top = 26.0
+offset_right = 976.0
+offset_bottom = 119.0
+theme_override_fonts/font = ExtResource("5_bj1ud")
+theme_override_font_sizes/font_size = 70
+text = "Exit"
+
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="body_entered" from="Green" to="." method="_on_green_body_entered"]
 [connection signal="body_entered" from="Yellow" to="." method="_on_yellow_body_entered"]
@@ -322,3 +331,4 @@ shape = SubResource("RectangleShape2D_d4lni")
 [connection signal="body_exited" from="Red" to="." method="_on_red_body_exited"]
 [connection signal="pressed" from="dropbutton" to="." method="_on_dropbutton_pressed"]
 [connection signal="pressed" from="dropbutton" to="spawner" method="_on_dropbutton_pressed"]
+[connection signal="pressed" from="backbuttonP" to="." method="_on_backbutton_p_pressed"]
