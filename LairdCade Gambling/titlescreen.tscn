@@ -123,6 +123,7 @@ stream = ExtResource("7_lyknv")
 autoplay = true
 
 [node name="playbutton2" type="Button" parent="."]
+layout_mode = 0
 offset_left = 303.0
 offset_top = 1506.0
 offset_right = 784.0
