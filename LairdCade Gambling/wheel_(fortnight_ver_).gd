@@ -42,7 +42,3 @@ func _on_button_pressed() -> void:
 		spin_velocity = randf_range(535,815)
 		spinning = true
 		
-
-
-func _on_uncommon_child_entered_tree(node: Node) -> void:
-	pass # Replace with function body.
