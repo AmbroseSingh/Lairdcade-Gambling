@@ -1,6 +1,7 @@
 extends Node2D
 
-var chip = preload("res://pokerchip.tscn")
+
+@onready var chip = load(Global.current_plinko_select)
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

@@ -14,7 +14,7 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	$scoretext.text = "Score: " + str(score)
-	print(dropable)
+	
 
 
 
