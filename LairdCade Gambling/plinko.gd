@@ -14,7 +14,7 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	$scoretext.text = "Score: " + str(score)
-	print(dropable)
+	
 
 
 
@@ -26,18 +26,22 @@ func _process(delta: float) -> void:
 
 func _on_green_body_entered(body: Node2D) -> void:
 
-		score = score + 25
+		score = score + 200
 		dropable = true
 		
 
 func _on_yellow_body_entered(body: Node2D) -> void:
 	
-		score = score + 5
+		score = score + 10
 		dropable = true
 		
 
 func _on_red_body_entered(body: Node2D) -> void:
 	
-		score = score - 1
+		score = score - 10
 		dropable = true
 		
+
+
+func _on_backbutton_p_pressed() -> void:
+	get_tree().change_scene_to_file("res://titlescreen.tscn")

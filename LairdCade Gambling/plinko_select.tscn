@@ -1,0 +1,116 @@
+[gd_scene load_steps=11 format=3 uid="uid://bpie7bwug1gn2"]
+
+[ext_resource type="Script" path="res://plinko_select.gd" id="1_3dj2g"]
+[ext_resource type="Texture2D" uid="uid://similhkjd2x4" path="res://images/Random Images/blkback.jpg" id="1_qpts4"]
+[ext_resource type="FontFile" uid="uid://dpen4mjgiv7pg" path="res://Miscellaneous Stuff/Budmo font/budmo jiggler.otf" id="2_fkubh"]
+[ext_resource type="Texture2D" uid="uid://du3f421c32ax" path="res://images/Icons/Marvel Logo.png" id="4_72ru5"]
+[ext_resource type="Texture2D" uid="uid://cltxdfih3igjh" path="res://images/Icons/Fortnite Logo.png" id="5_6g8tc"]
+[ext_resource type="Texture2D" uid="uid://dywhvg32bta3q" path="res://images/Icons/Breaking Bad Logo.png" id="6_rioxb"]
+[ext_resource type="Texture2D" uid="uid://blgfaspurafx1" path="res://images/Icons/Family Guy Logo.png" id="7_cai7s"]
+[ext_resource type="Texture2D" uid="uid://dj0o117gge446" path="res://images/Icons/SpongeBobIconNew.png" id="8_mw74m"]
+[ext_resource type="Texture2D" uid="uid://cnwca07apx88v" path="res://images/Icons/The Boys Logo.png" id="9_u8b7k"]
+[ext_resource type="Texture2D" uid="uid://c3v3dvgn4stan" path="res://images/Icons/Miscellaneous Logo.png" id="10_kbq8y"]
+
+[node name="plinko_select" type="Node2D"]
+script = ExtResource("1_3dj2g")
+
+[node name="Blkback" type="Sprite2D" parent="."]
+modulate = Color(5.0056e-06, 0.854024, 0.976503, 1)
+position = Vector2(544.5, 959.5)
+scale = Vector2(1.21, 1.20687)
+texture = ExtResource("1_qpts4")
+
+[node name="chooselabel" type="Label" parent="."]
+offset_left = 127.0
+offset_top = 16.0
+offset_right = 906.0
+offset_bottom = 107.0
+theme_override_fonts/font = ExtResource("2_fkubh")
+theme_override_font_sizes/font_size = 75
+text = "Choose your dropper"
+horizontal_alignment = 1
+
+[node name="tenlabel" type="Label" parent="."]
+offset_left = 413.0
+offset_top = 121.0
+offset_right = 625.0
+offset_bottom = 182.0
+theme_override_fonts/font = ExtResource("2_fkubh")
+theme_override_font_sizes/font_size = 50
+text = "Cost: $10"
+
+[node name="marvelbutton" type="Button" parent="."]
+offset_left = 416.0
+offset_top = 971.0
+offset_right = 744.0
+offset_bottom = 1170.0
+theme_override_font_sizes/font_size = 100
+icon = ExtResource("4_72ru5")
+expand_icon = true
+
+[node name="fortnitebutton" type="Button" parent="."]
+offset_left = 466.0
+offset_top = 744.0
+offset_right = 666.0
+offset_bottom = 914.0
+theme_override_font_sizes/font_size = 100
+icon = ExtResource("5_6g8tc")
+expand_icon = true
+
+[node name="breakingbutton" type="Button" parent="."]
+offset_left = 380.0
+offset_top = 254.0
+offset_right = 758.0
+offset_bottom = 458.0
+icon = ExtResource("6_rioxb")
+expand_icon = true
+
+[node name="familybutton" type="Button" parent="."]
+offset_left = 395.0
+offset_top = 491.0
+offset_right = 740.0
+offset_bottom = 686.0
+icon = ExtResource("7_cai7s")
+expand_icon = true
+
+[node name="spongebobbutton" type="Button" parent="."]
+offset_left = 430.0
+offset_top = 1499.0
+offset_right = 730.0
+offset_bottom = 1670.0
+icon = ExtResource("8_mw74m")
+expand_icon = true
+
+[node name="boysbutton" type="Button" parent="."]
+offset_left = 501.0
+offset_top = 1695.0
+offset_right = 709.0
+offset_bottom = 1909.0
+icon = ExtResource("9_u8b7k")
+expand_icon = true
+
+[node name="miscbutton" type="Button" parent="."]
+offset_left = 456.0
+offset_top = 1195.0
+offset_right = 711.0
+offset_bottom = 1442.0
+icon = ExtResource("10_kbq8y")
+expand_icon = true
+
+[node name="backbuttonPS" type="Button" parent="."]
+offset_left = 31.0
+offset_top = 1801.0
+offset_right = 288.0
+offset_bottom = 1894.0
+theme_override_fonts/font = ExtResource("2_fkubh")
+theme_override_font_sizes/font_size = 70
+text = "Back"
+
+[connection signal="pressed" from="marvelbutton" to="." method="_on_marvelbutton_pressed"]
+[connection signal="pressed" from="fortnitebutton" to="." method="_on_fortnitebutton_pressed"]
+[connection signal="pressed" from="breakingbutton" to="." method="_on_breakingbutton_pressed"]
+[connection signal="pressed" from="familybutton" to="." method="_on_familybutton_pressed"]
+[connection signal="pressed" from="spongebobbutton" to="." method="_on_spongebobbutton_pressed"]
+[connection signal="pressed" from="boysbutton" to="." method="_on_boysbutton_pressed"]
+[connection signal="pressed" from="miscbutton" to="." method="_on_miscbutton_pressed"]
+[connection signal="pressed" from="backbuttonPS" to="." method="_on_backbutton_ps_pressed"]

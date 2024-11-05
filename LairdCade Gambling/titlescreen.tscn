@@ -37,68 +37,71 @@ theme_override_fonts/font = ExtResource("2_pwswt")
 theme_override_font_sizes/font_size = 100
 text = "McLairds Gambling"
 
-[node name="playbutton" type="Button" parent="."]
+[node name="SlotsButton" type="Button" parent="."]
 layout_mode = 0
 offset_left = 308.0
-offset_top = 1366.0
+offset_top = 1420.0
 offset_right = 789.0
-offset_bottom = 1435.0
+offset_bottom = 1489.0
 theme_override_fonts/font = ExtResource("3_8j8jx")
 theme_override_font_sizes/font_size = 50
-text = "Begin your journey"
+text = "Slots"
 script = ExtResource("5_gh0y2")
 
-[node name="buttonclick" type="AudioStreamPlayer" parent="playbutton"]
+[node name="buttonclick" type="AudioStreamPlayer" parent="SlotsButton"]
 stream = ExtResource("8_mcsry")
 volume_db = 2.0
 
 [node name="wheelmachine" type="Button" parent="."]
 layout_mode = 0
-offset_left = 308.0
-offset_top = 1440.0
-offset_right = 789.0
-offset_bottom = 1509.0
+offset_left = 301.0
+offset_top = 1589.0
+offset_right = 782.0
+offset_bottom = 1658.0
 theme_override_fonts/font = ExtResource("3_8j8jx")
 theme_override_font_sizes/font_size = 50
-text = "character wheel"
+text = "character Spinner"
 script = ExtResource("7_mqlpn")
 
-[node name="buttonclick" type="AudioStreamPlayer" parent="wheelmachine"]
+[node name="buttonclick3" type="AudioStreamPlayer" parent="wheelmachine"]
 stream = ExtResource("8_mcsry")
 volume_db = 2.0
 
 [node name="how2play" type="Button" parent="."]
 layout_mode = 0
-offset_left = 398.0
-offset_top = 1526.0
-offset_right = 711.0
-offset_bottom = 1595.0
+offset_left = 388.0
+offset_top = 1787.0
+offset_right = 701.0
+offset_bottom = 1856.0
 theme_override_fonts/font = ExtResource("3_8j8jx")
 theme_override_font_sizes/font_size = 50
 text = "How 2 play"
 script = ExtResource("5_t0mcu")
 
-[node name="buttonclick" type="AudioStreamPlayer" parent="how2play"]
+[node name="buttonclick2" type="AudioStreamPlayer" parent="how2play"]
 stream = ExtResource("8_mcsry")
 volume_db = 2.0
 
 [node name="banterlabel" type="Label" parent="."]
 layout_mode = 0
-offset_left = 103.0
-offset_top = 336.0
-offset_right = 948.0
-offset_bottom = 794.0
+offset_left = 109.0
+offset_top = 327.0
+offset_right = 954.0
+offset_bottom = 696.0
 theme_override_fonts/font = ExtResource("3_8j8jx")
-theme_override_font_sizes/font_size = 70
-text = "Games
-Cards
-Bets
-Food & Drinks
-Fun For the Whole Family"
+theme_override_font_sizes/font_size = 100
+text = "Play Slots
+Play Plinko
+Spin Wheels"
 horizontal_alignment = 1
 
+[node name="MrLaird" type="Sprite2D" parent="."]
+position = Vector2(912, 1158)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("6_nhrsh")
+
 [node name="TextBubble" type="Sprite2D" parent="."]
-position = Vector2(490.5, 940.5)
+position = Vector2(458, 1041)
 scale = Vector2(3.08438, 1.30116)
 texture = ExtResource("5_ml8e3")
 flip_h = true
@@ -106,27 +109,38 @@ flip_h = true
 [node name="lairdlabel" type="Label" parent="."]
 modulate = Color(0, 0, 0, 1)
 layout_mode = 0
-offset_left = 111.0
-offset_top = 856.0
-offset_right = 875.0
-offset_bottom = 1194.0
+offset_left = 80.0
+offset_top = 959.0
+offset_right = 844.0
+offset_bottom = 1297.0
 theme_override_fonts/font = ExtResource("3_8j8jx")
 theme_override_font_sizes/font_size = 40
 text = "I love McLairds Gambling!  
 I would recommend it to all my friends"
 
-[node name="MrLaird" type="Sprite2D" parent="."]
-position = Vector2(912, 1158)
-scale = Vector2(0.6, 0.6)
-texture = ExtResource("6_nhrsh")
-
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("7_lyknv")
 autoplay = true
 
-[connection signal="button_down" from="playbutton" to="playbutton" method="_on_button_down"]
-[connection signal="finished" from="playbutton/buttonclick" to="playbutton" method="_on_buttonclick_finished"]
+[node name="playbutton2" type="Button" parent="."]
+offset_left = 303.0
+offset_top = 1506.0
+offset_right = 784.0
+offset_bottom = 1575.0
+theme_override_fonts/font = ExtResource("3_8j8jx")
+theme_override_font_sizes/font_size = 50
+text = "Plinko"
+script = ExtResource("5_gh0y2")
+
+[node name="buttonclick4" type="AudioStreamPlayer" parent="playbutton2"]
+stream = ExtResource("8_mcsry")
+volume_db = 2.0
+
+[connection signal="button_down" from="SlotsButton" to="SlotsButton" method="_on_button_down"]
+[connection signal="finished" from="SlotsButton/buttonclick" to="SlotsButton" method="_on_buttonclick_finished"]
 [connection signal="button_down" from="wheelmachine" to="wheelmachine" method="_on_button_down"]
-[connection signal="finished" from="wheelmachine/buttonclick" to="wheelmachine" method="_on_buttonclick_finished"]
+[connection signal="finished" from="wheelmachine/buttonclick3" to="wheelmachine" method="_on_buttonclick_3_finished"]
 [connection signal="button_down" from="how2play" to="how2play" method="_on_button_down"]
-[connection signal="finished" from="how2play/buttonclick" to="how2play" method="_on_buttonclick_finished"]
+[connection signal="finished" from="how2play/buttonclick2" to="how2play" method="_on_buttonclick_2_finished"]
+[connection signal="button_down" from="playbutton2" to="playbutton2" method="_on_button_down"]
+[connection signal="finished" from="playbutton2/buttonclick4" to="playbutton2" method="_on_buttonclick_4_finished"]

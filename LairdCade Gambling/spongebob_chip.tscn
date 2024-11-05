@@ -6,7 +6,7 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_mxvdo"]
 radius = 132.242
 
-[node name="SpongebobChip" type="Area2D"]
+[node name="SpongebobChip" type="RigidBody2D"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 scale = Vector2(0.15, 0.15)

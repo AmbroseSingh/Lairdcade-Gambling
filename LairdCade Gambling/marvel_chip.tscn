@@ -6,7 +6,7 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_xmkjo"]
 radius = 132.242
 
-[node name="MarvelChip" type="Area2D"]
+[node name="MarvelChip" type="RigidBody2D"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 scale = Vector2(0.15, 0.15)
