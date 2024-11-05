@@ -4,7 +4,7 @@ var iconTwo
 var iconThree
 var BreakingBadToken = 0 
 var FamilyGuyToken = 0
-var FortniteToken = 0
+var FortniteToken = 100
 var MiscToken = 0
 var MarvelToken = 0
 var TheBoysToken = 0

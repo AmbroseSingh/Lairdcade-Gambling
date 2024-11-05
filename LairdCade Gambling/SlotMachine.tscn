@@ -11,7 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://similhkjd2x4" path="res://images/Random Images/blkback.jpg" id="9_myi68"]
 [ext_resource type="PackedScene" uid="uid://bqevapkmr1lsk" path="res://icon_spawner.tscn" id="10_fvpnl"]
 [ext_resource type="PackedScene" uid="uid://cojxcxm86tspm" path="res://IconSpawner3.tscn" id="11_0ffyd"]
-[ext_resource type="PackedScene" uid="uid://cyhwumpvdaoeu" path="res://icon_spawner_2.tscn" id="12_4gixx"]
+[ext_resource type="PackedScene" path="res://icon_spawner_2.tscn" id="12_4gixx"]
 [ext_resource type="Script" path="res://backb.gd" id="12_6tb6p"]
 [ext_resource type="AudioStream" uid="uid://c0jg8gt3fbxrk" path="res://sound/sfx/button-pressed-38129.mp3" id="13_m6kln"]
 [ext_resource type="Script" path="res://help.gd" id="14_8xp8a"]
@@ -50,7 +50,7 @@ position = Vector2(596, 754)
 [node name="StaticSpawner3" parent="." instance=ExtResource("1_3gm2i")]
 position = Vector2(403, 754)
 
-[node name="Label" type="Label" parent="."]
+[node name="FNScore" type="Label" parent="."]
 offset_left = 26.0
 offset_top = 102.0
 offset_right = 597.0

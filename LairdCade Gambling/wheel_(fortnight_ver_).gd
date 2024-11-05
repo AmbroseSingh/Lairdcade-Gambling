@@ -35,10 +35,14 @@ func _process(delta: float) -> void:
 		
 
 func _on_button_pressed() -> void:
-	if spinning:
-		spin_velocity = randf_range(535,815)
-		spinning = false
-	else:
-		spin_velocity = randf_range(535,815)
-		spinning = true
+	if Global.FortniteToken >= 10:
+		if spinning:
+			spin_velocity = randf_range(535,815)
+			spinning = false
+			Global.FortniteToken = Global.FortniteToken - 10
+		else:
+			spin_velocity = randf_range(535,815)
+			spinning = true
+			Global.FortniteToken = Global.FortniteToken - 10
+		
 		
