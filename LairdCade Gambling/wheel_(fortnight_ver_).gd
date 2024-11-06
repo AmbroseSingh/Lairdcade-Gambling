@@ -3,6 +3,7 @@ extends Sprite2D
 var spinning = false
 var spin_velocity = 0
 var friction = 0.98
+var winningslot
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -16,7 +17,7 @@ func _ready() -> void:
 	var collision_rare = $"../Rare"
 	var collision_epic = $"../Epic"
 	var collision_Legendary =$"../Legendary"
-	var collision_myhtical =$"../Mythical"
+	var collision_myhtical =$"../Mythical" 
 	
 func _process(delta: float) -> void:
 	if spinning:
@@ -43,6 +44,17 @@ func _on_button_pressed() -> void:
 		else:
 			spin_velocity = randf_range(535,815)
 			spinning = true
-			Global.FortniteToken = Global.FortniteToken - 10
 		
 		
+		
+
+
+func _on_arrow_area_entered(area: Area2D) -> void:
+	winningslot = area
+	print(winningslot)
+	if spinning == false:
+		#if winningslot == String(area):
+			print(area)
+	
+	
+	
