@@ -1,25 +1,15 @@
-[gd_scene load_steps=21 format=3 uid="uid://bpie7bwug1gn2"]
+[gd_scene load_steps=11 format=3 uid="uid://bpie7bwug1gn2"]
 
 [ext_resource type="Script" path="res://plinko_select.gd" id="1_3dj2g"]
 [ext_resource type="Texture2D" uid="uid://similhkjd2x4" path="res://images/Random Images/blkback.jpg" id="1_qpts4"]
 [ext_resource type="FontFile" uid="uid://dpen4mjgiv7pg" path="res://Miscellaneous Stuff/Budmo font/budmo jiggler.otf" id="2_fkubh"]
 [ext_resource type="Texture2D" uid="uid://du3f421c32ax" path="res://images/Icons/Marvel Logo.png" id="4_72ru5"]
 [ext_resource type="Texture2D" uid="uid://cltxdfih3igjh" path="res://images/Icons/Fortnite Logo.png" id="5_6g8tc"]
-[ext_resource type="Script" path="res://marvelbutton.gd" id="5_54hql"]
-[ext_resource type="AudioStream" uid="uid://c0jg8gt3fbxrk" path="res://sound/sfx/button-pressed-38129.mp3" id="6_bs00v"]
 [ext_resource type="Texture2D" uid="uid://dywhvg32bta3q" path="res://images/Icons/Breaking Bad Logo.png" id="6_rioxb"]
 [ext_resource type="Texture2D" uid="uid://blgfaspurafx1" path="res://images/Icons/Family Guy Logo.png" id="7_cai7s"]
 [ext_resource type="Texture2D" uid="uid://dj0o117gge446" path="res://images/Icons/SpongeBobIconNew.png" id="8_mw74m"]
-[ext_resource type="Script" path="res://fortnitebutton.gd" id="8_of0ih"]
 [ext_resource type="Texture2D" uid="uid://cnwca07apx88v" path="res://images/Icons/The Boys Logo.png" id="9_u8b7k"]
-[ext_resource type="Texture2D" uid="uid://dxik5hg57wgrp" path="res://SlotMachine/WhiteFive.png" id="9_vy7s4"]
 [ext_resource type="Texture2D" uid="uid://c3v3dvgn4stan" path="res://images/Icons/Miscellaneous Logo.png" id="10_kbq8y"]
-[ext_resource type="Script" path="res://breakingbutton.gd" id="11_ymfag"]
-[ext_resource type="Script" path="res://familybutton.gd" id="13_cualo"]
-[ext_resource type="Script" path="res://spongebobbutton.gd" id="15_hl7gh"]
-[ext_resource type="Script" path="res://boysbutton.gd" id="17_3tcb7"]
-[ext_resource type="Script" path="res://miscbutton.gd" id="19_s4dh2"]
-[ext_resource type="Script" path="res://backbutton_ps.gd" id="20_sihuw"]
 
 [node name="plinko_select" type="Node2D"]
 script = ExtResource("1_3dj2g")
@@ -57,13 +47,8 @@ offset_bottom = 1170.0
 theme_override_font_sizes/font_size = 100
 icon = ExtResource("4_72ru5")
 expand_icon = true
-script = ExtResource("5_54hql")
-
-[node name="buttonclick" type="AudioStreamPlayer" parent="marvelbutton"]
-stream = ExtResource("6_bs00v")
 
 [node name="fortnitebutton" type="Button" parent="."]
-z_index = 2
 offset_left = 466.0
 offset_top = 744.0
 offset_right = 666.0
@@ -71,16 +56,6 @@ offset_bottom = 914.0
 theme_override_font_sizes/font_size = 100
 icon = ExtResource("5_6g8tc")
 expand_icon = true
-script = ExtResource("8_of0ih")
-
-[node name="Sprite2D" type="Sprite2D" parent="fortnitebutton"]
-z_index = -1
-position = Vector2(92.5, 85)
-scale = Vector2(5.78125, 5.3125)
-texture = ExtResource("9_vy7s4")
-
-[node name="buttonclick" type="AudioStreamPlayer" parent="fortnitebutton"]
-stream = ExtResource("6_bs00v")
 
 [node name="breakingbutton" type="Button" parent="."]
 offset_left = 380.0
@@ -89,10 +64,6 @@ offset_right = 758.0
 offset_bottom = 458.0
 icon = ExtResource("6_rioxb")
 expand_icon = true
-script = ExtResource("11_ymfag")
-
-[node name="buttonclick" type="AudioStreamPlayer" parent="breakingbutton"]
-stream = ExtResource("6_bs00v")
 
 [node name="familybutton" type="Button" parent="."]
 offset_left = 395.0
@@ -101,10 +72,6 @@ offset_right = 740.0
 offset_bottom = 686.0
 icon = ExtResource("7_cai7s")
 expand_icon = true
-script = ExtResource("13_cualo")
-
-[node name="buttonclick" type="AudioStreamPlayer" parent="familybutton"]
-stream = ExtResource("6_bs00v")
 
 [node name="spongebobbutton" type="Button" parent="."]
 offset_left = 430.0
@@ -113,10 +80,6 @@ offset_right = 730.0
 offset_bottom = 1670.0
 icon = ExtResource("8_mw74m")
 expand_icon = true
-script = ExtResource("15_hl7gh")
-
-[node name="buttonclick" type="AudioStreamPlayer" parent="spongebobbutton"]
-stream = ExtResource("6_bs00v")
 
 [node name="boysbutton" type="Button" parent="."]
 offset_left = 501.0
@@ -125,29 +88,14 @@ offset_right = 709.0
 offset_bottom = 1909.0
 icon = ExtResource("9_u8b7k")
 expand_icon = true
-script = ExtResource("17_3tcb7")
-
-[node name="buttonclick" type="AudioStreamPlayer" parent="boysbutton"]
-stream = ExtResource("6_bs00v")
 
 [node name="miscbutton" type="Button" parent="."]
-z_index = 1
 offset_left = 456.0
 offset_top = 1195.0
 offset_right = 711.0
 offset_bottom = 1442.0
 icon = ExtResource("10_kbq8y")
 expand_icon = true
-script = ExtResource("19_s4dh2")
-
-[node name="Sprite2D" type="Sprite2D" parent="miscbutton"]
-z_index = -1
-position = Vector2(123.5, 122)
-scale = Vector2(7.46875, 7.375)
-texture = ExtResource("9_vy7s4")
-
-[node name="buttonclick" type="AudioStreamPlayer" parent="miscbutton"]
-stream = ExtResource("6_bs00v")
 
 [node name="backbuttonPS" type="Button" parent="."]
 offset_left = 31.0
@@ -157,24 +105,12 @@ offset_bottom = 1894.0
 theme_override_fonts/font = ExtResource("2_fkubh")
 theme_override_font_sizes/font_size = 70
 text = "Back"
-script = ExtResource("20_sihuw")
 
-[node name="buttonclick" type="AudioStreamPlayer" parent="backbuttonPS"]
-stream = ExtResource("6_bs00v")
-
-[connection signal="button_down" from="marvelbutton" to="marvelbutton" method="_on_button_down"]
-[connection signal="finished" from="marvelbutton/buttonclick" to="marvelbutton" method="_on_audio_stream_player_finished"]
-[connection signal="button_down" from="fortnitebutton" to="fortnitebutton" method="_on_button_down"]
-[connection signal="finished" from="fortnitebutton/buttonclick" to="fortnitebutton" method="_on_buttonclick_finished"]
-[connection signal="button_down" from="breakingbutton" to="breakingbutton" method="_on_button_down"]
-[connection signal="finished" from="breakingbutton/buttonclick" to="breakingbutton" method="_on_buttonclick_finished"]
-[connection signal="button_down" from="familybutton" to="familybutton" method="_on_button_down"]
-[connection signal="finished" from="familybutton/buttonclick" to="familybutton" method="_on_buttonclick_finished"]
-[connection signal="button_down" from="spongebobbutton" to="spongebobbutton" method="_on_button_down"]
-[connection signal="finished" from="spongebobbutton/buttonclick" to="spongebobbutton" method="_on_buttonclick_finished"]
-[connection signal="button_down" from="boysbutton" to="boysbutton" method="_on_button_down"]
-[connection signal="finished" from="boysbutton/buttonclick" to="boysbutton" method="_on_buttonclick_finished"]
-[connection signal="button_down" from="miscbutton" to="miscbutton" method="_on_button_down"]
-[connection signal="finished" from="miscbutton/buttonclick" to="miscbutton" method="_on_buttonclick_finished"]
-[connection signal="button_down" from="backbuttonPS" to="backbuttonPS" method="_on_button_down"]
-[connection signal="finished" from="backbuttonPS/buttonclick" to="backbuttonPS" method="_on_buttonclick_finished"]
+[connection signal="pressed" from="marvelbutton" to="." method="_on_marvelbutton_pressed"]
+[connection signal="pressed" from="fortnitebutton" to="." method="_on_fortnitebutton_pressed"]
+[connection signal="pressed" from="breakingbutton" to="." method="_on_breakingbutton_pressed"]
+[connection signal="pressed" from="familybutton" to="." method="_on_familybutton_pressed"]
+[connection signal="pressed" from="spongebobbutton" to="." method="_on_spongebobbutton_pressed"]
+[connection signal="pressed" from="boysbutton" to="." method="_on_boysbutton_pressed"]
+[connection signal="pressed" from="miscbutton" to="." method="_on_miscbutton_pressed"]
+[connection signal="pressed" from="backbuttonPS" to="." method="_on_backbutton_ps_pressed"]
