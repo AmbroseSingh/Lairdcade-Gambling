@@ -10,8 +10,13 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	pass
 
+
 func _on_button_down() -> void:
-	$buttonclick.play()
+	$AudioStreamPlayer.play()
+
+func _on_audio_stream_player_finished() -> void:
+	if Global.MarvelToken > 10:
+		Global.current_plinko_select = ("res://marvel_chip.tscn")
+		get_tree().change_scene_to_file("res://plinko.tscn")
+		Global.MarvelToken = Global.MarvelToken - 10
 	
-func _on_buttonclick_finished():
-	get_tree().change_scene_to_file("res://SlotMachine.tscn")

@@ -11,7 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://similhkjd2x4" path="res://images/Random Images/blkback.jpg" id="9_myi68"]
 [ext_resource type="PackedScene" uid="uid://bqevapkmr1lsk" path="res://icon_spawner.tscn" id="10_fvpnl"]
 [ext_resource type="PackedScene" uid="uid://cojxcxm86tspm" path="res://IconSpawner3.tscn" id="11_0ffyd"]
-[ext_resource type="PackedScene" path="res://icon_spawner_2.tscn" id="12_4gixx"]
+[ext_resource type="PackedScene" uid="uid://cyhwumpvdaoeu" path="res://icon_spawner_2.tscn" id="12_4gixx"]
 [ext_resource type="Script" path="res://backb.gd" id="12_6tb6p"]
 [ext_resource type="FontFile" uid="uid://cmeke2x4k1cq8" path="res://Miscellaneous Stuff/Budmo font/budmo jigglish.otf" id="13_ennh2"]
 [ext_resource type="AudioStream" uid="uid://c0jg8gt3fbxrk" path="res://sound/sfx/button-pressed-38129.mp3" id="13_m6kln"]

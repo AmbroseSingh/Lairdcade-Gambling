@@ -10,8 +10,13 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	pass
 
+
 func _on_button_down() -> void:
 	$buttonclick.play()
-	
-func _on_buttonclick_finished():
-	get_tree().change_scene_to_file("res://SlotMachine.tscn")
+
+
+func _on_buttonclick_finished() -> void:
+	if Global.SpongebobToken > 10:
+		Global.current_plinko_select = ("res://spongebob_chip.tscn")
+		get_tree().change_scene_to_file("res://plinko.tscn")
+		Global.SpongebobToken = Global.SpongebobToken - 10
