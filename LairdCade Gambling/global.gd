@@ -3,6 +3,7 @@ var iconOne
 var iconTwo
 var iconThree
 var current_plinko_select = ("res://pokerchip.tscn")
+var current_score 
 var BreakingBadToken = 0 
 var FamilyGuyToken = 0
 var FortniteToken = 100
