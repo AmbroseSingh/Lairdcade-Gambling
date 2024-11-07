@@ -1,0 +1,100 @@
+[gd_scene load_steps=11 format=3 uid="uid://buqgpt7kkni20"]
+
+[ext_resource type="Script" path="res://wheelselect.gd" id="1_mtu81"]
+[ext_resource type="Texture2D" uid="uid://similhkjd2x4" path="res://images/Random Images/blkback.jpg" id="2_je061"]
+[ext_resource type="Texture2D" uid="uid://dywhvg32bta3q" path="res://images/Icons/Breaking Bad Logo.png" id="3_pprmv"]
+[ext_resource type="Texture2D" uid="uid://blgfaspurafx1" path="res://images/Icons/Family Guy Logo.png" id="4_mb7pe"]
+[ext_resource type="Texture2D" uid="uid://cltxdfih3igjh" path="res://images/Icons/Fortnite Logo.png" id="5_ans6j"]
+[ext_resource type="Texture2D" uid="uid://dxik5hg57wgrp" path="res://SlotMachine/WhiteFive.png" id="6_2fqn4"]
+[ext_resource type="Texture2D" uid="uid://du3f421c32ax" path="res://images/Icons/Marvel Logo.png" id="7_y587r"]
+[ext_resource type="Texture2D" uid="uid://c3v3dvgn4stan" path="res://images/Icons/Miscellaneous Logo.png" id="8_v511o"]
+[ext_resource type="Texture2D" uid="uid://dj0o117gge446" path="res://images/Icons/SpongeBobIconNew.png" id="9_n68bx"]
+[ext_resource type="Texture2D" uid="uid://cnwca07apx88v" path="res://images/Icons/The Boys Logo.png" id="10_tstx1"]
+
+[node name="wheelselect" type="Node2D"]
+script = ExtResource("1_mtu81")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(550, 965)
+scale = Vector2(1.22444, 1.19875)
+texture = ExtResource("2_je061")
+
+[node name="breakingb" type="Button" parent="."]
+offset_left = 269.0
+offset_top = 13.0
+offset_right = 2837.0
+offset_bottom = 1547.0
+scale = Vector2(0.2, 0.2)
+icon = ExtResource("3_pprmv")
+flat = true
+
+[node name="famguy" type="Button" parent="."]
+offset_left = 300.0
+offset_top = 330.0
+offset_right = 1508.0
+offset_bottom = 1055.0
+scale = Vector2(0.35, 0.35)
+icon = ExtResource("4_mb7pe")
+flat = true
+
+[node name="fortnite" type="Button" parent="."]
+z_index = 1
+offset_left = 365.0
+offset_top = 590.0
+offset_right = 673.0
+offset_bottom = 884.0
+icon = ExtResource("5_ans6j")
+flat = true
+
+[node name="Sprite2D" type="Sprite2D" parent="fortnite"]
+z_index = -1
+position = Vector2(153, 149)
+scale = Vector2(9.40625, 9.3125)
+texture = ExtResource("6_2fqn4")
+
+[node name="marvel" type="Button" parent="."]
+offset_left = 343.0
+offset_top = 907.0
+offset_right = 705.0
+offset_bottom = 1057.0
+icon = ExtResource("7_y587r")
+
+[node name="misc" type="Button" parent="."]
+z_index = 1
+offset_left = 401.0
+offset_top = 1062.0
+offset_right = 1872.0
+offset_bottom = 2530.0
+scale = Vector2(0.17, 0.17)
+icon = ExtResource("8_v511o")
+flat = true
+
+[node name="Sprite2D" type="Sprite2D" parent="misc"]
+z_index = -1
+position = Vector2(723.529, 747.059)
+scale = Vector2(47.0625, 45.1875)
+texture = ExtResource("6_2fqn4")
+
+[node name="spongeb" type="Button" parent="."]
+offset_left = 307.0
+offset_top = 1322.0
+offset_right = 746.0
+offset_bottom = 1640.0
+icon = ExtResource("9_n68bx")
+
+[node name="theboys" type="Button" parent="."]
+offset_left = 357.0
+offset_top = 1595.0
+offset_right = 1532.0
+offset_bottom = 2853.0
+scale = Vector2(0.3, 0.3)
+icon = ExtResource("10_tstx1")
+flat = true
+
+[connection signal="button_down" from="breakingb" to="." method="_on_breakingb_button_down"]
+[connection signal="button_down" from="famguy" to="." method="_on_famguy_button_down"]
+[connection signal="button_down" from="fortnite" to="." method="_on_fortnite_button_down"]
+[connection signal="button_down" from="marvel" to="." method="_on_marvel_button_down"]
+[connection signal="button_down" from="misc" to="." method="_on_misc_button_down"]
+[connection signal="button_down" from="spongeb" to="." method="_on_spongeb_button_down"]
+[connection signal="button_down" from="theboys" to="." method="_on_theboys_button_down"]
