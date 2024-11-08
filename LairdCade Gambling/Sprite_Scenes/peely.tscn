@@ -6,7 +6,7 @@
 [node name="Peely" type="Sprite2D"]
 texture = ExtResource("1_xtls3")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="PeelySprite" type="Sprite2D" parent="."]
 z_index = -1
 position = Vector2(-6.20446, 23)
 scale = Vector2(0.662634, 1.97484)

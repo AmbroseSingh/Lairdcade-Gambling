@@ -6,7 +6,7 @@
 [node name="Travis_Scott" type="Sprite2D"]
 texture = ExtResource("1_7r557")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="TravisSprite" type="Sprite2D" parent="."]
 z_index = -1
 position = Vector2(-6.20446, -11.5)
 scale = Vector2(0.662634, 2.89972)

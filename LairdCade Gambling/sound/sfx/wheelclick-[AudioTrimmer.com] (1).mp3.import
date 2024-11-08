@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bh6tkh45mu2xt"
+path="res://.godot/imported/wheelclick-[AudioTrimmer.com] (1).mp3-f0825369ee87823a1c9ad01c6d90e6ab.mp3str"
+
+[deps]
+
+source_file="res://sound/sfx/wheelclick-[AudioTrimmer.com] (1).mp3"
+dest_files=["res://.godot/imported/wheelclick-[AudioTrimmer.com] (1).mp3-f0825369ee87823a1c9ad01c6d90e6ab.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
