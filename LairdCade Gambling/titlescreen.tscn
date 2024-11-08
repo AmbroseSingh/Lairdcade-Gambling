@@ -84,15 +84,16 @@ volume_db = 2.0
 
 [node name="banterlabel" type="Label" parent="."]
 layout_mode = 0
-offset_left = 109.0
-offset_top = 327.0
-offset_right = 954.0
-offset_bottom = 696.0
+offset_left = -57.0
+offset_top = 341.0
+offset_right = 1150.0
+offset_bottom = 834.0
 theme_override_fonts/font = ExtResource("3_8j8jx")
-theme_override_font_sizes/font_size = 100
+theme_override_font_sizes/font_size = 85
 text = "Play Slots
 Play Plinko
-Spin Wheels"
+Spin Wheels
+fun for the whole family"
 horizontal_alignment = 1
 
 [node name="MrLaird" type="Sprite2D" parent="."]

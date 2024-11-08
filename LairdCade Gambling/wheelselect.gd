@@ -31,3 +31,7 @@ func _on_spongeb_button_down() -> void:
 
 func _on_theboys_button_down() -> void:
 	get_tree().change_scene_to_file("theboyspalceholder")
+
+
+func _on_backbutton_pressed() -> void:
+	get_tree().change_scene_to_file("res://titlescreen.tscn")
