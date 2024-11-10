@@ -242,6 +242,16 @@ theme_override_font_sizes/font_size = 125
 text = "Slot Machine"
 horizontal_alignment = 1
 
+[node name="Title2" type="Label" parent="."]
+offset_left = 4.0
+offset_top = 1236.0
+offset_right = 1050.0
+offset_bottom = 1327.0
+theme_override_fonts/font = ExtResource("24_xfxuf")
+theme_override_font_sizes/font_size = 75
+text = "Current Tokens"
+horizontal_alignment = 1
+
 [node name="ControlVar" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 0
