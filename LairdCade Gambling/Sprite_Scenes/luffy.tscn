@@ -1,13 +1,13 @@
 [gd_scene load_steps=3 format=3 uid="uid://cnrjqr2ejik3x"]
 
 [ext_resource type="Texture2D" uid="uid://c8mipa4o03mtx" path="res://images/Misc/luffy.png" id="1_a20c3"]
-[ext_resource type="Texture2D" uid="uid://mdj8cp01ngl" path="res://CharacterBackgrounds/Mythic.jpg" id="2_tnenl"]
+[ext_resource type="Texture2D" uid="uid://pyt6h243jht0" path="res://CharacterBackgrounds/Epic.jpg" id="3_5xlrl"]
 
 [node name="Luffy" type="Sprite2D"]
 texture = ExtResource("1_a20c3")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Sprite2D2" type="Sprite2D" parent="."]
 z_index = -1
-position = Vector2(14, -70.5)
-scale = Vector2(1.2125, 4.58611)
-texture = ExtResource("2_tnenl")
+position = Vector2(16, -72.0002)
+scale = Vector2(0.409375, 1.52963)
+texture = ExtResource("3_5xlrl")

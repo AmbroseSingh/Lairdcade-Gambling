@@ -1,13 +1,13 @@
 [gd_scene load_steps=3 format=3 uid="uid://vfla530e5gue"]
 
 [ext_resource type="Texture2D" uid="uid://c58dy5464p1j6" path="res://images/Misc/Shane.png" id="1_q1384"]
-[ext_resource type="Texture2D" uid="uid://du6u6xmkhqa2b" path="res://CharacterBackgrounds/Uncommon.jpg" id="2_d4f5t"]
+[ext_resource type="Texture2D" uid="uid://c58f6hyspalen" path="res://CharacterBackgrounds/Common.png" id="3_nmlcc"]
 
 [node name="Shane" type="Sprite2D"]
 texture = ExtResource("1_q1384")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Sprite2D2" type="Sprite2D" parent="."]
 z_index = -1
-position = Vector2(-17.5, 54.6111)
-scale = Vector2(0.95283, 2.75961)
-texture = ExtResource("2_d4f5t")
+position = Vector2(-17.5, 56)
+scale = Vector2(0.156771, 0.407407)
+texture = ExtResource("3_nmlcc")

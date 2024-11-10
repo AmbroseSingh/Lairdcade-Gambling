@@ -4,10 +4,10 @@ var iconTwo
 var iconThree
 var current_plinko_select = ("res://pokerchip.tscn")
 var current_score 
-var BreakingBadToken = 0 
-var FamilyGuyToken = 0
-var FortniteToken = 100
-var MiscToken = 0
-var MarvelToken = 0
-var TheBoysToken = 0
-var SpongebobToken = 0
+var BreakingBadToken = 100
+var FamilyGuyToken = 150
+var FortniteToken = 200
+var MiscToken = 250
+var MarvelToken = 300
+var TheBoysToken = 350
+var SpongebobToken = 400

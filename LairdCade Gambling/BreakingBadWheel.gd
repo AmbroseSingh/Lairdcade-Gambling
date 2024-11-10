@@ -27,8 +27,8 @@ func _ready() -> void:
 	var collision_myhtical =$"../Mythical" 
 	
 func _process(delta: float) -> void:
-	print(winningslotcommon)
-	#if finishspin == true: 
+	print(finishspin)
+	#if finishspin == true:
 		#$AudioStreamPlayer.play()
 		#finishspin = false
 	if spun == true and spin_velocity == 0:
@@ -47,75 +47,66 @@ func _process(delta: float) -> void:
 			get_parent().get_node("Button").visible = true
 			
 	if spinning == false and spun == true and winningslotcommon == true:
-		if tossup == 1:
-			get_parent().get_node("Jonesy").visible = true
-			get_parent().get_node("Header").text = "You Got Jonesy!"
-			get_parent().get_node("Footer").text = "30% spin rate!"
-			get_parent().get_node("Header").visible = true
-			get_parent().get_node("Footer").visible = true
-			finishspin = true
-		elif tossup == 2:
-			get_parent().get_node("Default").visible = true 
-			get_parent().get_node("Header").text = "You Got Default!"
-			get_parent().get_node("Footer").text = "30% spin rate!"
-			get_parent().get_node("Header").visible = true
-			get_parent().get_node("Footer").visible = true
-			finishspin = true
-	elif spinning == false and spun == true and winningslotuncommon == true:
-		if tossup == 1:
-			get_parent().get_node("Peely").visible = true 
-			get_parent().get_node("Header").text = "You Got Peely!"
-			get_parent().get_node("Footer").text = "10% spin rate!"
-			get_parent().get_node("Header").visible = true
-			get_parent().get_node("Footer").visible = true
-			finishspin = true
-		elif tossup == 2:
-			get_parent().get_node("Fishstick").visible = true 
-			get_parent().get_node("Header").text = "You Got Fishstick!"
-			get_parent().get_node("Footer").text = "10% spin rate!"
-			get_parent().get_node("Header").visible = true
-			get_parent().get_node("Footer").visible = true
-			finishspin = true
-	elif spinning == false and spun == true and winningslotrare == true:
-		if tossup == 1:
-			get_parent().get_node("Spider_Gwen").visible = true 
-			get_parent().get_node("Header").text = "You Got Spider Gwen!"
-			get_parent().get_node("Footer").text = "5% spin rate!"
-			get_parent().get_node("Header").visible = true
-			get_parent().get_node("Footer").visible = true
-			finishspin = true
-		elif tossup == 2:
-			get_parent().get_node("Klombo").visible = true 
-			get_parent().get_node("Header").text = "You Got Klombo!"
-			get_parent().get_node("Footer").text = "5% spin rate!"
-			get_parent().get_node("Header").visible = true
-			get_parent().get_node("Footer").visible = true
-			finishspin = true
-	elif spinning == false and spun == true and winningslotepic == true:
-		get_parent().get_node("Nick_Eh").visible = true 
-		get_parent().get_node("Header").text = "You Got Nick Eh 30!"
-		get_parent().get_node("Footer").text = "4% spin rate!"
+		get_parent().get_node("Walt_JR").visible = true
+		get_parent().get_node("Header").text = "You Got WaltJr!"
+		get_parent().get_node("Footer").text = "60% spin rate!"
 		get_parent().get_node("Header").visible = true
 		get_parent().get_node("Footer").visible = true
 		finishspin = true
-	elif spinning == false and spun == true and winningslotmythic == true:
-		get_parent().get_node("Travis_Scott").visible = true 
-		get_parent().get_node("Header").text = "You Got Travis Scott!"
-		get_parent().get_node("Footer").text = "2% spin rate!"
+	elif spinning == false and spun == true and winningslotuncommon == true:
+		get_parent().get_node("Skylar").visible = true 
+		get_parent().get_node("Header").text = "You Got Skylar White!"
+		get_parent().get_node("Footer").text = "20% spin rate!"
 		get_parent().get_node("Header").visible = true
 		get_parent().get_node("Footer").visible = true
+		finishspin = true
+	elif spinning == false and spun == true and winningslotrare == true:
+		get_parent().get_node("Tuco").visible = true 
+		get_parent().get_node("Header").text = "You Got Tuco!"
+		get_parent().get_node("Footer").text = "10% spin rate!"
+		get_parent().get_node("Header").visible = true
+		get_parent().get_node("Footer").visible = true
+		finishspin = true
+	elif spinning == false and spun == true and winningslotepic == true:
+		if tossup == 1:
+			get_parent().get_node("Mike_Hermantrout").visible = true 
+			get_parent().get_node("Header").text = "You Got Mike!"
+			get_parent().get_node("Footer").text = "2% spin rate!"
+			get_parent().get_node("Header").visible = true
+			get_parent().get_node("Footer").visible = true
+			finishspin = true
+		elif tossup == 2:
+			get_parent().get_node("Hank_Shrader").visible = true 
+			get_parent().get_node("Header").text = "You Got Hank!"
+			get_parent().get_node("Footer").text = "2% spin rate!"
+			get_parent().get_node("Header").visible = true
+			get_parent().get_node("Footer").visible = true
+	elif spinning == false and spun == true and winningslotmythic == true:
+		if tossup == 1:
+			get_parent().get_node("Gustavo").visible = true 
+			get_parent().get_node("Header").text = "You Got Gus Fring!"
+			get_parent().get_node("Footer").text = "1% spin rate!"
+			get_parent().get_node("Header").visible = true
+			get_parent().get_node("Footer").visible = true
+			finishspin = true
+		elif tossup == 2:
+			get_parent().get_node("Saul_Goodman").visible = true 
+			get_parent().get_node("Header").text = "You Got Saul Goodman!"
+			get_parent().get_node("Footer").text = "1% spin rate!"
+			get_parent().get_node("Header").visible = true
+			get_parent().get_node("Footer").visible = true
 		finishspin = true
 	elif spinning == false and spun == true and winningslotlegendary == true:
 		if tossup == 1:
-			get_parent().get_node("Chun_Li").visible = true 
-			get_parent().get_node("Header").text = "You Got Chun Li!"
+			get_parent().get_node("Sprite2D").visible = true 
+			get_parent().get_node("Header").text = "You Got Walter White!"
 			get_parent().get_node("Footer").text = "0.5% spin rate!"
 			get_parent().get_node("Header").visible = true
 			get_parent().get_node("Footer").visible = true
 			finishspin = true
 		elif tossup == 2:
-			get_parent().get_node("Mrs_Incredible").visible = true 
-			get_parent().get_node("Header").text = "You Got Mrs. Incredible!"
+			get_parent().get_node("Jesse_Pinkman").visible = true 
+			get_parent().get_node("Header").text = "You Got Jesse Pinkman!"
 			get_parent().get_node("Footer").text = "0.5% spin rate!"
 			get_parent().get_node("Header").visible = true
 			get_parent().get_node("Footer").visible = true
@@ -129,29 +120,28 @@ func _on_button_pressed() -> void:
 	$ButtonPressed.play()
 	var my_random_number = rng.randi_range(1, 2)
 	tossup = my_random_number
-	get_parent().get_node("Mrs_Incredible").visible = false 
-	get_parent().get_node("Chun_Li").visible = false 
-	get_parent().get_node("Travis_Scott").visible = false 
-	get_parent().get_node("Nick_Eh").visible = false 
-	get_parent().get_node("Klombo").visible = false 
-	get_parent().get_node("Spider_Gwen").visible = false 
-	get_parent().get_node("Peely").visible = false 
-	get_parent().get_node("Fishstick").visible = false 
-	get_parent().get_node("Default").visible = false 
-	get_parent().get_node("Jonesy").visible = false 
+	get_parent().get_node("Jesse_Pinkman").visible = false 
+	get_parent().get_node("Sprite2D").visible = false 
+	get_parent().get_node("Gustavo").visible = false 
+	get_parent().get_node("Hank_Shrader").visible = false 
+	get_parent().get_node("Mike_Hermantrout").visible = false 
+	get_parent().get_node("Saul_Goodman").visible = false 
+	get_parent().get_node("Skylar").visible = false 
+	get_parent().get_node("Tuco").visible = false 
+	get_parent().get_node("Walt_JR").visible = false 
 	get_parent().get_node("Header").visible = false
 	get_parent().get_node("Footer").visible = false
 	
-	if Global.FortniteToken >= 10:
+	if Global.BreakingBadToken >= 10:
 		if spinning:
 			spin_velocity = randf_range(535,815)
 			spinning = false
 			spun = true
-			Global.FortniteToken = Global.FortniteToken - 10
+			Global.BreakingBadToken = Global.BreakingBadToken - 10
 		else:
 			spin_velocity = randf_range(535,815)
 			spinning = true
-			Global.FortniteToken = Global.FortniteToken - 10
+			Global.BreakingBadToken = Global.BreakingBadToken - 10
 			spun = true
 		
 func _on_rare_body_area_entered(area):

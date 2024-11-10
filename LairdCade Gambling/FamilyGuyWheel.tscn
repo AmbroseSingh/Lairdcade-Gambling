@@ -1,0 +1,378 @@
+[gd_scene load_steps=26 format=3 uid="uid://jodt2be0hun8"]
+
+[ext_resource type="Texture2D" uid="uid://bs7ncwo0tesgn" path="res://images/Random Images/Title Screen Background.jpg" id="1_ept5r"]
+[ext_resource type="Texture2D" uid="uid://dtgjm8fdc3hw1" path="res://Spinner/file (1).png" id="2_0yxcv"]
+[ext_resource type="Script" path="res://FamilyGuyWheel.gd" id="3_tocmh"]
+[ext_resource type="FontFile" uid="uid://bjwi76q461gp1" path="res://Spinner/Luckiest_Guy/LuckiestGuy-Regular.ttf" id="4_d6v8h"]
+[ext_resource type="AudioStream" uid="uid://dh03fu6t4qfpn" path="res://sound/sfx/wheelclick.mp3" id="5_g37xe"]
+[ext_resource type="AudioStream" uid="uid://c0jg8gt3fbxrk" path="res://sound/sfx/button-pressed-38129.mp3" id="6_ra7de"]
+[ext_resource type="AudioStream" uid="uid://bd6w4h6n03xqn" path="res://sound/sfx/success-1-6297.mp3" id="7_yk1b6"]
+[ext_resource type="Script" path="res://header.gd" id="8_2hry0"]
+[ext_resource type="Texture2D" uid="uid://b1t22wss47k05" path="res://images/Random Images/Gry.png" id="9_ogm7x"]
+[ext_resource type="AudioStream" uid="uid://df2spsufrahfq" path="res://sound/music/shake sum.mp3" id="10_xs5qf"]
+[ext_resource type="Texture2D" uid="uid://blgfaspurafx1" path="res://images/Icons/Family Guy Logo.png" id="11_ajh4g"]
+[ext_resource type="Script" path="res://FamilyGuyScore.gd" id="12_3bkbu"]
+[ext_resource type="Script" path="res://arrow.gd" id="13_pu4h3"]
+[ext_resource type="Texture2D" uid="uid://cj0afi3db0g22" path="res://Spinner/ar.png" id="14_gsxv5"]
+[ext_resource type="Script" path="res://backb.gd" id="15_ovhdi"]
+[ext_resource type="PackedScene" uid="uid://b3r7xsqefyrbv" path="res://Brian.tscn" id="16_mmgyd"]
+[ext_resource type="PackedScene" uid="uid://u2iv1ox6v4pe" path="res://Sprite_Scenes/chicken.tscn" id="17_olfge"]
+[ext_resource type="PackedScene" uid="uid://brwb5s5v1wu05" path="res://Herbert.tscn" id="18_yttlc"]
+[ext_resource type="PackedScene" uid="uid://b4uq37oxa4omg" path="res://Sprite_Scenes/gold_peter.tscn" id="19_7ankx"]
+[ext_resource type="PackedScene" uid="uid://c47dd3kkxaadw" path="res://Sprite_Scenes/joe.tscn" id="20_w3l1i"]
+[ext_resource type="PackedScene" uid="uid://dp65t8qo2qdbv" path="res://Sprite_Scenes/lois.tscn" id="21_7c4is"]
+[ext_resource type="PackedScene" uid="uid://dcro8vkshkexl" path="res://Sprite_Scenes/peterg.tscn" id="22_fd0ts"]
+[ext_resource type="PackedScene" uid="uid://5cl85w335g66" path="res://Sprite_Scenes/meg.tscn" id="23_pjhg7"]
+[ext_resource type="PackedScene" uid="uid://duwvsgkbqkp8e" path="res://Sprite_Scenes/quagmire.tscn" id="24_s4byy"]
+[ext_resource type="PackedScene" uid="uid://c5jfxnkp2ljsf" path="res://Sprite_Scenes/Stewie.tscn" id="25_o3s2d"]
+
+[node name="Wheel" type="Node2D"]
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(540, 960)
+scale = Vector2(1.75041, 5.33333)
+texture = ExtResource("1_ept5r")
+metadata/_edit_lock_ = true
+
+[node name="Wheel" type="Sprite2D" parent="."]
+position = Vector2(523, 907)
+scale = Vector2(2.55129, 2.48666)
+texture = ExtResource("2_0yxcv")
+script = ExtResource("3_tocmh")
+
+[node name="Common" type="Label" parent="Wheel"]
+offset_left = -172.854
+offset_top = -22.118
+offset_right = -12.8537
+offset_bottom = 16.882
+theme_override_fonts/font = ExtResource("4_d6v8h")
+theme_override_font_sizes/font_size = 38
+text = "Common"
+metadata/_edit_use_anchors_ = true
+
+[node name="Uncommon" type="Label" parent="Wheel"]
+offset_left = 28.221
+offset_top = -5.22788
+offset_right = 192.221
+offset_bottom = 25.7721
+rotation = 0.321085
+theme_override_fonts/font = ExtResource("4_d6v8h")
+theme_override_font_sizes/font_size = 29
+text = "Uncommon"
+metadata/_edit_use_anchors_ = true
+
+[node name="Rare" type="Label" parent="Wheel"]
+offset_left = 56.0
+offset_top = -58.0
+offset_right = 167.0
+offset_bottom = -11.0
+rotation = -0.701724
+theme_override_fonts/font = ExtResource("4_d6v8h")
+theme_override_font_sizes/font_size = 43
+text = "Rare"
+metadata/_edit_use_anchors_ = true
+
+[node name="Epic" type="Label" parent="Wheel"]
+offset_left = 41.1556
+offset_top = -113.807
+offset_right = 105.156
+offset_bottom = -78.8073
+rotation = -1.08817
+theme_override_fonts/font = ExtResource("4_d6v8h")
+theme_override_font_sizes/font_size = 32
+text = "Epic"
+metadata/_edit_use_anchors_ = true
+
+[node name="Mythical" type="Label" parent="Wheel"]
+offset_left = 19.5979
+offset_top = -113.807
+offset_right = 91.5979
+offset_bottom = -90.8069
+rotation = -1.39657
+theme_override_fonts/font = ExtResource("4_d6v8h")
+text = "Mythical"
+metadata/_edit_use_anchors_ = true
+
+[node name="Legendary" type="Label" parent="Wheel"]
+offset_left = 1.95979
+offset_top = -106.569
+offset_right = 86.9598
+offset_bottom = -83.5688
+rotation = -1.55918
+theme_override_fonts/font = ExtResource("4_d6v8h")
+text = "Legendary"
+metadata/_edit_use_anchors_ = true
+
+[node name="Rare_Body" type="Area2D" parent="Wheel"]
+position = Vector2(-209.698, -327.749)
+scale = Vector2(0.391959, 0.402146)
+metadata/_edit_lock_ = true
+
+[node name="Rare_Collision_Shape" type="CollisionPolygon2D" parent="Wheel/Rare_Body"]
+polygon = PackedVector2Array(826, 424, 862, 452, 916, 506, 926, 517, 962, 567, 1006, 666, 536, 814)
+
+[node name="Legendary_Body" type="Area2D" parent="Wheel"]
+position = Vector2(-209.698, -327.749)
+scale = Vector2(0.391959, 0.402146)
+metadata/_edit_lock_ = true
+
+[node name="Legendary_Collision_Shape2" type="CollisionPolygon2D" parent="Wheel/Legendary_Body"]
+polygon = PackedVector2Array(534, 331, 536, 802, 598, 336)
+
+[node name="Mythical_Body" type="Area2D" parent="Wheel"]
+position = Vector2(-209.698, -327.749)
+scale = Vector2(0.391959, 0.402146)
+metadata/_edit_lock_ = true
+
+[node name="Mythical_Collision_Shape2" type="CollisionPolygon2D" parent="Wheel/Mythical_Body"]
+polygon = PackedVector2Array(598, 337, 632, 340, 662, 347, 688, 356, 537, 811)
+
+[node name="Common_Body" type="Area2D" parent="Wheel"]
+position = Vector2(-209.698, -327.749)
+scale = Vector2(0.391959, 0.402146)
+metadata/_edit_lock_ = true
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Wheel/Common_Body"]
+polygon = PackedVector2Array(534, 814, 827, 1208, 767, 1245, 713, 1269, 667, 1282, 591, 1298, 468, 1297, 375, 1275, 303, 1244, 240, 1207, 190, 1165, 136, 1106, 97.0003, 1045, 58.0004, 957, 37.0004, 846, 38.0004, 772, 53.0004, 689, 92.0003, 595, 122, 545, 166, 492, 229, 431, 312, 381, 407, 345, 515, 332, 532, 330)
+
+[node name="Epic_Body" type="Area2D" parent="Wheel"]
+position = Vector2(-209.698, -327.749)
+scale = Vector2(0.391959, 0.402146)
+metadata/_edit_lock_ = true
+
+[node name="Epic_Collision_Shape" type="CollisionPolygon2D" parent="Wheel/Epic_Body"]
+polygon = PackedVector2Array(688, 356, 725, 368, 765, 386, 802, 407, 826, 424, 536, 813)
+metadata/_edit_lock_ = true
+
+[node name="Uncommon_Body" type="Area2D" parent="Wheel"]
+position = Vector2(-209.698, -327.749)
+scale = Vector2(0.391959, 0.402146)
+metadata/_edit_lock_ = true
+
+[node name="Uncommon_Collision_Shape2" type="CollisionPolygon2D" parent="Wheel/Uncommon_Body"]
+polygon = PackedVector2Array(535, 813, 826, 1205, 900.999, 1143, 967.999, 1059, 1007, 978, 1031, 878, 1033, 795, 1017, 697, 1006, 666)
+
+[node name="Click1" type="AudioStreamPlayer" parent="Wheel"]
+stream = ExtResource("5_g37xe")
+
+[node name="Click2" type="AudioStreamPlayer" parent="Wheel"]
+stream = ExtResource("5_g37xe")
+
+[node name="Click3" type="AudioStreamPlayer" parent="Wheel"]
+stream = ExtResource("5_g37xe")
+
+[node name="Click4" type="AudioStreamPlayer" parent="Wheel"]
+stream = ExtResource("5_g37xe")
+
+[node name="Click5" type="AudioStreamPlayer" parent="Wheel"]
+stream = ExtResource("5_g37xe")
+
+[node name="Click6" type="AudioStreamPlayer" parent="Wheel"]
+stream = ExtResource("5_g37xe")
+
+[node name="ButtonPressed" type="AudioStreamPlayer" parent="Wheel"]
+stream = ExtResource("6_ra7de")
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="Wheel"]
+stream = ExtResource("7_yk1b6")
+
+[node name="Timer" type="Timer" parent="Wheel"]
+wait_time = 0.001
+one_shot = true
+
+[node name="Button" type="Button" parent="."]
+offset_left = 338.0
+offset_top = 1460.0
+offset_right = 725.0
+offset_bottom = 1645.0
+theme_override_fonts/font = ExtResource("4_d6v8h")
+theme_override_font_sizes/font_size = 150
+text = "Spin"
+metadata/_edit_use_anchors_ = true
+
+[node name="Header" type="Label" parent="."]
+visible = false
+z_index = 5
+offset_left = 5.0
+offset_top = 493.0
+offset_right = 1072.0
+offset_bottom = 594.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_d6v8h")
+theme_override_font_sizes/font_size = 100
+text = "You Got "
+horizontal_alignment = 1
+script = ExtResource("8_2hry0")
+
+[node name="Sprite2D" type="Sprite2D" parent="Header"]
+z_index = -1
+position = Vector2(536, 39)
+scale = Vector2(0.67625, 0.456667)
+texture = ExtResource("9_ogm7x")
+
+[node name="Footer" type="Label" parent="."]
+visible = false
+z_index = 5
+offset_left = 3.0
+offset_top = 1284.0
+offset_right = 1070.0
+offset_bottom = 1385.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_d6v8h")
+theme_override_font_sizes/font_size = 100
+text = "30% spin rate!"
+horizontal_alignment = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="Footer"]
+z_index = -1
+position = Vector2(538.5, 41.5)
+scale = Vector2(0.674375, 0.416666)
+texture = ExtResource("9_ogm7x")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("10_xs5qf")
+volume_db = -10.0
+autoplay = true
+
+[node name="FortniteLogo" type="Sprite2D" parent="."]
+position = Vector2(226.529, 146)
+scale = Vector2(0.35, 0.384)
+texture = ExtResource("11_ajh4g")
+script = ExtResource("12_3bkbu")
+
+[node name="FNScore" type="Label" parent="FortniteLogo"]
+anchors_preset = -1
+anchor_left = -4.99471e-05
+anchor_top = -5.81196e-05
+anchor_right = -4.99471e-05
+anchor_bottom = -5.81196e-05
+offset_left = 627.06
+offset_top = -98.9583
+offset_right = 2447.06
+offset_bottom = 402.042
+theme_override_fonts/font = ExtResource("4_d6v8h")
+theme_override_font_sizes/font_size = 300
+text = "0"
+metadata/_edit_use_anchors_ = true
+
+[node name="Arrow" type="Area2D" parent="."]
+position = Vector2(-10, 84)
+script = ExtResource("13_pu4h3")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Arrow"]
+position = Vector2(530, 305)
+rotation = -1.5708
+scale = Vector2(0.197143, 0.131649)
+build_mode = 1
+polygon = PackedVector2Array(-365.217, -0.00195312, -304.348, 30.3821, 370.289, 364.606, 207.971, 0, 365.217, -364.606)
+metadata/_edit_lock_ = true
+
+[node name="Ar" type="Sprite2D" parent="Arrow"]
+position = Vector2(530, 305)
+rotation = -1.5708
+scale = Vector2(0.197143, 0.131649)
+texture = ExtResource("14_gsxv5")
+metadata/_edit_lock_ = true
+
+[node name="backb" type="Button" parent="."]
+offset_left = 840.0
+offset_top = 1827.0
+offset_right = 1078.0
+offset_bottom = 1923.0
+theme_override_fonts/font = ExtResource("4_d6v8h")
+theme_override_font_sizes/font_size = 80
+text = "BACK"
+script = ExtResource("15_ovhdi")
+metadata/_edit_use_anchors_ = true
+
+[node name="buttonclick" type="AudioStreamPlayer" parent="backb"]
+stream = ExtResource("6_ra7de")
+
+[node name="Node2D" parent="." instance=ExtResource("16_mmgyd")]
+visible = false
+z_index = 1
+position = Vector2(550, 950)
+scale = Vector2(2, 2)
+
+[node name="Brian" parent="Node2D" index="0"]
+z_index = 1
+
+[node name="Chicken" parent="." instance=ExtResource("17_olfge")]
+visible = false
+z_index = 1
+position = Vector2(542, 944)
+scale = Vector2(1.65, 1.65)
+
+[node name="Node2D2" parent="." instance=ExtResource("18_yttlc")]
+visible = false
+z_index = 1
+position = Vector2(550, 950)
+scale = Vector2(1.7, 1.7)
+
+[node name="Gold_Peter" parent="." instance=ExtResource("19_7ankx")]
+visible = false
+z_index = 1
+position = Vector2(550, 950)
+scale = Vector2(2, 2)
+
+[node name="Joe" parent="." instance=ExtResource("20_w3l1i")]
+visible = false
+z_index = 1
+position = Vector2(518, 904)
+scale = Vector2(1.1, 1.1)
+
+[node name="Lois" parent="." instance=ExtResource("21_7c4is")]
+visible = false
+z_index = 1
+position = Vector2(550, 950)
+scale = Vector2(1.7, 1.7)
+
+[node name="Peterg" parent="." instance=ExtResource("22_fd0ts")]
+visible = false
+z_index = 1
+position = Vector2(548, 928)
+scale = Vector2(1.8, 1.8)
+
+[node name="Meg" parent="." instance=ExtResource("23_pjhg7")]
+visible = false
+z_index = 1
+position = Vector2(550, 950)
+scale = Vector2(1.8, 1.8)
+
+[node name="Quagmire" parent="." instance=ExtResource("24_s4byy")]
+visible = false
+z_index = 1
+position = Vector2(550, 940)
+scale = Vector2(1.8, 1.8)
+
+[node name="Stewie" parent="." instance=ExtResource("25_o3s2d")]
+visible = false
+z_index = 1
+position = Vector2(552, 970)
+scale = Vector2(1.8, 1.8)
+
+[connection signal="child_entered_tree" from="Wheel/Uncommon" to="Wheel" method="_on_uncommon_child_entered_tree"]
+[connection signal="area_entered" from="Wheel/Rare_Body" to="Wheel" method="_on_rare_body_area_entered"]
+[connection signal="area_entered" from="Wheel/Legendary_Body" to="Wheel" method="_on_legendary_body_area_entered"]
+[connection signal="area_entered" from="Wheel/Mythical_Body" to="Wheel" method="_on_mythical_body_area_entered"]
+[connection signal="area_entered" from="Wheel/Common_Body" to="Wheel" method="_on_common_body_area_entered"]
+[connection signal="area_entered" from="Wheel/Epic_Body" to="Wheel" method="_on_epic_body_area_entered"]
+[connection signal="area_entered" from="Wheel/Uncommon_Body" to="Wheel" method="_on_uncommon_body_area_entered"]
+[connection signal="timeout" from="Wheel/Timer" to="Wheel" method="_on_timer_timeout"]
+[connection signal="pressed" from="Button" to="Wheel" method="_on_button_pressed"]
+[connection signal="area_entered" from="Arrow" to="Wheel" method="_on_arrow_area_entered"]
+[connection signal="body_entered" from="Arrow" to="Wheel" method="_on_arrow_body_entered"]
+[connection signal="body_entered" from="Arrow" to="Arrow" method="_on_body_entered"]
+[connection signal="button_down" from="backb" to="backb" method="_on_button_down"]
+[connection signal="finished" from="backb/buttonclick" to="backb" method="_on_buttonclick_finished"]
+
+[editable path="Node2D"]
+[editable path="Chicken"]
+[editable path="Node2D2"]
+[editable path="Gold_Peter"]
+[editable path="Joe"]
+[editable path="Lois"]
+[editable path="Peterg"]
+[editable path="Meg"]
+[editable path="Quagmire"]
+[editable path="Stewie"]

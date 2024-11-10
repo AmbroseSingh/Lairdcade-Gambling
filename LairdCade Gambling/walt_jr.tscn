@@ -1,6 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://da5uhoaqg1n4g"]
+[gd_scene load_steps=3 format=3 uid="uid://da5uhoaqg1n4g"]
 
 [ext_resource type="Texture2D" uid="uid://djt328qqibrmx" path="res://images/BreakingBad/WaltJr.png" id="1_qvkit"]
+[ext_resource type="Texture2D" uid="uid://c58f6hyspalen" path="res://CharacterBackgrounds/Common.png" id="2_ee6tv"]
 
 [node name="Walt_JR" type="Sprite2D"]
 texture = ExtResource("1_qvkit")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(2, -18)
+scale = Vector2(0.234375, 0.435185)
+texture = ExtResource("2_ee6tv")
