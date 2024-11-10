@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://buqgpt7kkni20"]
+[gd_scene load_steps=12 format=3 uid="uid://dl4od1hog4mht"]
 
 [ext_resource type="Script" path="res://wheelselect.gd" id="1_mtu81"]
 [ext_resource type="Texture2D" uid="uid://similhkjd2x4" path="res://images/Random Images/blkback.jpg" id="2_je061"]
@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://c3v3dvgn4stan" path="res://images/Icons/Miscellaneous Logo.png" id="8_v511o"]
 [ext_resource type="Texture2D" uid="uid://dj0o117gge446" path="res://images/Icons/SpongeBobIconNew.png" id="9_n68bx"]
 [ext_resource type="Texture2D" uid="uid://cnwca07apx88v" path="res://images/Icons/The Boys Logo.png" id="10_tstx1"]
+[ext_resource type="FontFile" uid="uid://dpen4mjgiv7pg" path="res://Miscellaneous Stuff/Budmo font/budmo jiggler.otf" id="11_pcqsn"]
 
 [node name="wheelselect" type="Node2D"]
 script = ExtResource("1_mtu81")
@@ -27,6 +28,7 @@ offset_bottom = 1547.0
 scale = Vector2(0.2, 0.2)
 icon = ExtResource("3_pprmv")
 flat = true
+expand_icon = true
 
 [node name="famguy" type="Button" parent="."]
 offset_left = 300.0
@@ -84,12 +86,21 @@ icon = ExtResource("9_n68bx")
 
 [node name="theboys" type="Button" parent="."]
 offset_left = 357.0
-offset_top = 1595.0
+offset_top = 1599.0
 offset_right = 1532.0
-offset_bottom = 2853.0
+offset_bottom = 2857.0
 scale = Vector2(0.3, 0.3)
 icon = ExtResource("10_tstx1")
 flat = true
+
+[node name="backbutton" type="Button" parent="."]
+offset_left = 10.0
+offset_top = 1756.0
+offset_right = 193.0
+offset_bottom = 1918.0
+theme_override_fonts/font = ExtResource("11_pcqsn")
+theme_override_font_sizes/font_size = 50
+text = "Back"
 
 [connection signal="button_down" from="breakingb" to="." method="_on_breakingb_button_down"]
 [connection signal="button_down" from="famguy" to="." method="_on_famguy_button_down"]
@@ -98,3 +109,4 @@ flat = true
 [connection signal="button_down" from="misc" to="." method="_on_misc_button_down"]
 [connection signal="button_down" from="spongeb" to="." method="_on_spongeb_button_down"]
 [connection signal="button_down" from="theboys" to="." method="_on_theboys_button_down"]
+[connection signal="pressed" from="backbutton" to="." method="_on_backbutton_pressed"]

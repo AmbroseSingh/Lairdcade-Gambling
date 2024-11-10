@@ -15,4 +15,4 @@ func _on_button_down() -> void:
 	$buttonclick3.play()
 
 func _on_buttonclick_3_finished():
-	get_tree().change_scene_to_file("res://wheel_fortnight_ver.tscn")
+	get_tree().change_scene_to_file("res://wheelselect.tscn")
