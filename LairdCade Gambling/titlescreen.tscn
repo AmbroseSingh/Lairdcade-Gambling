@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://daw67cojklrht"]
+[gd_scene load_steps=13 format=3 uid="uid://daw67cojklrht"]
 
 [ext_resource type="Texture2D" uid="uid://bs7ncwo0tesgn" path="res://images/Random Images/Title Screen Background.jpg" id="1_0kuuo"]
 [ext_resource type="Script" path="res://titlescreen.gd" id="1_8i68i"]
@@ -7,6 +7,7 @@
 [ext_resource type="Script" path="res://playbutton.gd" id="5_gh0y2"]
 [ext_resource type="Texture2D" uid="uid://ddf0nr1444lwn" path="res://images/Random Images/Text bubble.png" id="5_ml8e3"]
 [ext_resource type="Script" path="res://how_2_play.gd" id="5_t0mcu"]
+[ext_resource type="Script" path="res://slots_button.gd" id="5_x4dat"]
 [ext_resource type="Texture2D" uid="uid://bhtw3wap6vaw3" path="res://images/Random Images/Mr Laird.png" id="6_nhrsh"]
 [ext_resource type="AudioStream" uid="uid://chl2q76jafi30" path="res://sound/music/kane.mp3" id="7_lyknv"]
 [ext_resource type="Script" path="res://wheelmachine.gd" id="7_mqlpn"]
@@ -46,11 +47,10 @@ offset_bottom = 1489.0
 theme_override_fonts/font = ExtResource("3_8j8jx")
 theme_override_font_sizes/font_size = 50
 text = "Slots"
-script = ExtResource("5_gh0y2")
+script = ExtResource("5_x4dat")
 
-[node name="buttonclick" type="AudioStreamPlayer" parent="SlotsButton"]
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="SlotsButton"]
 stream = ExtResource("8_mcsry")
-volume_db = 2.0
 
 [node name="wheelmachine" type="Button" parent="."]
 layout_mode = 0
@@ -139,7 +139,7 @@ stream = ExtResource("8_mcsry")
 volume_db = 2.0
 
 [connection signal="button_down" from="SlotsButton" to="SlotsButton" method="_on_button_down"]
-[connection signal="finished" from="SlotsButton/buttonclick" to="SlotsButton" method="_on_buttonclick_finished"]
+[connection signal="finished" from="SlotsButton/AudioStreamPlayer" to="SlotsButton" method="_on_audio_stream_player_finished"]
 [connection signal="button_down" from="wheelmachine" to="wheelmachine" method="_on_button_down"]
 [connection signal="finished" from="wheelmachine/buttonclick3" to="wheelmachine" method="_on_buttonclick_3_finished"]
 [connection signal="button_down" from="how2play" to="how2play" method="_on_button_down"]

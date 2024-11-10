@@ -1,7 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://cojxcxm86tspm"]
+[gd_scene load_steps=2 format=3 uid="uid://cojxcxm86tspm"]
 
 [ext_resource type="Script" path="res://IconSpawner3.gd" id="1_was3q"]
-[ext_resource type="AudioStream" uid="uid://cb0mx44ivbwdk" path="res://sound/sfx/jackpot.mp3" id="2_53wwh"]
 
 [node name="IconSpawner3" type="Node2D"]
 script = ExtResource("1_was3q")
@@ -9,8 +8,5 @@ script = ExtResource("1_was3q")
 [node name="Timer" type="Timer" parent="."]
 wait_time = 0.001
 one_shot = true
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("2_53wwh")
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

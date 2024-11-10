@@ -1,10 +1,10 @@
-[gd_scene load_steps=25 format=3 uid="uid://blcknufm6puux"]
+[gd_scene load_steps=26 format=3 uid="uid://blcknufm6puux"]
 
 [ext_resource type="Script" path="res://plinko.gd" id="1_gilrr"]
 [ext_resource type="Texture2D" uid="uid://dvogl30btppak" path="res://images/Random Images/Wall.png" id="1_kkeg3"]
 [ext_resource type="Texture2D" uid="uid://dbd0b5864jede" path="res://images/Random Images/Plinko Background.jpg" id="1_robqe"]
-[ext_resource type="PackedScene" uid="uid://cgbrqbrea8ir4" path="res://plinko_peg.tscn" id="4_f1lw3"]
-[ext_resource type="PackedScene" uid="uid://hc7igeg23y3" path="res://pokerchip.tscn" id="5_aqh37"]
+[ext_resource type="PackedScene" path="res://plinko_peg.tscn" id="4_f1lw3"]
+[ext_resource type="PackedScene" uid="uid://d00ds1i5ayr4n" path="res://pokerchip.tscn" id="5_aqh37"]
 [ext_resource type="FontFile" uid="uid://dpen4mjgiv7pg" path="res://Miscellaneous Stuff/Budmo font/budmo jiggler.otf" id="5_bj1ud"]
 [ext_resource type="PackedScene" uid="uid://cga2kt50gl5ds" path="res://marvel_chip.tscn" id="6_lcv85"]
 [ext_resource type="Texture2D" uid="uid://b1fy0ho8x5aoc" path="res://images/Random Images/Green.png" id="6_skt6h"]
@@ -17,6 +17,7 @@
 [ext_resource type="PackedScene" uid="uid://bfglhtejnufs3" path="res://the_boys_chip.tscn" id="11_brnod"]
 [ext_resource type="PackedScene" uid="uid://da6sygpciwm8d" path="res://spongebob_chip.tscn" id="12_5ixig"]
 [ext_resource type="Script" path="res://plinkospawner.gd" id="13_81u3k"]
+[ext_resource type="AudioStream" uid="uid://dbh3imt8n4bhu" path="res://sound/music/156.mp3" id="18_ggnef"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_j55p2"]
 size = Vector2(19.2, 12.58)
@@ -323,6 +324,10 @@ offset_bottom = 119.0
 theme_override_fonts/font = ExtResource("5_bj1ud")
 theme_override_font_sizes/font_size = 70
 text = "Exit"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("18_ggnef")
+autoplay = true
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="body_entered" from="Green" to="." method="_on_green_body_entered"]

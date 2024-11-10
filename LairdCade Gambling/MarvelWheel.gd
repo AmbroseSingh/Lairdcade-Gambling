@@ -131,16 +131,16 @@ func _on_button_pressed() -> void:
 	get_parent().get_node("Header").visible = false
 	get_parent().get_node("Footer").visible = false
 	
-	if Global.MarvelToken >= 10:
+	if Global.MarvelToken >= 2:
 		if spinning:
 			spin_velocity = randf_range(535,815)
 			spinning = false
 			spun = true
-			Global.MarvelToken = Global.MarvelToken - 10
+			Global.MarvelToken = Global.MarvelToken - 2
 		else:
 			spin_velocity = randf_range(535,815)
 			spinning = true
-			Global.MarvelToken = Global.MarvelToken - 10
+			Global.MarvelToken = Global.MarvelToken - 2
 			spun = true
 		
 func _on_rare_body_area_entered(area):

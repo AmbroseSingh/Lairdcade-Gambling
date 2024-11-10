@@ -161,16 +161,16 @@ func _on_button_pressed() -> void:
 	
 	
 	
-	if Global.MiscToken >= 10:
+	if Global.MiscToken >= 2:
 		if spinning:
 			spin_velocity = randf_range(535,815)
 			spinning = false
 			spun = true
-			Global.MiscToken = Global.MiscToken - 10
+			Global.MiscToken = Global.MiscToken - 2
 		else:
 			spin_velocity = randf_range(535,815)
 			spinning = true
-			Global.MiscToken = Global.MiscToken - 10
+			Global.MiscToken = Global.MiscToken - 2
 			spun = true
 		
 func _on_rare_body_area_entered(area):

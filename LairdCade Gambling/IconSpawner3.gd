@@ -26,7 +26,6 @@ func _process(delta):
 func _on_timer_timeout():
 	get_parent().get_node("Lever").leverTimeout = false
 	get_parent().processPOne = true
-	$AudioStreamPlayer.play()
 	var NewIconOne = RanIconOne.instantiate()
 	var NewIconTwo = RanIconTwo.instantiate()
 	var NewIconThree = RanIconThree.instantiate()

@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://hc7igeg23y3"]
+[gd_scene load_steps=4 format=3 uid="uid://d00ds1i5ayr4n"]
 
 [ext_resource type="Texture2D" uid="uid://ccy201ewyee7n" path="res://images/Random Images/Chip.png" id="1_awthl"]
 [ext_resource type="Script" path="res://pokerchip.gd" id="2_xrnop"]

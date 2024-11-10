@@ -132,16 +132,16 @@ func _on_button_pressed() -> void:
 	get_parent().get_node("Header").visible = false
 	get_parent().get_node("Footer").visible = false
 	
-	if Global.BreakingBadToken >= 10:
+	if Global.BreakingBadToken >= 2:
 		if spinning:
 			spin_velocity = randf_range(535,815)
 			spinning = false
 			spun = true
-			Global.BreakingBadToken = Global.BreakingBadToken - 10
+			Global.BreakingBadToken = Global.BreakingBadToken - 2
 		else:
 			spin_velocity = randf_range(535,815)
 			spinning = true
-			Global.BreakingBadToken = Global.BreakingBadToken - 10
+			Global.BreakingBadToken = Global.BreakingBadToken - 2
 			spun = true
 		
 func _on_rare_body_area_entered(area):

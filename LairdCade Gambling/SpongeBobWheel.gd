@@ -132,16 +132,16 @@ func _on_button_pressed() -> void:
 	get_parent().get_node("Spongebob").visible = false 
 	get_parent().get_node("Header").visible = false
 	get_parent().get_node("Footer").visible = false
-	if Global.SpongebobToken >= 10:
+	if Global.SpongebobToken >= 2:
 		if spinning:
 			spin_velocity = randf_range(535,815)
 			spinning = false
 			spun = true
-			Global.SpongebobToken = Global.SpongebobToken - 10
+			Global.SpongebobToken = Global.SpongebobToken - 2
 		else:
 			spin_velocity = randf_range(535,815)
 			spinning = true
-			Global.SpongebobToken = Global.SpongebobToken - 10
+			Global.SpongebobToken = Global.SpongebobToken - 2
 			spun = true
 		
 func _on_rare_body_area_entered(area):

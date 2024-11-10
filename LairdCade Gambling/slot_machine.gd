@@ -16,25 +16,31 @@ func _process(delta):
 			matchingicon = Global.iconOne
 			processPOne = false
 			processPTwo = true
+			$WinOne.play()
 		elif Global.iconOne == Global.iconThree and Global.iconOne != Global.iconTwo:
 			tokens = tokens + 10
 			matchingicon = Global.iconOne
 			processPOne = false
 			processPTwo = true
+			$WinOne.play()
 		elif Global.iconTwo == Global.iconThree and Global.iconTwo != Global.iconOne:
 			tokens = tokens + 10
 			matchingicon = Global.iconTwo 
 			processPOne = false
 			processPTwo = true
+			$WinOne.play()
 		elif Global.iconOne == Global.iconTwo and Global.iconOne == Global.iconThree:
 			tokens = tokens + 500
 			matchingicon = Global.iconOne
 			processPOne = false
 			processPTwo = true
+			$Jackpot.play()
+			$Jackpot2.play()
 		else: 
 			tokens = tokens + 0
 			processPOne = false
 			processPTwo = true
+			$Fail.play()
 	if processPTwo == true:
 		if matchingicon == 1:
 			Global.BreakingBadToken = Global.BreakingBadToken + tokens

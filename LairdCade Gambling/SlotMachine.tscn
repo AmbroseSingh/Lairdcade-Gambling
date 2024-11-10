@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=3 uid="uid://dmx783qp25b82"]
+[gd_scene load_steps=38 format=3 uid="uid://dmx783qp25b82"]
 
 [ext_resource type="PackedScene" uid="uid://bfatxylpa8tye" path="res://Spawner.tscn" id="1_3gm2i"]
 [ext_resource type="Script" path="res://slot_machine.gd" id="1_ayar6"]
@@ -33,6 +33,10 @@
 [ext_resource type="Script" path="res://miscellaneous_logo.gd" id="26_jucrm"]
 [ext_resource type="Script" path="res://sponge_bob_icon_new.gd" id="28_h2m5b"]
 [ext_resource type="Script" path="res://the_boys_logo.gd" id="30_mcm3q"]
+[ext_resource type="AudioStream" uid="uid://k8uol83xunmt" path="res://sound/sfx/wrong-answer-126515.mp3" id="34_hgcrn"]
+[ext_resource type="AudioStream" uid="uid://cb0mx44ivbwdk" path="res://sound/sfx/jackpot.mp3" id="35_pilkv"]
+[ext_resource type="AudioStream" uid="uid://bhpn13ewqmqfj" path="res://sound/sfx/jackpot-slot-machine-coin-loop-1-216029.mp3" id="36_d588w"]
+[ext_resource type="AudioStream" uid="uid://b7e4cnc454n33" path="res://sound/sfx/playful-casino-slot-machine-jackpot-2-183923.mp3" id="37_oxpn7"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_ayar6")
@@ -244,6 +248,18 @@ anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 script = ExtResource("25_12stl")
+
+[node name="Fail" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("34_hgcrn")
+
+[node name="WinOne" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("35_pilkv")
+
+[node name="Jackpot" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("36_d588w")
+
+[node name="Jackpot2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("37_oxpn7")
 
 [connection signal="pressed" from="Lever/Button" to="." method="_on_button_pressed"]
 [connection signal="button_down" from="backb" to="backb" method="_on_button_down"]

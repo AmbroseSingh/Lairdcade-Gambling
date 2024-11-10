@@ -28,7 +28,7 @@ func _on_green_body_entered(body: Node2D) -> void:
 
 func _on_yellow_body_entered(body: Node2D) -> void:
 	
-		compare_current_selection(10)
+		compare_current_selection(15)
 		dropable = true
 		
 
@@ -42,25 +42,25 @@ func compare_current_selection(scoreamount):
 	match Global.current_plinko_select:
 		"res://marvel_chip.tscn":
 			Global.MarvelToken+= scoreamount
-			Global.current_score.text = Global.MarvelToken.text
+			Global.current_score = Global.MarvelToken
 		"res://fortnite_chip.tscn":
 			Global.FortniteToken+= scoreamount
 			Global.current_score = Global.FortniteToken
 		"res://breaking_bad_chip.tscn":
 			Global.BreakingBadToken+= scoreamount
-			Global.current_score.text = Global.BreakingBadToken
+			Global.current_score = Global.BreakingBadToken
 		"res://family_guy_chip.tscn":
 			Global.FamilyGuyToken+= scoreamount
-			Global.current_score.text = Global.FamilyGuyToken
+			Global.current_score = Global.FamilyGuyToken
 		"res://spongebob_chip.tscn":
 			Global.SpongebobToken+= scoreamount
-			Global.current_score.text = Global.SpongebobToken
+			Global.current_score = Global.SpongebobToken
 		"res://the_boys_chip.tscn":
 			Global.FortniteToken+= scoreamount
-			Global.current_score.text = Global.TheBoysToken
+			Global.current_score = Global.TheBoysToken
 		"res://misc_chip.tscn":
 			Global.MiscToken+= scoreamount
-			Global.current_score.text = Global.MiscToken
+			Global.current_score = Global.MiscToken
 
 """func compare_current_score():
 	match Global.current_plinko_select:
