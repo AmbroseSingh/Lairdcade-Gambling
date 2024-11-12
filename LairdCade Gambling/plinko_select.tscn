@@ -1,10 +1,11 @@
-[gd_scene load_steps=13 format=3 uid="uid://bpie7bwug1gn2"]
+[gd_scene load_steps=14 format=3 uid="uid://bpie7bwug1gn2"]
 
 [ext_resource type="Script" path="res://plinko_select.gd" id="1_3dj2g"]
 [ext_resource type="Texture2D" uid="uid://similhkjd2x4" path="res://images/Random Images/blkback.jpg" id="1_qpts4"]
 [ext_resource type="FontFile" uid="uid://dpen4mjgiv7pg" path="res://Miscellaneous Stuff/Budmo font/budmo jiggler.otf" id="2_fkubh"]
 [ext_resource type="Texture2D" uid="uid://du3f421c32ax" path="res://images/Icons/Marvel Logo.png" id="4_72ru5"]
 [ext_resource type="Texture2D" uid="uid://cltxdfih3igjh" path="res://images/Icons/Fortnite Logo.png" id="5_6g8tc"]
+[ext_resource type="Texture2D" uid="uid://dxik5hg57wgrp" path="res://SlotMachine/WhiteFive.png" id="6_2vnip"]
 [ext_resource type="Texture2D" uid="uid://dywhvg32bta3q" path="res://images/Icons/Breaking Bad Logo.png" id="6_rioxb"]
 [ext_resource type="Texture2D" uid="uid://blgfaspurafx1" path="res://images/Icons/Family Guy Logo.png" id="7_cai7s"]
 [ext_resource type="Texture2D" uid="uid://dj0o117gge446" path="res://images/Icons/SpongeBobIconNew.png" id="8_mw74m"]
@@ -142,13 +143,21 @@ icon = ExtResource("4_72ru5")
 expand_icon = true
 
 [node name="fortnitebutton" type="Button" parent="."]
+z_index = 1
 offset_left = 152.0
 offset_top = 1126.0
 offset_right = 352.0
 offset_bottom = 1296.0
 theme_override_font_sizes/font_size = 100
 icon = ExtResource("5_6g8tc")
+flat = true
 expand_icon = true
+
+[node name="Sprite2D" type="Sprite2D" parent="fortnitebutton"]
+z_index = -1
+position = Vector2(89.5, 87)
+scale = Vector2(6.59375, 6.4375)
+texture = ExtResource("6_2vnip")
 
 [node name="breakingbutton" type="Button" parent="."]
 offset_left = 586.0
@@ -183,12 +192,20 @@ icon = ExtResource("9_u8b7k")
 expand_icon = true
 
 [node name="miscbutton" type="Button" parent="."]
+z_index = 1
 offset_left = 122.0
 offset_top = 1389.0
 offset_right = 377.0
 offset_bottom = 1636.0
 icon = ExtResource("10_kbq8y")
+flat = true
 expand_icon = true
+
+[node name="Sprite2D" type="Sprite2D" parent="miscbutton"]
+z_index = -1
+position = Vector2(128, 124)
+scale = Vector2(6.75, 6.875)
+texture = ExtResource("6_2vnip")
 
 [node name="backbuttonPS" type="Button" parent="."]
 offset_left = 31.0
