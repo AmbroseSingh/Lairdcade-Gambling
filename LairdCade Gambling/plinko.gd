@@ -56,7 +56,7 @@ func compare_current_selection(scoreamount):
 			Global.SpongebobToken+= scoreamount
 			Global.current_score = Global.SpongebobToken
 		"res://the_boys_chip.tscn":
-			Global.FortniteToken+= scoreamount
+			Global.TheBoysToken+= scoreamount
 			Global.current_score = Global.TheBoysToken
 		"res://misc_chip.tscn":
 			Global.MiscToken+= scoreamount
