@@ -38,7 +38,7 @@ func _on_fortnitebutton_pressed() -> void:
 
 func _on_breakingbutton_pressed() -> void:
 	if Global.BreakingBadToken >= 10:
-		Global.current_plinko_select = ("res://the_boys_chip.tscn")
+		Global.current_plinko_select = ("res://breaking_bad_chip.tscn")
 		get_tree().change_scene_to_file("res://plinko.tscn")
 		Global.BreakingBadToken = Global.BreakingBadToken - 10
 		Global.current_score = Global.BreakingBadToken
